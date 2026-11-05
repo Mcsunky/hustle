@@ -106,6 +106,12 @@ ol.picks { list-style: none; margin: 0; padding: 0; display: flex; flex-directio
 .ticket .total b { color: var(--ink); font-size: 16px; }
 .reminder { font-weight: 600; margin: 0; padding: 12px 14px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 4px 4px 0; }
 
+.acca { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; background: var(--surface); border: 2px solid var(--ink); border-radius: 6px; padding: 16px 18px; }
+.acca .lbl { font: 700 12px var(--font-data); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.acca .code { font: 700 clamp(28px, 7vw, 36px) var(--font-data); letter-spacing: 0.08em; user-select: all; }
+.acca .sub { font-size: 14px; color: var(--muted); }
+.acca button { font: 700 14px var(--font-body); color: var(--bg); background: var(--ink); border: 0; border-radius: 4px; padding: 10px 16px; cursor: pointer; }
+
 /* Audit */
 .scoreline { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 15px; }
 .scoreline span b { font-family: var(--font-data); font-size: 20px; margin-right: 4px; font-variant-numeric: tabular-nums; }
@@ -150,7 +156,7 @@ const SLATES = [
         ]},
         { ko: "20:00 UK", picks: [
           { n: 4, fx: "Benfica v Lech Poznań", mk: "Home Win & Over 1.5 Goals", odds: "1.19" },
-          { n: 5, fx: "Celtic v Beşiktaş", mk: "Over 2.5 Goals", odds: "1.53" }
+          { n: 5, fx: "Celtic v Beşiktaş", mk: "Over 2.5 Goals", odds: "1.50" }
         ]}
       ]},
       { name: "UEFA Conference League", windows: [
@@ -178,9 +184,10 @@ const SLATES = [
         ["Midtjylland v Ajax: BTTS Yes", "1.45"],
         ["Crystal Palace v Hoffenheim: BTTS Yes", "1.50"],
         ["Twente v Pafos: Over 2.5", "1.37"],
-        ["Celtic v Beşiktaş: Over 2.5", "1.53"]
-      ], total: "4.56" }
+        ["Celtic v Beşiktaş: Over 2.5", "1.50"]
+      ], total: "4.47" }
     ],
+    acca: { code: "PH2ZGG", legs: 11, odds: "11.97", booked: "06:45 UK" },
     results: null,
     audit: {
       of: "Wednesday 4 November 2026",
@@ -247,6 +254,7 @@ function renderSlate(sl) {
     </section>
     <section aria-labelledby="tix-h">
       <div class="sec-head"><h2 id="tix-h">Tickets</h2></div>
+      ${sl.acca ? `<div class="acca"><div><div class="lbl">Full accumulator · football.com booking code</div><div class="code" id="acca-code">${esc(sl.acca.code)}</div><div class="sub">All ${sl.acca.legs} picks · total odds ${esc(sl.acca.odds)} · booked ${esc(sl.acca.booked)}</div></div><button type="button" id="copy-code">Copy code</button></div>` : ""}
       <div class="tickets">${tickets}</div>
       <p class="reminder">Check kickoff times and team news before staking. Odds move.</p>
     </section>`;
@@ -284,6 +292,13 @@ function show(date) {
   $("#meta").innerHTML = `<span><b>${countPicks(sl)}</b> picks</span><span><b>${sl.comps.length}</b> competitions</span><span>${esc(sl.built)}</span>`;
   $("#days").innerHTML = SLATES.length > 1 ? SLATES.map(s => `<button type="button" data-d="${s.date}" aria-pressed="${s.date === sl.date}">${s.date.slice(8)}/${s.date.slice(5,7)}</button>`).join("") : "";
   $("#app").innerHTML = renderSlate(sl) + renderAudit(sl.audit);
+  const cb = $("#copy-code");
+  if (cb) cb.onclick = () => {
+    const code = $("#acca-code").textContent;
+    const done = () => { cb.textContent = "Copied"; setTimeout(() => cb.textContent = "Copy code", 1500); };
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents($("#acca-code")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); cb.textContent = "Selected, press copy"; };
+    try { navigator.clipboard.writeText(code).then(done, fallback); } catch (e) { fallback(); }
+  };
   document.querySelectorAll("#days button").forEach(b => b.onclick = () => { location.hash = "d" + b.dataset.d; });
 }
 function fromHash() { const m = location.hash.match(/^#d(\d{4}-\d{2}-\d{2})$/); show(m ? m[1] : SLATES[0].date); }
