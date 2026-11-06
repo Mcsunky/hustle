@@ -180,7 +180,17 @@ const SLATES = [
       ], total: "2.57" }
     ],
     acca: { code: "HADVN3", legs: 8, odds: "4.85", booked: "02:35 UK" },
-    results: null,
+    results: {
+      1: { status: "lost", score: "0–0", src: "https://www.reviersport.de/fussball/2bundesliga/a631944---2-liga-dresden-landet-befreiungsschlag-gegen-fuerth-braunschweig-cottbus-torlos.html", srcName: "RevierSport" },
+      2: { status: "won", score: "3–0", src: "https://www.reviersport.de/fussball/2bundesliga/a631944---2-liga-dresden-landet-befreiungsschlag-gegen-fuerth-braunschweig-cottbus-torlos.html", srcName: "RevierSport" },
+      3: { status: "won", score: "6–0", src: "https://sport.orf.at/stories/3164600/", srcName: "ORF" },
+      4: { status: "won", score: "1–1", src: "https://www.goal.com/en-za/news/willem-ii-gain-little-from-a-point-against-pec-zwolle/blt015370056d7cf60c", srcName: "Goal" },
+      5: { status: "won", score: "3–1 (HT 1–1)", src: "https://www.sportschau.de/fussball/bundesliga/hsv-schickt-gladbach-zurueck-in-die-krise,spielbericht-hamburger-sv-borussia-moenchengladbach-102.html", srcName: "Sportschau" },
+      6: { status: "won", score: "3–1", src: "https://www.eurosport.fr/football/ligue-1/2026-2027/ligue-1-10e-journee-vainqueur-au-stadium-3-1-toulouse-replonge-strasbourg-dans-ses-doutes_sto23352979/story.shtml", srcName: "Eurosport" },
+      7: { status: "won", score: "3–1", src: "https://www.espn.com/soccer/report/_/gameId/401879242", srcName: "ESPN" },
+      8: { status: "won", score: "0–0", src: "https://www.noticiasdealava.eus/alaves/2026/11/06/cronica-alaves-la-liga-sevilla-pizjuan-quique-sanchez-flores-mendizorroza-11731700.html", srcName: "Noticias de Álava" }
+    },
+    settled: "Settled 23:05 UK: 8 picks, 7 won, 1 lost (88%). Safest 4-leg landed. Goals & cover 4-leg and accumulator HADVN3 lost on Braunschweig v Cottbus (0–0).",
     audit: {
       of: "Thursday 5 November 2026",
       note: "Flashscore's results page loaded without scores, so results are checked against ESPN's official scoreboards, plus Sofascore and Goal for the half-time splits.",
@@ -316,6 +326,7 @@ function renderSlate(sl) {
     <section aria-labelledby="slate-h">
       <div class="sec-head"><h2 id="slate-h">The Slate</h2><span class="note">${countPicks(sl)} picks · UK kickoff times</span></div>
       ${comps}
+      ${sl.settled ? `<p class="reminder">${esc(sl.settled)}</p>` : ""}
       <p class="passes"><b>Passes:</b> ${esc(sl.passes)}</p>
     </section>
     <section aria-labelledby="tix-h">
