@@ -144,6 +144,72 @@ footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line)
 /* ===== DATA: one entry per day, newest first. Daily update = add an entry and fill in yesterday's results. ===== */
 const SLATES = [
   {
+    date: "2026-11-06",
+    label: "Friday 6 November 2026",
+    built: "Built 02:40 UK",
+    comps: [
+      { name: "2. Bundesliga", windows: [ { ko: "17:30 UK", picks: [
+        { n: 1, fx: "Eintracht Braunschweig v Energie Cottbus", mk: "Both Teams to Score: Yes", odds: "1.44" },
+        { n: 2, fx: "Dynamo Dresden v Greuther Fürth", mk: "Over 1.5 Goals", odds: "1.19" } ] } ] },
+      { name: "Austrian Bundesliga", windows: [ { ko: "18:30 UK", picks: [
+        { n: 3, fx: "Rapid Wien v Wolfsberger AC", mk: "Over 1.5 Goals", odds: "1.11" } ] } ] },
+      { name: "Eredivisie", windows: [ { ko: "19:00 UK", picks: [
+        { n: 4, fx: "Willem II v PEC Zwolle", mk: "Over 1.5 Goals", odds: "1.19" } ] } ] },
+      { name: "Bundesliga", windows: [ { ko: "19:30 UK", picks: [
+        { n: 5, fx: "Hamburger SV v Borussia Mönchengladbach", mk: "2nd Half Over 0.5 Goals", odds: "1.20" } ] } ] },
+      { name: "Ligue 1", windows: [ { ko: "19:45 UK", picks: [
+        { n: 6, fx: "Toulouse v Strasbourg", mk: "Over 1.5 Goals", odds: "1.20" } ] } ] },
+      { name: "Premier League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 7, fx: "Everton v Coventry City", mk: "Double Chance 1X", odds: "1.20" } ] } ] },
+      { name: "LaLiga", windows: [ { ko: "20:00 UK", picks: [
+        { n: 8, fx: "Sevilla v Alavés", mk: "Double Chance 1X", odds: "1.24" } ] } ] }
+    ],
+    passes: "Venezia v Udinese, Derby v Bolton, Famalicão v Arouca, Standard Liège v Beveren, Gaziantep v Kasımpaşa, Silkeborg v Lyngby (no form data to back a pick), all four Argentine games and Vitória v Fluminense (low-scoring leagues, conflicting kickoff times). Eerste Divisie, Ligue 2, Serie B and LaLiga 2 fixtures were not checked against an official list, so they were left out.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Rapid Wien v Wolfsberger: Over 1.5", "1.11"],
+        ["Dresden v Greuther Fürth: Over 1.5", "1.19"],
+        ["Willem II v PEC Zwolle: Over 1.5", "1.19"],
+        ["Everton v Coventry: 1X", "1.20"]
+      ], total: "1.89" },
+      { name: "Goals & cover 4-leg", legs: [
+        ["Braunschweig v Cottbus: BTTS Yes", "1.44"],
+        ["Hamburg v Gladbach: 2nd Half Over 0.5", "1.20"],
+        ["Toulouse v Strasbourg: Over 1.5", "1.20"],
+        ["Sevilla v Alavés: 1X", "1.24"]
+      ], total: "2.57" }
+    ],
+    acca: { code: "HADVN3", legs: 8, odds: "4.85", booked: "02:35 UK" },
+    results: null,
+    audit: {
+      of: "Thursday 5 November 2026",
+      note: "Flashscore's results page loaded without scores, so results are checked against ESPN's official scoreboards, plus Sofascore and Goal for the half-time splits.",
+      picks: [
+        { fx: "Crystal Palace v Hoffenheim", mk: "Both Teams to Score: Yes", odds: "1.50", score: "1–1", status: "won", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa/date/20261105", srcName: "ESPN" },
+        { fx: "AC Milan v Ferencváros", mk: "Over 1.5 Goals", odds: "1.16", score: "0–2", status: "won", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa/date/20261105", srcName: "ESPN" },
+        { fx: "Real Sociedad v Lyon", mk: "2nd Half Over 0.5 Goals", odds: "1.18", score: "1–1 (2H 0–1)", status: "won", src: "https://www.sofascore.com/es/news/real-sociedad-1-1-lyon-puntuacion-sofascore-de-tolisso-7-8", srcName: "Sofascore" },
+        { fx: "Benfica v Lech Poznań", mk: "Home Win & Over 1.5 Goals", odds: "1.19", score: "3–1", status: "won", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa/date/20261105", srcName: "ESPN" },
+        { fx: "Celtic v Beşiktaş", mk: "Over 2.5 Goals", odds: "1.50", score: "3–2", status: "won", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa/date/20261105", srcName: "ESPN" },
+        { fx: "Midtjylland v Ajax", mk: "Both Teams to Score: Yes", odds: "1.45", score: "1–6", status: "won", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa.conf/date/20261105", srcName: "ESPN" },
+        { fx: "Crvena Zvezda v Inter d'Escaldes", mk: "Home Win & Over 1.5 Goals", odds: "1.12", score: "2–1", status: "won", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa.conf/date/20261105", srcName: "ESPN" },
+        { fx: "Atalanta v Kairat Almaty", mk: "2nd Half Over 0.5 Goals", odds: "1.14", score: "1–1 (HT 0–0)", status: "won", src: "https://www.goal.com/en/lists/conference-league-poor-atalanta-draw-with-kairat-almaty-thanks-to-krstovic/blt1f992047ca978d29", srcName: "Goal" },
+        { fx: "FC Twente v Pafos", mk: "Over 2.5 Goals", odds: "1.37", score: "3–1", status: "won", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa.conf/date/20261105", srcName: "ESPN" },
+        { fx: "Panathinaikos v CSKA Sofia", mk: "Double Chance 1X", odds: "1.12", score: "2–1", status: "won", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa.conf/date/20261105", srcName: "ESPN" },
+        { fx: "Copenhagen v Iberia 1999", mk: "Over 1.5 Goals", odds: "1.15", score: "2–1", status: "won", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa.conf/date/20261105", srcName: "ESPN" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.78", landed: true },
+        { name: "Goals 4-leg", total: "4.47", landed: true },
+        { name: "Full accumulator PH2ZGG", total: "11.97", landed: true }
+      ],
+      lessons: [
+        "11 from 11 is variance, not proof. The process stays the same.",
+        "The straight home wins the rules ruled out mostly failed: Milan lost 0–2, Sunderland lost 0–2, Atalanta drew 1–1, Palace drew 1–1. Keep the strict home-win rule.",
+        "Second-half Over 0.5 needed a 54th-minute goal at Real Sociedad and a 53rd-minute goal at Atalanta. It wins often, but it isn't automatic, so keep it at Medium."
+      ]
+    }
+  },
+  {
     date: "2026-11-05",
     label: "Thursday 5 November 2026",
     built: "Built 06:10 UK",
@@ -188,7 +254,7 @@ const SLATES = [
       ], total: "4.47" }
     ],
     acca: { code: "PH2ZGG", legs: 11, odds: "11.97", booked: "06:45 UK" },
-    results: null,
+    results: { 1: { status: "won", score: "1–1", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa/date/20261105", srcName: "ESPN" }, 2: { status: "won", score: "0–2", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa/date/20261105", srcName: "ESPN" }, 3: { status: "won", score: "1–1 (2H 0–1)", src: "https://www.sofascore.com/es/news/real-sociedad-1-1-lyon-puntuacion-sofascore-de-tolisso-7-8", srcName: "Sofascore" }, 4: { status: "won", score: "3–1", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa/date/20261105", srcName: "ESPN" }, 5: { status: "won", score: "3–2", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa/date/20261105", srcName: "ESPN" }, 6: { status: "won", score: "1–6", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa.conf/date/20261105", srcName: "ESPN" }, 7: { status: "won", score: "2–1", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa.conf/date/20261105", srcName: "ESPN" }, 8: { status: "won", score: "1–1 (HT 0–0)", src: "https://www.goal.com/en/lists/conference-league-poor-atalanta-draw-with-kairat-almaty-thanks-to-krstovic/blt1f992047ca978d29", srcName: "Goal" }, 9: { status: "won", score: "3–1", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa.conf/date/20261105", srcName: "ESPN" }, 10: { status: "won", score: "2–1", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa.conf/date/20261105", srcName: "ESPN" }, 11: { status: "won", score: "2–1", src: "https://www.espn.com/soccer/scoreboard/_/league/uefa.europa.conf/date/20261105", srcName: "ESPN" } },
     audit: {
       of: "Wednesday 4 November 2026",
       note: "Settled the 8-leg slip from 4 Nov (booking code GZCH1E). Flashscore pages could not be loaded for checking, so each result is verified against ESPN or CBS Sports, linked below.",
