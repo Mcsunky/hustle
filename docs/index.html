@@ -151,7 +151,7 @@ const SLATES = [
       { name: "Premier League", windows: [ { ko: "15:00 UK", picks: [
         { n: 1, fx: "Arsenal v Hull City", mk: "Home Win", odds: "1.20" } ] } ] },
       { name: "Bundesliga", windows: [ { ko: "14:30 UK", picks: [
-        { n: 2, fx: "RB Leipzig v Augsburg", mk: "Home Win & Over 1.5 Goals", odds: "1.49" },
+        { n: 2, fx: "RB Leipzig v Augsburg", mk: "Home Win", odds: "1.48" },
         { n: 3, fx: "Borussia Dortmund v Elversberg", mk: "Home Win", odds: "1.34" },
         { n: 4, fx: "Mainz v Bayern Munich", mk: "Over 2.5 Goals", odds: "1.26" } ] } ] },
       { name: "Süper Lig", windows: [ { ko: "16:00 UK", picks: [
@@ -161,7 +161,7 @@ const SLATES = [
       { name: "LaLiga", windows: [ { ko: "20:00 UK", picks: [
         { n: 7, fx: "Valencia v Real Madrid", mk: "Over 1.5 Goals", odds: "1.14" } ] } ] },
       { name: "Ligue 1", windows: [ { ko: "20:05 UK", picks: [
-        { n: 8, fx: "PSG v Troyes", mk: "Home Win & Over 1.5 Goals", odds: "1.18" } ] } ] },
+        { n: 8, fx: "PSG v Troyes", mk: "Home Win", odds: "1.15" } ] } ] },
       { name: "Argentina Liga Profesional", windows: [ { ko: "20:30 UK", picks: [
         { n: 9, fx: "Rosario Central v Estudiantes (Río Cuarto)", mk: "Home Win", odds: "1.16" } ] } ] },
       { name: "MLS Decision Day", windows: [ { ko: "21:00 UK", picks: [
@@ -173,16 +173,16 @@ const SLATES = [
         ["Valencia v Real Madrid: Over 1.5", "1.14"],
         ["Galatasaray v Amed SK: 1X", "1.13"],
         ["Rosario Central v Estudiantes RC: Home Win", "1.16"],
-        ["PSG v Troyes: Home & Over 1.5", "1.18"]
-      ], total: "1.76" },
-      { name: "Goals 4-leg", legs: [
+        ["PSG v Troyes: Home Win", "1.15"]
+      ], total: "1.72" },
+      { name: "Goals & cover 4-leg", legs: [
         ["Mainz v Bayern: Over 2.5", "1.26"],
         ["Roma v Sassuolo: Over 2.5", "1.36"],
         ["Inter Miami v Charlotte: Over 2.5", "1.26"],
-        ["RB Leipzig v Augsburg: Home & Over 1.5", "1.49"]
-      ], total: "3.22" }
+        ["RB Leipzig v Augsburg: Home Win", "1.48"]
+      ], total: "3.20" }
     ],
-    acca: { code: "XB33Z4", legs: 10, odds: "9.12", booked: "01:30 UK" },
+    acca: { code: "XB33Z4", legs: 10, odds: "8.76", booked: "01:30 UK", note: "Updated 01:40 UK to lower the risk: Leipzig and PSG are now straight Home Wins. Code XB33Z4 still holds the original Home & Over 1.5 on both, so if you load it, switch those two legs to Home Win yourself." },
     results: null,
     audit: {
       of: "Friday 6 November 2026",
@@ -397,7 +397,7 @@ function renderSlate(sl) {
     </section>
     <section aria-labelledby="tix-h">
       <div class="sec-head"><h2 id="tix-h">Tickets</h2></div>
-      ${sl.acca ? `<div class="acca"><div><div class="lbl">Full accumulator · football.com booking code</div><div class="code" id="acca-code">${esc(sl.acca.code)}</div><div class="sub">All ${sl.acca.legs} picks · total odds ${esc(sl.acca.odds)} · booked ${esc(sl.acca.booked)}</div></div><button type="button" id="copy-code">Copy code</button></div>` : ""}
+      ${sl.acca ? `<div class="acca"><div><div class="lbl">Full accumulator · football.com booking code</div><div class="code" id="acca-code">${esc(sl.acca.code)}</div><div class="sub">All ${sl.acca.legs} picks · total odds ${esc(sl.acca.odds)} · booked ${esc(sl.acca.booked)}</div>${sl.acca.note ? `<div class="sub">${esc(sl.acca.note)}</div>` : ""}</div><button type="button" id="copy-code">Copy code</button></div>` : ""}
       <div class="tickets">${tickets}</div>
       <p class="reminder">Check kickoff times and team news before staking. Odds move.</p>
     </section>`;
