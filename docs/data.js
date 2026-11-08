@@ -46,7 +46,22 @@ window.SLATES = [
     ],
     acca: { code: "UU1SLA", legs: 11, odds: "9.32", booked: "01:20 UK" },
     mega: {
-      code: "R0XWP2", odds: "273.99", booked: "01:25 UK", results: null, landed: null,
+      code: "R0XWP2", odds: "273.99", booked: "01:25 UK", landed: false,
+      results: [
+        { status: "won", score: "1–1", src: "https://www.espn.com/soccer/match/_/gameId/401874810", srcName: "ESPN" },
+        { status: "won", score: "5–3", src: "https://www.foxsports.com/soccer/eredivisie-sc-heerenveen-vs-feyenoord-nov-08-2026-game-boxscore-878334", srcName: "Fox Sports" },
+        { status: "lost", score: "1–1", src: "https://www.voetbalkrant.com/belgie/jupiler-pro-league/2026-2027/kalender/speeldag-11/club-brugge/anderlecht/een-klasseflits-volstaat-anderlecht-bezorgt-club-brugge-zure-namiddag-op-jan-breydel", srcName: "Voetbalkrant" },
+        { status: "lost", score: "2–0", src: "https://www.skysports.com/football/brighton-and-hove-albion-vs-brentford/5565576225764913232", srcName: "Sky Sports" },
+        { status: "won", score: "1–0", src: "https://sporza.be/nl/matches/voetbal/jupiler-pro-league/2026-2027/regulier/11/kaa-gent-kv-kortrijk-live-16-uur-profiteert-gent-van-blauw-zwart-puntenverlies-tegen-rode-lantaarn-kortrijk~1781871665148/", srcName: "Sporza" },
+        { status: "lost", score: "2–5", src: "https://www.heartsfc.co.uk/blogs/news/match-report-hearts-2-5-falkirk", srcName: "Hearts FC" },
+        { status: "won", score: "4–3", src: "https://www.myfootballfacts.com/match/eredivisie-2026-27-az-vs-groningen-2026-11-08/", srcName: "My Football Facts" },
+        { status: "won", score: "2–5", src: "https://nos.nl/artikel/2638615-psv-wint-en-is-nieuwe-koploper-na-verlies-feyenoord-en-gelijkspel-twente-ajax", srcName: "NOS" },
+        { status: "won", score: "2–0", src: "https://www.espn.com/soccer/match/_/gameId/401884741", srcName: "ESPN" },
+        { status: "won", score: "4–4", src: "https://www.espn.com/soccer/report/_/gameId/401879240", srcName: "ESPN" },
+        { status: "won", score: "1–0", src: "https://www.voetbalkrant.com/nieuws/2026-11-08/ross-sykes-kopt-union-naar-de-leidersplaats-genk-ziet-top-steeds-verder-weglopen", srcName: "Voetbalkrant" },
+        { status: "won", score: "2–1", src: "https://www.foxsports.com/soccer/bundesliga-hoffenheim-vs-fc-schalke-04-nov-08-2026-game-boxscore-912621", srcName: "Fox Sports" },
+        { status: "won", score: "1–2", src: "https://www.footmercato.net/live/2320001620100876839-lens-vs-marseille", srcName: "Foot Mercato" }
+      ],
       legs: [
         { fx: "Napoli v Lazio", comp: "Serie A", ko: "11:30", mk: "Both Teams to Score: Yes", odds: "1.56" },
         { fx: "Heerenveen v Feyenoord", comp: "Eredivisie", ko: "11:15", mk: "Both Teams to Score: Yes", odds: "1.45" },
@@ -63,7 +78,20 @@ window.SLATES = [
         { fx: "Lens v Marseille", comp: "Ligue 1", ko: "19:45", mk: "Both Teams to Score: Yes", odds: "1.46" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "won", score: "1–1", src: "https://www.voetbalkrant.com/belgie/jupiler-pro-league/2026-2027/kalender/speeldag-11/club-brugge/anderlecht/een-klasseflits-volstaat-anderlecht-bezorgt-club-brugge-zure-namiddag-op-jan-breydel", srcName: "Voetbalkrant" },
+      2: { status: "won", score: "1–0", src: "https://sporza.be/nl/matches/voetbal/jupiler-pro-league/2026-2027/regulier/11/kaa-gent-kv-kortrijk-live-16-uur-profiteert-gent-van-blauw-zwart-puntenverlies-tegen-rode-lantaarn-kortrijk~1781871665148/", srcName: "Sporza" },
+      3: { status: "won", score: "5–3", src: "https://www.foxsports.com/soccer/eredivisie-sc-heerenveen-vs-feyenoord-nov-08-2026-game-boxscore-878334", srcName: "Fox Sports" },
+      4: { status: "won", score: "2–5", src: "https://nos.nl/artikel/2638615-psv-wint-en-is-nieuwe-koploper-na-verlies-feyenoord-en-gelijkspel-twente-ajax", srcName: "NOS" },
+      5: { status: "won", score: "2–0", src: "https://www.skysports.com/football/brighton-and-hove-albion-vs-brentford/5565576225764913232", srcName: "Sky Sports" },
+      6: { status: "lost", score: "1–0", src: "https://www.celticnewsnow.com/news/scales-on-target-as-celtic-defeat-kilmarnock/743607/", srcName: "Celtic News Now" },
+      7: { status: "won", score: "2–0", src: "https://www.espn.com/soccer/match/_/gameId/401884741", srcName: "ESPN" },
+      8: { status: "won", score: "2–1", src: "https://www.foxsports.com/soccer/bundesliga-hoffenheim-vs-fc-schalke-04-nov-08-2026-game-boxscore-912621", srcName: "Fox Sports" },
+      9: { status: "lost", score: "2–2", src: "https://bold.dk/fodbold/stillinger/superligaen/nyheder/fcm-dummede-sig-mod-sonderjyske", srcName: "bold.dk" },
+      10: { status: "won", score: "3–0", src: "https://www.hurriyet.com.tr/sporarena/canli-anlatim-besiktas-genclerbirligi-super-lig-maci-43370512", srcName: "Hürriyet" },
+      11: { status: "won", score: "2–3", src: "https://www.ojogo.pt/futebol/artigo/pavlidis-da-vitoria-ao-benfica-sobre-o-estrela-da-amadora-ao-cair-do-pano/18146115", srcName: "O Jogo" }
+    },
+    settled: "Settled 23:40 UK: 11 picks, 9 won, 2 lost (82%). Safest 4-leg landed. Home strength 4-leg and accumulator UU1SLA lost on Celtic (1–0, Home & Over 1.5 needed two goals) and Midtjylland (2–2). Mega R0XWP2 lost: 10 of 13 legs won.",
     audit: {
       of: "Saturday 7 November 2026",
       note: "Settled with Leipzig and PSG as straight Home Wins, as you changed them. Flashscore's pages loaded without scores, so each result is checked against a match report, linked below.",
