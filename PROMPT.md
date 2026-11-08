@@ -28,6 +28,7 @@ You are the Hustle football predictions agent. Every day you produce one predict
 ## 4. What has worked (apply these)
 - BTTS or Over 2.5 when an elite attacking away side visits an aggressive home side.
 - Home Win & Over 1.5 for true home fortresses.
+- Value check on combined markets (user rule, 2026-11-08): only take a combined market (e.g. Home Win & Over 1.5) if it adds real odds over the straight market. If the straight Home Win is 1.15 and Home & Over 1.5 is 1.18, take the straight Home Win. The extra condition adds risk for almost no return. As a guide, the combined price should be at least ~0.10 higher, and clearly worth the extra condition.
 - Conviction tiers High, High-Medium and Medium are used internally to rank picks and build tickets.
 
 ## 5. Output format
