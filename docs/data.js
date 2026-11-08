@@ -45,7 +45,22 @@ window.SLATES = [
     ],
     acca: { code: "XB33Z4", legs: 10, odds: "8.76", booked: "01:30 UK", note: "Updated 01:40 UK to lower the risk: Leipzig and PSG are now straight Home Wins. Code XB33Z4 still holds the original Home & Over 1.5 on both, so if you load it, switch those two legs to Home Win yourself." },
     mega: {
-      code: "W2VN9E", odds: "351.67", booked: "08:50 UK", results: null, landed: null,
+      code: "W2VN9E", odds: "351.67", booked: "08:50 UK", landed: false,
+      results: [
+        { status: "lost", score: "1–0", src: "https://www.skysports.com/football/leeds-united-vs-tottenham-hotspur/report/559540", srcName: "Sky Sports" },
+        { status: "won", score: "5–2", src: "https://vglive.vg.no/fotball/event/rb-leipzig-fc-augsburg/757624", srcName: "VG Live" },
+        { status: "won", score: "1–2", src: "https://www.espn.com/soccer/report/_/gameId/401884740", srcName: "ESPN" },
+        { status: "lost", score: "1–0", src: "https://www.espn.com/soccer/report/_/gameId/401878760", srcName: "ESPN" },
+        { status: "won", score: "1–1", src: "https://www.fulhamfc.com/news/2026/november/07/fulham-1-1-newcastle-united/", srcName: "Fulham FC" },
+        { status: "won", score: "4–3", src: "https://www.hurriyet.com.tr/sporarena/galatasaray-4-3-amed-sportif-faaliyetler-super-lig-maci-ozeti-43369174", srcName: "Hürriyet" },
+        { status: "won", score: "3–0", src: "https://www.ertsports.gr/super-league/aris-panaitolikos-3-0-aneti-epistrofi-stis-nikes-gia-tous-thessalonikeis/", srcName: "ERT Sports" },
+        { status: "won", score: "2–2", src: "https://sporza.be/nl/matches/voetbal/jupiler-pro-league/2026-2027/regulier/11/antwerp-lommel-sk-live-ecuadoraanse-connectie-brengt-antwerp-op-voorsprong-na-penaltymisser-van-lommel~1781871729145/", srcName: "Sporza" },
+        { status: "won", score: "0–3", src: "https://www.espn.com/soccer/report/_/gameId/401882808", srcName: "ESPN" },
+        { status: "lost", score: "0–2", src: "https://www.skysports.com/football/st-mirren-vs-rangers/558409", srcName: "Sky Sports" },
+        { status: "lost", score: "1–0", src: "https://noticiasargentinas.com/deportes/rosario-central-le-gano-2-0-a-estudiantes-de-rio-cuarto--pero-no-le-alcanzo-para-ser-campeon-de-liga_a6aefa7354574a35e62f27dae", srcName: "Noticias Argentinas" },
+        { status: "lost", score: "2–0", src: "https://www.cadena3.com/noticia/deportes-rosario/a-rosario-central-se-le-escapo-el-bicampeonato-por-segundos-tras-ganar-2-a-0-como-local_610856", srcName: "Cadena 3" },
+        { status: "won", score: "4–1", src: "https://www.tfcrepublic.ca/november-7-toronto-fc-philadelphia-union/", srcName: "TFC Republic" }
+      ],
       legs: [
         { fx: "Leeds United v Tottenham", comp: "Premier League", ko: "12:30", mk: "Both Teams to Score: Yes", odds: "1.71" },
         { fx: "RB Leipzig v Augsburg", comp: "Bundesliga", ko: "14:30", mk: "Home Win", odds: "1.47" },
@@ -62,7 +77,19 @@ window.SLATES = [
         { fx: "Philadelphia Union v Toronto FC", comp: "MLS", ko: "21:00", mk: "Both Teams to Score: Yes", odds: "1.64" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "won", score: "1–0", src: "https://www.espn.com/soccer/report/_/gameId/401878760", srcName: "ESPN" },
+      2: { status: "won", score: "5–2", src: "https://vglive.vg.no/fotball/event/rb-leipzig-fc-augsburg/757624", srcName: "VG Live" },
+      3: { status: "won", score: "2–1", src: "https://www.espn.com/soccer/match/_/gameId/401884745", srcName: "ESPN" },
+      4: { status: "won", score: "1–2", src: "https://www.espn.com/soccer/report/_/gameId/401884740", srcName: "ESPN" },
+      5: { status: "won", score: "4–3", src: "https://www.hurriyet.com.tr/sporarena/galatasaray-4-3-amed-sportif-faaliyetler-super-lig-maci-ozeti-43369174", srcName: "Hürriyet" },
+      6: { status: "won", score: "3–0", src: "https://www.agi.it/sport/news/2026-11-07/calcio-roma-sassuolo-39932756/", srcName: "AGI" },
+      7: { status: "won", score: "0–3", src: "https://www.espn.com/soccer/report/_/gameId/401882808", srcName: "ESPN" },
+      8: { status: "won", score: "1–0", src: "https://www.beinsports.com/en-us/soccer/ligue-1/articles/psg-vs-troyes-highlights-ligue-1-2026-11-07", srcName: "beIN Sports" },
+      9: { status: "won", score: "2–0", src: "https://www.cadena3.com/noticia/deportes-rosario/a-rosario-central-se-le-escapo-el-bicampeonato-por-segundos-tras-ganar-2-a-0-como-local_610856", srcName: "Cadena 3" },
+      10: { status: "won", score: "3–3", src: "https://sports.yahoo.com/articles/charlotte-fc-rallies-3-goal-234711042.html", srcName: "Yahoo Sports" }
+    },
+    settled: "Settled 00:10 UK: 10 picks, 10 won (100%). Both 4-leg tickets landed, and the Slate as posted (Leipzig and PSG as Home Win) landed at 8.76. The booked code XB33Z4 still had PSG Home & Over 1.5, which lost at 1–0. Mega W2VN9E lost: 9 of 13 legs won.",
     audit: {
       of: "Friday 6 November 2026",
       note: "Flashscore's pages loaded without scores, so each result is checked against a match report, linked below.",
