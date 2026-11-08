@@ -1,3 +1,4 @@
 odds-*.json
 .DS_Store
 fixtures-*.json
+book-*.js

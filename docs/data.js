@@ -5,6 +5,95 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-08",
+    label: "Sunday 8 November 2026",
+    built: "Built 01:25 UK",
+    comps: [
+      { name: "Belgian Pro League", windows: [ { ko: "12:30 UK", picks: [
+        { n: 1, fx: "Club Brugge v Anderlecht", mk: "Double Chance 1X", odds: "1.16" } ] }, { ko: "15:00 UK", picks: [
+        { n: 2, fx: "Gent v Kortrijk", mk: "Home Win", odds: "1.48" } ] } ] },
+      { name: "Eredivisie", windows: [ { ko: "11:15 UK", picks: [
+        { n: 3, fx: "Heerenveen v Feyenoord", mk: "Over 1.5 Goals", odds: "1.13" } ] }, { ko: "15:45 UK", picks: [
+        { n: 4, fx: "Cambuur v PSV", mk: "Over 2.5 Goals", odds: "1.30" } ] } ] },
+      { name: "Premier League", windows: [ { ko: "14:00 UK", picks: [
+        { n: 5, fx: "Brighton v Brentford", mk: "Over 1.5 Goals", odds: "1.17" } ] } ] },
+      { name: "Scottish Premiership", windows: [ { ko: "16:00 UK", picks: [
+        { n: 6, fx: "Celtic v Kilmarnock", mk: "Home Win & Over 1.5 Goals", odds: "1.21" } ] } ] },
+      { name: "Bundesliga", windows: [ { ko: "16:30 UK", picks: [
+        { n: 7, fx: "Freiburg v Union Berlin", mk: "Double Chance 1X", odds: "1.15" } ] }, { ko: "18:30 UK", picks: [
+        { n: 8, fx: "Hoffenheim v Schalke", mk: "Double Chance 1X", odds: "1.19" } ] } ] },
+      { name: "Danish Superliga", windows: [ { ko: "17:00 UK", picks: [
+        { n: 9, fx: "Midtjylland v SønderjyskE", mk: "Home Win & Over 1.5 Goals", odds: "1.36" } ] } ] },
+      { name: "Süper Lig", windows: [ { ko: "18:00 UK", picks: [
+        { n: 10, fx: "Beşiktaş v Gençlerbirliği", mk: "Home Win", odds: "1.23" } ] } ] },
+      { name: "Primeira Liga", windows: [ { ko: "20:30 UK", picks: [
+        { n: 11, fx: "Estrela Amadora v Benfica", mk: "Over 1.5 Goals", odds: "1.14" } ] } ] }
+    ],
+    passes: "Atlético v Barcelona (Atlético concede 0.7 a game, no safe angle), Crystal Palace v Liverpool (Palace scoreless in three), Villarreal v Getafe (1 home win in 5), AEK v Levadiakos (three straight losses), Olympiacos v PAOK (kickoff not officially confirmed), Inter v Como (Lautaro out, Como in form), Sunderland v Chelsea, Napoli v Lazio, Lens v Marseille.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Heerenveen v Feyenoord: Over 1.5", "1.13"],
+        ["Estrela v Benfica: Over 1.5", "1.14"],
+        ["Freiburg v Union Berlin: 1X", "1.15"],
+        ["Club Brugge v Anderlecht: 1X", "1.16"]
+      ], total: "1.71" },
+      { name: "Home strength 4-leg", legs: [
+        ["Gent v Kortrijk: Home Win", "1.48"],
+        ["Midtjylland v SønderjyskE: Home & Over 1.5", "1.36"],
+        ["Beşiktaş v Gençlerbirliği: Home Win", "1.23"],
+        ["Celtic v Kilmarnock: Home & Over 1.5", "1.21"]
+      ], total: "3.00" }
+    ],
+    acca: { code: "UU1SLA", legs: 11, odds: "9.32", booked: "01:20 UK" },
+    mega: {
+      code: "R0XWP2", odds: "273.99", booked: "01:25 UK", results: null, landed: null,
+      legs: [
+        { fx: "Napoli v Lazio", comp: "Serie A", ko: "11:30", mk: "Both Teams to Score: Yes", odds: "1.56" },
+        { fx: "Heerenveen v Feyenoord", comp: "Eredivisie", ko: "11:15", mk: "Both Teams to Score: Yes", odds: "1.45" },
+        { fx: "Club Brugge v Anderlecht", comp: "Belgian Pro League", ko: "12:30", mk: "Home Win", odds: "1.52" },
+        { fx: "Brighton v Brentford", comp: "Premier League", ko: "14:00", mk: "Both Teams to Score: Yes", odds: "1.56" },
+        { fx: "Gent v Kortrijk", comp: "Belgian Pro League", ko: "15:00", mk: "Home Win", odds: "1.48" },
+        { fx: "Hearts v Falkirk", comp: "Scottish Premiership", ko: "15:00", mk: "Home Win", odds: "1.66" },
+        { fx: "AZ v Groningen", comp: "Eredivisie", ko: "15:45", mk: "Both Teams to Score: Yes", odds: "1.55" },
+        { fx: "Cambuur v PSV", comp: "Eredivisie", ko: "15:45", mk: "Both Teams to Score: Yes", odds: "1.46" },
+        { fx: "Freiburg v Union Berlin", comp: "Bundesliga", ko: "16:30", mk: "Home Win", odds: "1.53" },
+        { fx: "Man Utd v Aston Villa", comp: "Premier League", ko: "16:30", mk: "Both Teams to Score: Yes", odds: "1.52" },
+        { fx: "Union SG v Genk", comp: "Belgian Pro League", ko: "17:30", mk: "Home Win", odds: "1.64" },
+        { fx: "Hoffenheim v Schalke", comp: "Bundesliga", ko: "18:30", mk: "Home Win", odds: "1.65" },
+        { fx: "Lens v Marseille", comp: "Ligue 1", ko: "19:45", mk: "Both Teams to Score: Yes", odds: "1.46" }
+      ]
+    },
+    results: null,
+    audit: {
+      of: "Saturday 7 November 2026",
+      note: "Settled with Leipzig and PSG as straight Home Wins, as you changed them. Flashscore's pages loaded without scores, so each result is checked against a match report, linked below.",
+      picks: [
+        { fx: "Arsenal v Hull City", mk: "Home Win", odds: "1.20", score: "1–0", status: "won", src: "https://www.espn.com/soccer/report/_/gameId/401878760", srcName: "ESPN" },
+        { fx: "RB Leipzig v Augsburg", mk: "Home Win", odds: "1.48", score: "5–2", status: "won", src: "https://vglive.vg.no/fotball/event/rb-leipzig-fc-augsburg/757624", srcName: "VG Live" },
+        { fx: "Borussia Dortmund v Elversberg", mk: "Home Win", odds: "1.34", score: "2–1", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401884745", srcName: "ESPN" },
+        { fx: "Mainz v Bayern Munich", mk: "Over 2.5 Goals", odds: "1.26", score: "1–2", status: "won", src: "https://www.espn.com/soccer/report/_/gameId/401884740", srcName: "ESPN" },
+        { fx: "Galatasaray v Amed SK", mk: "Double Chance 1X", odds: "1.13", score: "4–3", status: "won", src: "https://www.hurriyet.com.tr/sporarena/galatasaray-4-3-amed-sportif-faaliyetler-super-lig-maci-ozeti-43369174", srcName: "Hürriyet" },
+        { fx: "Roma v Sassuolo", mk: "Over 2.5 Goals", odds: "1.36", score: "3–0", status: "won", src: "https://www.agi.it/sport/news/2026-11-07/calcio-roma-sassuolo-39932756/", srcName: "AGI" },
+        { fx: "Valencia v Real Madrid", mk: "Over 1.5 Goals", odds: "1.14", score: "0–3", status: "won", src: "https://www.espn.com/soccer/report/_/gameId/401882808", srcName: "ESPN" },
+        { fx: "PSG v Troyes", mk: "Home Win", odds: "1.15", score: "1–0", status: "won", src: "https://www.beinsports.com/en-us/soccer/ligue-1/articles/psg-vs-troyes-highlights-ligue-1-2026-11-07", srcName: "beIN Sports" },
+        { fx: "Rosario Central v Estudiantes (Río Cuarto)", mk: "Home Win", odds: "1.16", score: "2–0", status: "won", src: "https://www.cadena3.com/noticia/deportes-rosario/a-rosario-central-se-le-escapo-el-bicampeonato-por-segundos-tras-ganar-2-a-0-como-local_610856", srcName: "Cadena 3" },
+        { fx: "Inter Miami v Charlotte FC", mk: "Over 2.5 Goals", odds: "1.26", score: "3–3", status: "won", src: "https://sports.yahoo.com/articles/charlotte-fc-rallies-3-goal-234711042.html", srcName: "Yahoo Sports" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.72", landed: true },
+        { name: "Goals & cover 4-leg", total: "3.20", landed: true },
+        { name: "Full accumulator as posted (Leipzig and PSG Home Win)", total: "8.76", landed: true },
+        { name: "Booked code XB33Z4 (still had PSG Home & Over 1.5)", total: "9.12", landed: false },
+        { name: "Mega W2VN9E (9 of 13 legs)", total: "351.67", landed: false }
+      ],
+      lessons: [
+        "10 from 10 is variance. The process stays the same.",
+        "Your switch to straight Home Wins saved the slip: PSG won 1–0, which beat Home & Over 1.5. With elite home sides that rotate players, a straight win is safer than adding goals.",
+        "The Mega lost on four one-sided results (1–0, 0–2, 1–0, 2–0). For Megas, avoid BTTS and Over 2.5 where one side is a strong defensive favourite."
+      ]
+    }
+  },
+  {
     date: "2026-11-07",
     label: "Saturday 7 November 2026",
     built: "Built 01:30 UK",
