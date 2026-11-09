@@ -293,7 +293,10 @@ function show(date) {
   $("#updated").textContent = sl.built + (sl.settled ? " · settled" : "");
   $("#kick").innerHTML = kickLine(sl);
   $("#days").innerHTML = SLATES.map(s => `<button type="button" data-d="${s.date}" aria-pressed="${s.date === sl.date}">${new Date(s.date + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" })}</button>`).join("");
-  $("#app").innerHTML = codesBlock(sl) + recordBlock() + slateBlock(sl) + ticketsBlock(sl) + megaBlock(sl) + auditBlock(sl.audit);
+  const body = sl.noSlate
+    ? `<section aria-labelledby="slate-h"><div class="sec-head"><h2 id="slate-h">No Slate Today</h2></div><p class="settled">${esc(sl.noSlate)}</p></section>`
+    : slateBlock(sl) + ticketsBlock(sl) + megaBlock(sl);
+  $("#app").innerHTML = codesBlock(sl) + recordBlock() + body + auditBlock(sl.audit);
   document.querySelectorAll("#days button").forEach(b => b.onclick = () => { location.hash = "d" + b.dataset.d; });
   document.querySelectorAll(".copy").forEach(b => b.onclick = () => {
     const code = b.dataset.code, done = () => { b.textContent = "Copied"; setTimeout(() => b.textContent = "Copy", 1500); };

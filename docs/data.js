@@ -5,6 +5,42 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-09",
+    label: "Monday 9 November 2026",
+    built: "Built 01:05 UK",
+    noSlate: "International break. The bookmaker lists only two games today in the leagues the Slate covers, both in LaLiga 2. That isn't enough for a rule-compliant Slate, and well short of the 12+ legs a Mega needs, so there are no picks and no booking codes today. The next slate posts at 01:00 UK tomorrow.",
+    comps: [], passes: "", tickets: [],
+    results: null,
+    audit: {
+      of: "Sunday 8 November 2026",
+      note: "Each result has at least two sources. One match report is linked below.",
+      picks: [
+        { fx: "Club Brugge v Anderlecht", mk: "Double Chance 1X", odds: "1.16", score: "1–1", status: "won", src: "https://www.voetbalkrant.com/belgie/jupiler-pro-league/2026-2027/kalender/speeldag-11/club-brugge/anderlecht/een-klasseflits-volstaat-anderlecht-bezorgt-club-brugge-zure-namiddag-op-jan-breydel", srcName: "Voetbalkrant" },
+        { fx: "Gent v Kortrijk", mk: "Home Win", odds: "1.48", score: "1–0", status: "won", src: "https://sporza.be/nl/matches/voetbal/jupiler-pro-league/2026-2027/regulier/11/kaa-gent-kv-kortrijk-live-16-uur-profiteert-gent-van-blauw-zwart-puntenverlies-tegen-rode-lantaarn-kortrijk~1781871665148/", srcName: "Sporza" },
+        { fx: "Heerenveen v Feyenoord", mk: "Over 1.5 Goals", odds: "1.13", score: "5–3", status: "won", src: "https://www.foxsports.com/soccer/eredivisie-sc-heerenveen-vs-feyenoord-nov-08-2026-game-boxscore-878334", srcName: "Fox Sports" },
+        { fx: "Cambuur v PSV", mk: "Over 2.5 Goals", odds: "1.30", score: "2–5", status: "won", src: "https://nos.nl/artikel/2638615-psv-wint-en-is-nieuwe-koploper-na-verlies-feyenoord-en-gelijkspel-twente-ajax", srcName: "NOS" },
+        { fx: "Brighton v Brentford", mk: "Over 1.5 Goals", odds: "1.17", score: "2–0", status: "won", src: "https://www.skysports.com/football/brighton-and-hove-albion-vs-brentford/5565576225764913232", srcName: "Sky Sports" },
+        { fx: "Celtic v Kilmarnock", mk: "Home Win & Over 1.5 Goals", odds: "1.21", score: "1–0", status: "lost", src: "https://www.celticnewsnow.com/news/scales-on-target-as-celtic-defeat-kilmarnock/743607/", srcName: "Celtic News Now" },
+        { fx: "Freiburg v Union Berlin", mk: "Double Chance 1X", odds: "1.15", score: "2–0", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401884741", srcName: "ESPN" },
+        { fx: "Hoffenheim v Schalke", mk: "Double Chance 1X", odds: "1.19", score: "2–1", status: "won", src: "https://www.foxsports.com/soccer/bundesliga-hoffenheim-vs-fc-schalke-04-nov-08-2026-game-boxscore-912621", srcName: "Fox Sports" },
+        { fx: "Midtjylland v SønderjyskE", mk: "Home Win & Over 1.5 Goals", odds: "1.36", score: "2–2", status: "lost", src: "https://bold.dk/fodbold/stillinger/superligaen/nyheder/fcm-dummede-sig-mod-sonderjyske", srcName: "bold.dk" },
+        { fx: "Beşiktaş v Gençlerbirliği", mk: "Home Win", odds: "1.23", score: "3–0", status: "won", src: "https://www.hurriyet.com.tr/sporarena/canli-anlatim-besiktas-genclerbirligi-super-lig-maci-43370512", srcName: "Hürriyet" },
+        { fx: "Estrela Amadora v Benfica", mk: "Over 1.5 Goals", odds: "1.14", score: "2–3", status: "won", src: "https://www.ojogo.pt/futebol/artigo/pavlidis-da-vitoria-ao-benfica-sobre-o-estrela-da-amadora-ao-cair-do-pano/18146115", srcName: "O Jogo" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.71", landed: true },
+        { name: "Home strength 4-leg", total: "3.00", landed: false },
+        { name: "Full accumulator UU1SLA", total: "9.32", landed: false },
+        { name: "Mega R0XWP2 (10 of 13 legs)", total: "273.99", landed: false }
+      ],
+      lessons: [
+        "Both losses were Home & Over 1.5. Celtic won 1–0, so a straight Home Win would have landed. This is the value rule you set: skip a combined market when it adds only a few hundredths. It applies from today.",
+        "Midtjylland drew 2–2 at home against the bottom side, a reminder that a big home favourite can still slip. Keep those to one per ticket.",
+        "Over 1.5, Over 2.5 and 1X went 8 from 8 across both days. They stay the base of the safe ticket."
+      ]
+    }
+  },
+  {
     date: "2026-11-08",
     label: "Sunday 8 November 2026",
     built: "Built 01:25 UK",
