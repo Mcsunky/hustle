@@ -7,9 +7,34 @@ window.SLATES = [
   {
     date: "2026-11-10",
     label: "Tuesday 10 November 2026",
-    built: "Built 01:02 UK",
-    noSlate: "International break. The bookmaker lists no games today in any of the club leagues the Slate covers, so there are no picks and no booking codes. Yesterday also had no slate, so there's nothing to audit. The next slate posts at 01:00 UK tomorrow.",
-    comps: [], passes: "", tickets: [],
+    built: "Built 01:40 UK",
+    comps: [
+      { name: "Copa del Rey", windows: [ { ko: "18:00 UK", picks: [
+        { n: 1, fx: "CD Anaitasuna v Alavés", mk: "Over 2.5 Goals", odds: "1.17" },
+        { n: 2, fx: "CD Pamplona v Eibar", mk: "Over 1.5 Goals", odds: "1.16" } ] }, { ko: "19:00 UK", picks: [
+        { n: 3, fx: "Trival Valderas v Leganés", mk: "Over 1.5 Goals", odds: "1.17" } ] } ] },
+      { name: "EFL Trophy", windows: [ { ko: "19:00 UK", picks: [
+        { n: 4, fx: "Oxford United v Cheltenham", mk: "Home Win", odds: "1.23" } ] } ] },
+      { name: "Women's Champions League", windows: [ { ko: "17:45 UK", picks: [
+        { n: 5, fx: "Real Madrid v Paris FC", mk: "Over 1.5 Goals", odds: "1.13" } ] }, { ko: "20:00 UK", picks: [
+        { n: 6, fx: "Inter v Manchester City", mk: "Over 1.5 Goals", odds: "1.14" } ] } ] }
+    ],
+    passes: "International break, so this is a small cup-and-women's card. No Mega today: there aren't 12+ verified legs that meet the rules. Passed: Tavernes v Valencia (no odds offered), Leicester v Walsall (conflicting rotation news), Stockport, Huddersfield and Plymouth (dead rubbers, rotation likely), Grimsby (bottom of group), Roma v Servette (Roma 1 point from 3), Häcken v Chelsea (away favourite, Chelsea have scored only 3 in 3), PSG v Bayern, plus lower-league and amateur fixtures.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Real Madrid v Paris FC (W): Over 1.5", "1.13"],
+        ["Inter v Man City (W): Over 1.5", "1.14"],
+        ["Pamplona v Eibar: Over 1.5", "1.16"],
+        ["Trival Valderas v Leganés: Over 1.5", "1.17"]
+      ], total: "1.75" },
+      { name: "Cup 4-leg", legs: [
+        ["Anaitasuna v Alavés: Over 2.5", "1.17"],
+        ["Pamplona v Eibar: Over 1.5", "1.16"],
+        ["Trival Valderas v Leganés: Over 1.5", "1.17"],
+        ["Oxford v Cheltenham: Home Win", "1.23"]
+      ], total: "1.95" }
+    ],
+    acca: { code: "VCET8M", legs: 6, odds: "2.52", booked: "01:38 UK" },
     results: null,
     audit: null
   },
