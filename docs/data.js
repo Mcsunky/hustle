@@ -5,6 +5,15 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-10",
+    label: "Tuesday 10 November 2026",
+    built: "Built 01:02 UK",
+    noSlate: "International break. The bookmaker lists no games today in any of the club leagues the Slate covers, so there are no picks and no booking codes. Yesterday also had no slate, so there's nothing to audit. The next slate posts at 01:00 UK tomorrow.",
+    comps: [], passes: "", tickets: [],
+    results: null,
+    audit: null
+  },
+  {
     date: "2026-11-09",
     label: "Monday 9 November 2026",
     built: "Built 01:05 UK",
