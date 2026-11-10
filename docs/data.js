@@ -35,7 +35,15 @@ window.SLATES = [
       ], total: "1.95" }
     ],
     acca: { code: "VCET8M", legs: 6, odds: "2.52", booked: "01:38 UK" },
-    results: null,
+    results: {
+      1: { status: "won", score: "1–6", src: "https://www.vavel.com/es/futbol/2026/11/10/1278763-anaitasuna-vs-alaves-en-vivo-resultado-goles-copa-del-rey.html", srcName: "VAVEL" },
+      2: { status: "won", score: "0–3", src: "https://www.noticiasdenavarra.com/futbol/2026/11/10/cd-pamplona-eibar-copa-rey-11743071.html", srcName: "Noticias de Navarra" },
+      3: { status: "lost", score: "0–1", src: "https://www.cdleganes.com/cronica-trival-valderas-leganes-copa-del-rey-r1", srcName: "CD Leganés" },
+      4: { status: "won", score: "4–0", src: "https://sports.yahoo.com/articles/leicester-brentford-u21-trophy-knockout-221758203.html", srcName: "Yahoo Sports" },
+      5: { status: "won", score: "3–0", src: "https://www.realmadrid.com/en-US/news/football/womens-team/reports/cronica-real-madrid-paris-fc-wcl-10-11-2026", srcName: "Real Madrid" },
+      6: { status: "won", score: "1–4", src: "https://www.skysports.com/football/inter-milan-women-vs-manchester-city-women/578260", srcName: "Sky Sports" }
+    },
+    settled: "Settled 23:15 UK: 6 picks, 5 won, 1 lost (83%). Both 4-leg tickets and accumulator VCET8M lost on Trival Valderas v Leganés, which finished 0–1 and needed two goals.",
     audit: null
   },
   {
