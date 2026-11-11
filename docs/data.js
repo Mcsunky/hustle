@@ -5,6 +5,58 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-11",
+    label: "Wednesday 11 November 2026",
+    built: "Built 01:30 UK",
+    comps: [
+      { name: "International Friendly", windows: [ { ko: "12:00 UK", picks: [
+        { n: 1, fx: "Vietnam v Chinese Taipei", mk: "Home Win", odds: "1.13" } ] } ] },
+      { name: "Slovak Cup", windows: [ { ko: "15:00 UK", picks: [
+        { n: 2, fx: "Železiarne Podbrezová v ViOn Zlaté Moravce", mk: "Home Win", odds: "1.24" } ] } ] },
+      { name: "Women's Europa Cup", windows: [ { ko: "18:00 UK", picks: [
+        { n: 3, fx: "Hammarby v Spartak Myjava", mk: "Over 2.5 Goals", odds: "1.21" } ] } ] },
+      { name: "Women's Champions League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 4, fx: "Juventus v OL Lyonnes", mk: "Over 2.5 Goals", odds: "1.24" } ] } ] }
+    ],
+    passes: "Still the international break, so this is a 4-pick card with no Mega. Passed: Sheffield Wednesday v Accrington (dead rubber for Wednesday, rotation, winless in 5), Londrina v Náutico (dead rubber, Náutico fielding reserves), Urawa v Cerezo (Urawa winless in 5 against them), Frankfurt v PSV (first-leg lead, Frankfurt may sit back), India v Maldives (neutral venue in Dhaka, home price without home advantage), Barnsley v Oldham, Leuven v Køge (away favourite), plus lower-league fixtures.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Vietnam v Chinese Taipei: Home Win", "1.13"],
+        ["Podbrezová v Zlaté Moravce: Home Win", "1.24"],
+        ["Hammarby v Spartak Myjava: Over 2.5", "1.21"],
+        ["Juventus v Lyon (W): Over 2.5", "1.24"]
+      ], total: "2.10" },
+      { name: "Banker double", legs: [
+        ["Vietnam v Chinese Taipei: Home Win", "1.13"],
+        ["Hammarby v Spartak Myjava: Over 2.5", "1.21"]
+      ], total: "1.37" }
+    ],
+    acca: { code: "XLXNT8", legs: 4, odds: "2.10", booked: "01:28 UK" },
+    results: null,
+    audit: {
+      of: "Tuesday 10 November 2026",
+      note: "Each result is checked against the linked match report.",
+      picks: [
+        { fx: "CD Anaitasuna v Alavés", mk: "Over 2.5 Goals", odds: "1.17", score: "1–6", status: "won", src: "https://www.vavel.com/es/futbol/2026/11/10/1278763-anaitasuna-vs-alaves-en-vivo-resultado-goles-copa-del-rey.html", srcName: "VAVEL" },
+        { fx: "CD Pamplona v Eibar", mk: "Over 1.5 Goals", odds: "1.16", score: "0–3", status: "won", src: "https://www.noticiasdenavarra.com/futbol/2026/11/10/cd-pamplona-eibar-copa-rey-11743071.html", srcName: "Noticias de Navarra" },
+        { fx: "Trival Valderas v Leganés", mk: "Over 1.5 Goals", odds: "1.17", score: "0–1", status: "lost", src: "https://www.cdleganes.com/cronica-trival-valderas-leganes-copa-del-rey-r1", srcName: "CD Leganés" },
+        { fx: "Oxford United v Cheltenham", mk: "Home Win", odds: "1.23", score: "4–0", status: "won", src: "https://sports.yahoo.com/articles/leicester-brentford-u21-trophy-knockout-221758203.html", srcName: "Yahoo Sports" },
+        { fx: "Real Madrid v Paris FC (W)", mk: "Over 1.5 Goals", odds: "1.13", score: "3–0", status: "won", src: "https://www.realmadrid.com/en-US/news/football/womens-team/reports/cronica-real-madrid-paris-fc-wcl-10-11-2026", srcName: "Real Madrid" },
+        { fx: "Inter v Manchester City (W)", mk: "Over 1.5 Goals", odds: "1.14", score: "1–4", status: "won", src: "https://www.skysports.com/football/inter-milan-women-vs-manchester-city-women/578260", srcName: "Sky Sports" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.75", landed: false },
+        { name: "Cup 4-leg", total: "1.95", landed: false },
+        { name: "Full accumulator VCET8M", total: "2.52", landed: false }
+      ],
+      lessons: [
+        "Over 1.5 failed when a weakened, out-of-form favourite (Leganés, 6 losses in 7) won only 0–1. In cup goals markets, back only favourites in form or ones expected to field strong teams.",
+        "Both tickets shared the losing leg. On small cards, keep at least one ticket free of the shakiest pick. Today's banker double has no leg from the weakest picks.",
+        "Elite women's sides against weaker teams went 2 for 2 on Over 1.5 (3–0, 1–4). Keep using them on quiet days."
+      ]
+    }
+  },
+  {
     date: "2026-11-10",
     label: "Tuesday 10 November 2026",
     built: "Built 01:40 UK",
