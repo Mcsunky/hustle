@@ -32,7 +32,13 @@ window.SLATES = [
       ], total: "1.37" }
     ],
     acca: { code: "XLXNT8", legs: 4, odds: "2.10", booked: "01:28 UK" },
-    results: null,
+    results: {
+      1: { status: "won", score: "2–0", src: "https://www.vavel.com/en-us/soccer/2026/11/11/1278798-vietnam-vs-chinese-taipei-live-latest-score-goals-and-friendly-updates.html", srcName: "VAVEL" },
+      2: { status: "won", score: "2–0", src: "https://www.denniksport.sk/futbal/c/slovnaft-cup-osemfinale-podbrezova-zlate-moravce-sumar-streda-11-november-2026", srcName: "Denník Šport" },
+      3: { status: "won", score: "4–0", src: "https://www.svt.se/sport/fotboll/hammarby-vidare-i-europa-cup-mots-i-kvartsfinalen", srcName: "SVT" },
+      4: { status: "won", score: "0–6", src: "https://www.espn.com/soccer/match/_/gameId/401916984", srcName: "ESPN" }
+    },
+    settled: "Settled 02:05 UK (late, the scheduled 23:03 audit didn't run): 4 picks, 4 won (100%). Safest 4-leg, banker double and accumulator XLXNT8 all landed.",
     audit: {
       of: "Tuesday 10 November 2026",
       note: "Each result is checked against the linked match report.",
