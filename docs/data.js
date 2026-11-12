@@ -39,7 +39,21 @@ window.SLATES = [
     ],
     acca: { code: "ZBP93F", legs: 9, odds: "5.09", booked: "07:10 UK", note: "Rebooked at 07:10 UK with Arsenal removed (your rule: no Arsenal picks). The old code SRQJ2V included Barcelona v Arsenal. Use ZBP93F." },
     mega: {
-      code: "N6WXCD", odds: "272.02", booked: "07:12 UK", results: null, landed: null,
+      code: "N6WXCD", odds: "272.02", booked: "07:12 UK", landed: false,
+      results: [
+        { status: "lost", score: "2–0", src: "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/Match-Report-Ghana-beat-Somalia-to-secure-first-win-in-2027-AFCON-qualifiers-2061077", srcName: "GhanaWeb" },
+        { status: "won", score: "3–1", src: "https://www.cafonline.com/afcon2025/news/totalenergies-caf-afcon-2027-qualifiers-dr-congo-extend-perfect-run-as-guinea-bissau-and-zimbabwe-held-to-draws/", srcName: "CAF" },
+        { status: "won", score: "2–1", src: "https://panafricafootball.com/article/guinea-eritrea-afcon-qualifier", srcName: "PanAfrica Football" },
+        { status: "won", score: "1–2", src: "https://www.turkiyetoday.com/sports/belgium-come-from-behind-to-beat-turkiye-2-1-in-nations-league-3232284", srcName: "Türkiye Today" },
+        { status: "won", score: "0–3", src: "https://www.infobae.com/espana/agencias/2026/11/12/el-albacete-clasificado-con-un-0-3-en-puertollano/", srcName: "Infobae" },
+        { status: "won", score: "4–1", src: "https://en.africatopsports.com/2027-afcon-q-second-half-blitz-powers-senegal-past-sudan-4-1-in-dakar/", srcName: "Africa Top Sports" },
+        { status: "won", score: "2–1", src: "https://en.africatopsports.com/afcon-2027-ivory-coast-secure-crucial-win-against-gambia/", srcName: "Africa Top Sports" },
+        { status: "won", score: "2–0", src: "https://www.vavel.com/en-us/soccer/2026/11/12/1278863-cameroon-vs-namibia-live-latest-score-goals-and-africa-cup-of-nations-qualifiers-updates.html", srcName: "VAVEL" },
+        { status: "won", score: "2–1", src: "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2026-27/nations-league/england-v-croatia-uefa-nations-league-thursday-12-november-2026-match-centre", srcName: "England Football" },
+        { status: "won", score: "2–1", src: "https://www.livescore.com/en/football/international/uefa-nations-league/montenegro-vs-latvia/1738379/", srcName: "LiveScore" },
+        { status: "won", score: "3–1", src: "https://www.aljazeera.com/sports/2026/11/12/italy-fight-back-to-beat-france-3-1-and-move-top-of-nations-league-group", srcName: "Al Jazeera" },
+        { status: "won", score: "3–1", src: "https://www.ojogo.pt/especiais/artigo/benfica-vence-austria-viena-e-esta-em-zona-de-play-off-na-champions-feminina/18147649", srcName: "O Jogo" }
+      ],
       legs: [
         { fx: "Ghana v Somalia", comp: "AFCON Qualifiers", ko: "15:00", mk: "Over 2.5 Goals", odds: "1.45" },
         { fx: "DR Congo v Sierra Leone", comp: "AFCON Qualifiers", ko: "16:00", mk: "Over 2.5 Goals", odds: "1.86" },
@@ -55,7 +69,18 @@ window.SLATES = [
         { fx: "Benfica v Austria Wien", comp: "Women's Champions League", ko: "20:00", mk: "Home Win", odds: "1.59" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "won", score: "2–0", src: "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/Match-Report-Ghana-beat-Somalia-to-secure-first-win-in-2027-AFCON-qualifiers-2061077", srcName: "GhanaWeb" },
+      2: { status: "won", score: "3–1", src: "https://www.cafonline.com/afcon2025/news/totalenergies-caf-afcon-2027-qualifiers-dr-congo-extend-perfect-run-as-guinea-bissau-and-zimbabwe-held-to-draws/", srcName: "CAF" },
+      3: { status: "won", score: "4–1", src: "https://en.africatopsports.com/2027-afcon-q-second-half-blitz-powers-senegal-past-sudan-4-1-in-dakar/", srcName: "Africa Top Sports" },
+      4: { status: "won", score: "1–2", src: "https://www.turkiyetoday.com/sports/belgium-come-from-behind-to-beat-turkiye-2-1-in-nations-league-3232284", srcName: "Türkiye Today" },
+      5: { status: "won", score: "2–1", src: "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2026-27/nations-league/england-v-croatia-uefa-nations-league-thursday-12-november-2026-match-centre", srcName: "England Football" },
+      6: { status: "won", score: "2–1", src: "https://www.livescore.com/en/football/international/uefa-nations-league/montenegro-vs-latvia/1738379/", srcName: "LiveScore" },
+      7: { status: "won", score: "0–2", src: "https://www.tntsports.co.uk/football/uefa-nations-league/2026-2027/live-czechia-spain_mtc20005824/live-commentary.shtml", srcName: "TNT Sports" },
+      8: { status: "won", score: "3–1", src: "https://www.aljazeera.com/sports/2026/11/12/italy-fight-back-to-beat-france-3-1-and-move-top-of-nations-league-group", srcName: "Al Jazeera" },
+      9: { status: "won", score: "2–1", src: "https://en.africatopsports.com/afcon-2027-ivory-coast-secure-crucial-win-against-gambia/", srcName: "Africa Top Sports" }
+    },
+    settled: "Settled 23:00 UK: 9 picks, 9 won (100%). Safest 4-leg, Home strength 4-leg and accumulator ZBP93F (5.09) all landed. Mega N6WXCD lost 11 of 12: only Ghana v Somalia Over 2.5 failed (2–0, with a missed penalty).",
     audit: {
       of: "Wednesday 11 November 2026",
       note: "Settled late at 02:05 UK because the scheduled audit didn't run. Each result is checked against the linked report.",
