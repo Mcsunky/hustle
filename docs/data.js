@@ -5,6 +5,79 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-12",
+    label: "Thursday 12 November 2026",
+    built: "Built 02:25 UK (late)",
+    comps: [
+      { name: "AFCON Qualifiers", windows: [ { ko: "15:00 UK", picks: [
+        { n: 1, fx: "Ghana v Somalia", mk: "Over 1.5 Goals", odds: "1.14" } ] }, { ko: "16:00 UK", picks: [
+        { n: 2, fx: "DR Congo v Sierra Leone", mk: "Home Win", odds: "1.22" } ] }, { ko: "19:00 UK", picks: [
+        { n: 3, fx: "Senegal v Sudan", mk: "Home Win", odds: "1.12" } ] } ] },
+      { name: "UEFA Nations League", windows: [ { ko: "17:00 UK", picks: [
+        { n: 4, fx: "Türkiye v Belgium", mk: "Over 1.5 Goals", odds: "1.15" } ] }, { ko: "19:45 UK", picks: [
+        { n: 5, fx: "England v Croatia", mk: "Home Win", odds: "1.26" },
+        { n: 6, fx: "Montenegro v Latvia", mk: "Home Win", odds: "1.31" },
+        { n: 7, fx: "Czechia v Spain", mk: "Over 1.5 Goals", odds: "1.13" },
+        { n: 8, fx: "Italy v France", mk: "Over 1.5 Goals", odds: "1.20" } ] } ] },
+      { name: "Women's Champions League", windows: [ { ko: "17:45 UK", picks: [
+        { n: 9, fx: "Barcelona v Arsenal", mk: "Home Win", odds: "1.16" } ] } ] }
+    ],
+    passes: "Copa del Rey ties: Betis without 10 players, Tarancón v Levante confirmed by one source only, Calvo Sotelo v Albacete (away favourite). Also passed: Ivory Coast v Gambia (both unbeaten, Renard's side win 2–0s), Cameroon v Namibia (low-scoring prices), Guinea v Eritrea (travel problems, kickoff disputed), New Zealand v India (06:00 friendly), Benfica v Austria Wien (in the Mega only).",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Senegal v Sudan: Home Win", "1.12"],
+        ["Czechia v Spain: Over 1.5", "1.13"],
+        ["Ghana v Somalia: Over 1.5", "1.14"],
+        ["Türkiye v Belgium: Over 1.5", "1.15"]
+      ], total: "1.66" },
+      { name: "Home strength 4-leg", legs: [
+        ["Barcelona v Arsenal (W): Home Win", "1.16"],
+        ["DR Congo v Sierra Leone: Home Win", "1.22"],
+        ["England v Croatia: Home Win", "1.26"],
+        ["Montenegro v Latvia: Home Win", "1.31"]
+      ], total: "2.33" }
+    ],
+    acca: { code: "SRQJ2V", legs: 9, odds: "4.65", booked: "02:20 UK" },
+    mega: {
+      code: "UMZ2ED", odds: "250.32", booked: "02:25 UK", results: null, landed: null,
+      legs: [
+        { fx: "Ghana v Somalia", comp: "AFCON Qualifiers", ko: "15:00", mk: "Over 2.5 Goals", odds: "1.45" },
+        { fx: "DR Congo v Sierra Leone", comp: "AFCON Qualifiers", ko: "16:00", mk: "Over 2.5 Goals", odds: "1.86" },
+        { fx: "Guinea v Eritrea", comp: "AFCON Qualifiers", ko: "16:00", mk: "Over 2.5 Goals", odds: "1.69" },
+        { fx: "Türkiye v Belgium", comp: "UEFA Nations League", ko: "17:00", mk: "Both Teams to Score: Yes", odds: "1.52" },
+        { fx: "Barcelona v Arsenal", comp: "Women's Champions League", ko: "17:45", mk: "Both Teams to Score: Yes", odds: "1.62" },
+        { fx: "Senegal v Sudan", comp: "AFCON Qualifiers", ko: "19:00", mk: "Over 2.5 Goals", odds: "1.49" },
+        { fx: "Ivory Coast v Gambia", comp: "AFCON Qualifiers", ko: "19:00", mk: "Over 2.5 Goals", odds: "1.68" },
+        { fx: "Cameroon v Namibia", comp: "AFCON Qualifiers", ko: "19:00", mk: "Home Win & Over 1.5 Goals", odds: "1.60" },
+        { fx: "England v Croatia", comp: "UEFA Nations League", ko: "19:45", mk: "Over 2.5 Goals", odds: "1.46" },
+        { fx: "Montenegro v Latvia", comp: "UEFA Nations League", ko: "19:45", mk: "Home Win & Over 1.5 Goals", odds: "1.49" },
+        { fx: "Italy v France", comp: "UEFA Nations League", ko: "19:45", mk: "Both Teams to Score: Yes", odds: "1.61" },
+        { fx: "Benfica v Austria Wien", comp: "Women's Champions League", ko: "20:00", mk: "Home Win", odds: "1.59" }
+      ]
+    },
+    results: null,
+    audit: {
+      of: "Wednesday 11 November 2026",
+      note: "Settled late at 02:05 UK because the scheduled audit didn't run. Each result is checked against the linked report.",
+      picks: [
+        { fx: "Vietnam v Chinese Taipei", mk: "Home Win", odds: "1.13", score: "2–0", status: "won", src: "https://www.vavel.com/en-us/soccer/2026/11/11/1278798-vietnam-vs-chinese-taipei-live-latest-score-goals-and-friendly-updates.html", srcName: "VAVEL" },
+        { fx: "Železiarne Podbrezová v ViOn Zlaté Moravce", mk: "Home Win", odds: "1.24", score: "2–0", status: "won", src: "https://www.denniksport.sk/futbal/c/slovnaft-cup-osemfinale-podbrezova-zlate-moravce-sumar-streda-11-november-2026", srcName: "Denník Šport" },
+        { fx: "Hammarby v Spartak Myjava", mk: "Over 2.5 Goals", odds: "1.21", score: "4–0", status: "won", src: "https://www.svt.se/sport/fotboll/hammarby-vidare-i-europa-cup-mots-i-kvartsfinalen", srcName: "SVT" },
+        { fx: "Juventus v OL Lyonnes", mk: "Over 2.5 Goals", odds: "1.24", score: "0–6", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401916984", srcName: "ESPN" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "2.10", landed: true },
+        { name: "Banker double", total: "1.37", landed: true },
+        { name: "Full accumulator XLXNT8", total: "2.10", landed: true }
+      ],
+      lessons: [
+        "4 from 4 is variance. The process stays the same.",
+        "Elite women's sides against weaker teams are now 4 from 4 on goals markets (3–0, 1–4, 4–0, 0–6).",
+        "Big mismatches carried a thin card. Keep the full scan of every league on quiet days."
+      ]
+    }
+  },
+  {
     date: "2026-11-11",
     label: "Wednesday 11 November 2026",
     built: "Built 01:30 UK",
