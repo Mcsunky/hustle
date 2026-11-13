@@ -5,6 +5,84 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-13",
+    label: "Friday 13 November 2026",
+    built: "Built 01:30 UK",
+    comps: [
+      { name: "AFCON Qualifiers", windows: [ { ko: "16:00 UK", picks: [
+        { n: 1, fx: "Nigeria v Tanzania", mk: "Home Win", odds: "1.19" },
+        { n: 2, fx: "South Africa v Kenya", mk: "Home Win", odds: "1.29" } ] }, { ko: "19:00 UK", picks: [
+        { n: 3, fx: "Egypt v Malawi", mk: "Home Win", odds: "1.12" } ] }, { ko: "20:00 UK", picks: [
+        { n: 4, fx: "Morocco v Niger", mk: "Over 1.5 Goals", odds: "1.13" } ] } ] },
+      { name: "UEFA Nations League", windows: [ { ko: "19:45 UK", picks: [
+        { n: 5, fx: "Scotland v North Macedonia", mk: "Home Win", odds: "1.21" },
+        { n: 6, fx: "Slovakia v Faroe Islands", mk: "Double Chance 1X", odds: "1.09" },
+        { n: 7, fx: "Serbia v Germany", mk: "Over 1.5 Goals", odds: "1.13" },
+        { n: 8, fx: "Netherlands v Greece", mk: "Over 1.5 Goals", odds: "1.19" } ] } ] }
+    ],
+    passes: "Tunisia v Libya and Mali v Rwanda (tight, low-scoring prices), Cape Verde v Liberia and Gabon v Lesotho (data from one source only), Argentina v Uruguay, Ecuador v Costa Rica and Colombia v Chile (friendlies after midnight UK, rotation), Salamanca v Celta (heavy Celta rotation), Welsh Cup ties (no team news), plus lower-league fixtures. No Arsenal fixtures were considered (your rule).",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Slovakia v Faroe Islands: 1X", "1.09"],
+        ["Egypt v Malawi: Home Win", "1.12"],
+        ["Morocco v Niger: Over 1.5", "1.13"],
+        ["Serbia v Germany: Over 1.5", "1.13"]
+      ], total: "1.50" },
+      { name: "Home strength 4-leg", legs: [
+        ["Nigeria v Tanzania: Home Win", "1.19"],
+        ["Scotland v North Macedonia: Home Win", "1.21"],
+        ["South Africa v Kenya: Home Win", "1.29"],
+        ["Netherlands v Greece: Over 1.5", "1.19"]
+      ], total: "2.21" }
+    ],
+    acca: { code: "HAGHVF", legs: 8, odds: "3.45", booked: "01:25 UK" },
+    mega: {
+      code: "QXXHSN", odds: "451.02", booked: "01:28 UK", results: null, landed: null,
+      legs: [
+        { fx: "Nigeria v Tanzania", comp: "AFCON Qualifiers", ko: "16:00", mk: "Over 2.5 Goals", odds: "1.67" },
+        { fx: "South Africa v Kenya", comp: "AFCON Qualifiers", ko: "16:00", mk: "Home Win & Over 1.5 Goals", odds: "1.58" },
+        { fx: "Tunisia v Libya", comp: "AFCON Qualifiers", ko: "16:00", mk: "Home Win & Over 1.5 Goals", odds: "1.68" },
+        { fx: "Cape Verde v Liberia", comp: "AFCON Qualifiers", ko: "16:00", mk: "Home Win & Over 1.5 Goals", odds: "1.46" },
+        { fx: "Gabon v Lesotho", comp: "AFCON Qualifiers", ko: "16:00", mk: "Home Win & Over 1.5 Goals", odds: "1.47" },
+        { fx: "Egypt v Malawi", comp: "AFCON Qualifiers", ko: "19:00", mk: "Over 2.5 Goals", odds: "1.63" },
+        { fx: "Mali v Rwanda", comp: "AFCON Qualifiers", ko: "19:00", mk: "Home Win & Over 1.5 Goals", odds: "1.61" },
+        { fx: "Netherlands v Greece", comp: "UEFA Nations League", ko: "19:45", mk: "Home Win", odds: "1.59" },
+        { fx: "Scotland v North Macedonia", comp: "UEFA Nations League", ko: "19:45", mk: "Over 2.5 Goals", odds: "1.70" },
+        { fx: "Slovakia v Faroe Islands", comp: "UEFA Nations League", ko: "19:45", mk: "Home Win & Over 1.5 Goals", odds: "1.59" },
+        { fx: "Serbia v Germany", comp: "UEFA Nations League", ko: "19:45", mk: "Both Teams to Score: Yes", odds: "1.82" },
+        { fx: "Penybont v Cardiff Draconians", comp: "FAW Welsh Cup", ko: "19:45", mk: "Over 3.5 Goals", odds: "1.55" },
+        { fx: "Salamanca v Celta", comp: "Copa del Rey", ko: "20:00", mk: "Over 2.5 Goals", odds: "1.49" }
+      ]
+    },
+    results: null,
+    audit: {
+      of: "Thursday 12 November 2026",
+      note: "Each result has at least two sources. One report is linked below.",
+      picks: [
+        { fx: "Ghana v Somalia", mk: "Over 1.5 Goals", odds: "1.14", score: "2–0", status: "won", src: "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/Match-Report-Ghana-beat-Somalia-to-secure-first-win-in-2027-AFCON-qualifiers-2061077", srcName: "GhanaWeb" },
+        { fx: "DR Congo v Sierra Leone", mk: "Home Win", odds: "1.22", score: "3–1", status: "won", src: "https://www.cafonline.com/afcon2025/news/totalenergies-caf-afcon-2027-qualifiers-dr-congo-extend-perfect-run-as-guinea-bissau-and-zimbabwe-held-to-draws/", srcName: "CAF" },
+        { fx: "Senegal v Sudan", mk: "Home Win", odds: "1.12", score: "4–1", status: "won", src: "https://en.africatopsports.com/2027-afcon-q-second-half-blitz-powers-senegal-past-sudan-4-1-in-dakar/", srcName: "Africa Top Sports" },
+        { fx: "Türkiye v Belgium", mk: "Over 1.5 Goals", odds: "1.15", score: "1–2", status: "won", src: "https://www.turkiyetoday.com/sports/belgium-come-from-behind-to-beat-turkiye-2-1-in-nations-league-3232284", srcName: "Türkiye Today" },
+        { fx: "England v Croatia", mk: "Home Win", odds: "1.29", score: "2–1", status: "won", src: "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2026-27/nations-league/england-v-croatia-uefa-nations-league-thursday-12-november-2026-match-centre", srcName: "England Football" },
+        { fx: "Montenegro v Latvia", mk: "Home Win", odds: "1.31", score: "2–1", status: "won", src: "https://www.livescore.com/en/football/international/uefa-nations-league/montenegro-vs-latvia/1738379/", srcName: "LiveScore" },
+        { fx: "Czechia v Spain", mk: "Over 1.5 Goals", odds: "1.14", score: "0–2", status: "won", src: "https://www.tntsports.co.uk/football/uefa-nations-league/2026-2027/live-czechia-spain_mtc20005824/live-commentary.shtml", srcName: "TNT Sports" },
+        { fx: "Italy v France", mk: "Over 1.5 Goals", odds: "1.20", score: "3–1", status: "won", src: "https://www.aljazeera.com/sports/2026/11/12/italy-fight-back-to-beat-france-3-1-and-move-top-of-nations-league-group", srcName: "Al Jazeera" },
+        { fx: "Ivory Coast v Gambia", mk: "Home Win", odds: "1.23", score: "2–1", status: "won", src: "https://en.africatopsports.com/afcon-2027-ivory-coast-secure-crucial-win-against-gambia/", srcName: "Africa Top Sports" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.67", landed: true },
+        { name: "Home strength 4-leg", total: "2.56", landed: true },
+        { name: "Full accumulator ZBP93F", total: "5.09", landed: true },
+        { name: "Mega N6WXCD (11 of 12 legs)", total: "272.02", landed: false }
+      ],
+      lessons: [
+        "9 from 9 is variance. The process stays the same.",
+        "Czechia v Spain Over 1.5 only landed with a 96th-minute goal. A rotated favourite that's already qualified can still win narrowly.",
+        "The Mega has gone 9/13, 10/13 and 11/12. Big favourites in Over 2.5 legs (Ghana 2–0) are the usual leak. Today's Mega uses Home & Over 1.5 for most favourites instead, where the gain is worth it."
+      ]
+    }
+  },
+  {
     date: "2026-11-12",
     label: "Thursday 12 November 2026",
     built: "Built 02:25 UK (late)",
