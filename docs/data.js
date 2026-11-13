@@ -37,7 +37,22 @@ window.SLATES = [
     ],
     acca: { code: "HAGHVF", legs: 8, odds: "3.45", booked: "01:25 UK" },
     mega: {
-      code: "QXXHSN", odds: "451.02", booked: "01:28 UK", results: null, landed: null,
+      code: "QXXHSN", odds: "451.02", booked: "01:28 UK", landed: false,
+      results: [
+        { status: "won", score: "3–1", src: "https://www.vavel.com/en/football/2026/11/13/1279066-nigeria-vs-tanzania-live-score-goals-and-afcon-qualifiers-updates.html", srcName: "VAVEL" },
+        { status: "lost", score: "2–2", src: "https://africasoccer.com/afcon-2027-qualifiers-south-africa-held-to-2-2-draw-by-kenya-in-group-d/", srcName: "AfricaSoccer" },
+        { status: "lost", score: "0–2", src: "https://www.espn.com/soccer/match/_/gameId/401927205/libya-tunisia", srcName: "ESPN" },
+        { status: "won", score: "4–2", src: "https://africasoccer.com/afcon-2027-qualifiers-cape-verde-beat-liberia-4-2-to-claim-first-group-k-victory/", srcName: "AfricaSoccer" },
+        { status: "won", score: "2–0", src: "https://africasoccer.com/afcon-2027-qualifiers-gabon-beat-lesotho-2-0-to-strengthen-group-a-hopes/", srcName: "AfricaSoccer" },
+        { status: "won", score: "5–0", src: "https://www.vavel.com/en-us/soccer/2026/11/13/1279006-egypt-vs-malawi-live-latest-score-goals-and-african-cup-of-nations-qualifiers-updates.html", srcName: "VAVEL" },
+        { status: "won", score: "3–2", src: "https://www.newtimes.co.rw/article/40433/sports/football/mali-edge-rwanda-in-five-goal-thriller-to-go-top-of-group-k", srcName: "The New Times" },
+        { status: "won", score: "7–0", src: "https://www.espn.com/soccer/match/_/gameId/401861159/greece-netherlands", srcName: "ESPN" },
+        { status: "won", score: "2–1", src: "https://news.bet365.com/en-gb/article/scotland-v-north-macedonia-stats-and-timeline/2026111321014784045", srcName: "bet365 News" },
+        { status: "lost", score: "2–2", src: "https://www.espn.com/soccer/match/_/gameId/401861160/faroe-islands-slovakia", srcName: "ESPN" },
+        { status: "won", score: "1–3", src: "https://www.espn.com/soccer/report/_/gameId/401861158", srcName: "ESPN" },
+        { status: "won", score: "6–0", src: "https://nwsport.co.uk/2026/11/13/welsh-cup-r3-holders-caernarfon-town-and-on-form-nomads-advance-to-last-16/", srcName: "NW Sport" },
+        { status: "won", score: "0–5", src: "https://www.cope.es/programas/tiempo-de-juego/cronica/directo-salamanca-celta-vigo-copa-rey-13-20261113_3475201.html", srcName: "COPE" }
+      ],
       legs: [
         { fx: "Nigeria v Tanzania", comp: "AFCON Qualifiers", ko: "16:00", mk: "Over 2.5 Goals", odds: "1.67" },
         { fx: "South Africa v Kenya", comp: "AFCON Qualifiers", ko: "16:00", mk: "Home Win & Over 1.5 Goals", odds: "1.58" },
@@ -54,7 +69,17 @@ window.SLATES = [
         { fx: "Salamanca v Celta", comp: "Copa del Rey", ko: "20:00", mk: "Over 2.5 Goals", odds: "1.49" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "won", score: "3–1", src: "https://www.vavel.com/en/football/2026/11/13/1279066-nigeria-vs-tanzania-live-score-goals-and-afcon-qualifiers-updates.html", srcName: "VAVEL" },
+      2: { status: "lost", score: "2–2", src: "https://africasoccer.com/afcon-2027-qualifiers-south-africa-held-to-2-2-draw-by-kenya-in-group-d/", srcName: "AfricaSoccer" },
+      3: { status: "won", score: "5–0", src: "https://www.vavel.com/en-us/soccer/2026/11/13/1279006-egypt-vs-malawi-live-latest-score-goals-and-african-cup-of-nations-qualifiers-updates.html", srcName: "VAVEL" },
+      4: { status: "won", score: "5–1", src: "https://en.hespress.com/149131-morocco-beat-niger-5-1-in-2027-afcon-qualifier.html", srcName: "Hespress" },
+      5: { status: "won", score: "2–1", src: "https://news.bet365.com/en-gb/article/scotland-v-north-macedonia-stats-and-timeline/2026111321014784045", srcName: "bet365 News" },
+      6: { status: "won", score: "2–2", src: "https://www.espn.com/soccer/match/_/gameId/401861160/faroe-islands-slovakia", srcName: "ESPN" },
+      7: { status: "won", score: "1–3", src: "https://www.espn.com/soccer/report/_/gameId/401861158", srcName: "ESPN" },
+      8: { status: "won", score: "7–0", src: "https://www.espn.com/soccer/match/_/gameId/401861159/greece-netherlands", srcName: "ESPN" }
+    },
+    settled: "Settled 23:15 UK: 8 picks, 7 won, 1 lost (88%). Safest 4-leg landed. Home strength 4-leg and accumulator HAGHVF lost on South Africa v Kenya (2–2). Mega QXXHSN lost: 10 of 13 legs won (South Africa 2–2, Tunisia 0–2, Slovakia 2–2).",
     audit: {
       of: "Thursday 12 November 2026",
       note: "Each result has at least two sources. One report is linked below.",
