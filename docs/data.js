@@ -5,6 +5,92 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-14",
+    label: "Saturday 14 November 2026",
+    built: "Built 01:25 UK",
+    comps: [
+      { name: "Scottish Championship", windows: [ { ko: "15:00 UK", picks: [
+        { n: 1, fx: "Livingston v Greenock Morton", mk: "Home Win", odds: "1.28" } ] } ] },
+      { name: "Coupe de France", windows: [ { ko: "13:00 UK", picks: [
+        { n: 2, fx: "US Tourcoing v Reims", mk: "Over 2.5 Goals", odds: "1.18" } ] }, { ko: "17:00 UK", picks: [
+        { n: 3, fx: "Stade Béthunois v Nancy", mk: "Over 1.5 Goals", odds: "1.08" } ] } ] },
+      { name: "UEFA Nations League", windows: [ { ko: "17:00 UK", picks: [
+        { n: 4, fx: "Norway v Wales", mk: "Over 1.5 Goals", odds: "1.11" } ] }, { ko: "19:45 UK", picks: [
+        { n: 5, fx: "Portugal v Denmark", mk: "Over 1.5 Goals", odds: "1.16" } ] } ] },
+      { name: "AFCON Qualifiers", windows: [ { ko: "19:00 UK", picks: [
+        { n: 6, fx: "Algeria v Togo", mk: "Home Win", odds: "1.22" },
+        { n: 7, fx: "Angola v South Sudan", mk: "Home Win", odds: "1.12" } ] } ] },
+      { name: "Eerste Divisie", windows: [ { ko: "19:00 UK", picks: [
+        { n: 8, fx: "Almere City v Helmond Sport", mk: "Over 1.5 Goals", odds: "1.11" } ] } ] },
+      { name: "Brazil Série B", windows: [ { ko: "19:30 UK", picks: [
+        { n: 9, fx: "Juventude v Botafogo-SP", mk: "Home Win", odds: "1.36" } ] } ] },
+      { name: "Colombia Liga BetPlay", windows: [ { ko: "20:30 UK", picks: [
+        { n: 10, fx: "Millonarios v Alianza Valledupar", mk: "Home Win", odds: "1.31" } ] } ] },
+      { name: "CONCACAF Nations League", windows: [ { ko: "21:30 UK", picks: [
+        { n: 11, fx: "Haiti v USA (in Miami)", mk: "Over 1.5 Goals", odds: "1.18" } ] } ] }
+    ],
+    passes: "Banfield v Boca (away favourite, low-scoring Argentine cup), Atlético-GO and CRB (in the Mega only), Fco Firminy v Annecy and St Ouen v Boulogne (picked one Coupe de France goals leg per window), Carlisle and Southend (in the Mega only), Nacional v Albion (behind closed doors, key absences), plus amateur and lower-league fixtures. No Arsenal fixtures were considered.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Béthune v Nancy: Over 1.5", "1.08"],
+        ["Norway v Wales: Over 1.5", "1.11"],
+        ["Almere City v Helmond: Over 1.5", "1.11"],
+        ["Angola v South Sudan: Home Win", "1.12"]
+      ], total: "1.49" },
+      { name: "Must-win 4-leg", legs: [
+        ["Juventude v Botafogo-SP: Home Win (needs it for promotion)", "1.36"],
+        ["Millonarios v Alianza: Home Win (needs it for the semi-final groups)", "1.31"],
+        ["Livingston v Morton: Home Win", "1.28"],
+        ["Algeria v Togo: Home Win", "1.22"]
+      ], total: "2.78" }
+    ],
+    acca: { code: "T24VCJ", legs: 11, odds: "6.70", booked: "01:20 UK" },
+    mega: {
+      code: "UTGYMV", odds: "307.51", booked: "01:22 UK", results: null, landed: null,
+      legs: [
+        { fx: "Carlisle v Boston United", comp: "National League", ko: "15:00", mk: "Home Win", odds: "1.46" },
+        { fx: "Southend v Aldershot", comp: "National League", ko: "15:00", mk: "Both Teams to Score: Yes", odds: "1.56" },
+        { fx: "Livingston v Greenock Morton", comp: "Scottish Championship", ko: "15:00", mk: "Over 2.5 Goals", odds: "1.53" },
+        { fx: "Algeria v Togo", comp: "AFCON Qualifiers", ko: "19:00", mk: "Over 2.5 Goals", odds: "1.72" },
+        { fx: "Angola v South Sudan", comp: "AFCON Qualifiers", ko: "19:00", mk: "Over 2.5 Goals", odds: "1.72" },
+        { fx: "Almere City v Helmond Sport", comp: "Eerste Divisie", ko: "19:00", mk: "Home Win", odds: "1.46" },
+        { fx: "Atlético-GO v Cuiabá", comp: "Brazil Série B", ko: "19:30", mk: "Home Win & Over 1.5 Goals", odds: "1.64" },
+        { fx: "Juventude v Botafogo-SP", comp: "Brazil Série B", ko: "19:30", mk: "Home Win & Over 1.5 Goals", odds: "1.60" },
+        { fx: "CRB v Ceará", comp: "Brazil Série B", ko: "19:30", mk: "Home Win", odds: "1.46" },
+        { fx: "Portugal v Denmark", comp: "UEFA Nations League", ko: "19:45", mk: "Home Win", odds: "1.53" },
+        { fx: "Millonarios v Alianza Valledupar", comp: "Colombia Liga BetPlay", ko: "20:30", mk: "Home Win & Over 1.5 Goals", odds: "1.49" },
+        { fx: "Haiti v USA (in Miami)", comp: "CONCACAF Nations League", ko: "21:30", mk: "Over 2.5 Goals", odds: "1.57" },
+        { fx: "Nacional v Albion", comp: "Uruguay Primera", ko: "23:00", mk: "Home Win", odds: "1.49" }
+      ]
+    },
+    results: null,
+    audit: {
+      of: "Friday 13 November 2026",
+      note: "Each result has at least two sources. One report is linked below.",
+      picks: [
+        { fx: "Nigeria v Tanzania", mk: "Home Win", odds: "1.19", score: "3–1", status: "won", src: "https://www.vavel.com/en/football/2026/11/13/1279066-nigeria-vs-tanzania-live-score-goals-and-afcon-qualifiers-updates.html", srcName: "VAVEL" },
+        { fx: "South Africa v Kenya", mk: "Home Win", odds: "1.29", score: "2–2", status: "lost", src: "https://africasoccer.com/afcon-2027-qualifiers-south-africa-held-to-2-2-draw-by-kenya-in-group-d/", srcName: "AfricaSoccer" },
+        { fx: "Egypt v Malawi", mk: "Home Win", odds: "1.12", score: "5–0", status: "won", src: "https://www.vavel.com/en-us/soccer/2026/11/13/1279006-egypt-vs-malawi-live-latest-score-goals-and-african-cup-of-nations-qualifiers-updates.html", srcName: "VAVEL" },
+        { fx: "Morocco v Niger", mk: "Over 1.5 Goals", odds: "1.13", score: "5–1", status: "won", src: "https://en.hespress.com/149131-morocco-beat-niger-5-1-in-2027-afcon-qualifier.html", srcName: "Hespress" },
+        { fx: "Scotland v North Macedonia", mk: "Home Win", odds: "1.21", score: "2–1", status: "won", src: "https://news.bet365.com/en-gb/article/scotland-v-north-macedonia-stats-and-timeline/2026111321014784045", srcName: "bet365 News" },
+        { fx: "Slovakia v Faroe Islands", mk: "Double Chance 1X", odds: "1.09", score: "2–2", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401861160/faroe-islands-slovakia", srcName: "ESPN" },
+        { fx: "Serbia v Germany", mk: "Over 1.5 Goals", odds: "1.13", score: "1–3", status: "won", src: "https://www.espn.com/soccer/report/_/gameId/401861158", srcName: "ESPN" },
+        { fx: "Netherlands v Greece", mk: "Over 1.5 Goals", odds: "1.19", score: "7–0", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401861159/greece-netherlands", srcName: "ESPN" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.50", landed: true },
+        { name: "Home strength 4-leg", total: "2.21", landed: false },
+        { name: "Full accumulator HAGHVF", total: "3.45", landed: false },
+        { name: "Mega QXXHSN (10 of 13 legs)", total: "451.02", landed: false }
+      ],
+      lessons: [
+        "South Africa drew 2–2 at home to Kenya. A favourite at 1.29 still draws about one game in five, so keep home wins at that price to one per ticket.",
+        "Goals markets in mismatches went 4 from 4 again (5–1, 1–3, 7–0, 5–0).",
+        "Two of the Mega's three losses were home favourites that didn't win (Tunisia 0–2, Slovakia 2–2). Today's Mega leans towards teams that must win: Juventude, Millonarios, Atlético-GO and CRB."
+      ]
+    }
+  },
+  {
     date: "2026-11-13",
     label: "Friday 13 November 2026",
     built: "Built 01:30 UK",
