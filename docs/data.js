@@ -5,6 +5,89 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-15",
+    label: "Sunday 15 November 2026",
+    built: "Built 01:30 UK",
+    comps: [
+      { name: "International Friendly", windows: [ { ko: "03:00 UK", picks: [
+        { n: 1, fx: "New Zealand v India", mk: "Over 1.5 Goals", odds: "1.14" } ] } ] },
+      { name: "Damallsvenskan (W)", windows: [ { ko: "13:00 UK", picks: [
+        { n: 2, fx: "Häcken v Piteå", mk: "Home Win", odds: "1.11" },
+        { n: 3, fx: "Hammarby v Kristianstad", mk: "Home Win", odds: "1.19" } ] } ] },
+      { name: "Serie C", windows: [ { ko: "13:30 UK", picks: [
+        { n: 4, fx: "Spezia v Vado", mk: "Home Win", odds: "1.23" } ] } ] },
+      { name: "Coupe de France", windows: [ { ko: "14:00 UK", picks: [
+        { n: 5, fx: "Montpellier Atlas Paillade v AS Cannes", mk: "Over 1.5 Goals", odds: "1.17" } ] } ] },
+      { name: "Serbia Prva Liga", windows: [ { ko: "15:00 UK", picks: [
+        { n: 6, fx: "TSC Bačka Topola v Jedinstvo Ub", mk: "Home Win", odds: "1.21" } ] } ] },
+      { name: "UEFA Nations League", windows: [ { ko: "17:00 UK", picks: [
+        { n: 7, fx: "Finland v San Marino", mk: "Over 2.5 Goals", odds: "1.24" } ] }, { ko: "19:45 UK", picks: [
+        { n: 8, fx: "France v Türkiye", mk: "Home Win", odds: "1.23" } ] } ] }
+    ],
+    passes: "Malmö v Vittsjö (nothing at stake), Rumilly v Saint-Étienne (14 Saint-Étienne players unavailable), Sedan v Bourges (Sedan unbeaten; both in the Mega only), Panama v Curaçao and Cerro Porteño v Sol de América (Mega only), plus a long list of lower-league fixtures. New Zealand v India kicks off at 03:00 UK, two hours after this slate posts. No Arsenal fixtures were considered.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Häcken v Piteå (W): Home Win", "1.11"],
+        ["New Zealand v India: Over 1.5", "1.14"],
+        ["Montpellier Paillade v Cannes: Over 1.5", "1.17"],
+        ["Hammarby v Kristianstad (W): Home Win", "1.19"]
+      ], total: "1.68" },
+      { name: "Home strength 4-leg", legs: [
+        ["Bačka Topola v Jedinstvo: Home Win", "1.21"],
+        ["Spezia v Vado: Home Win", "1.23"],
+        ["France v Türkiye: Home Win", "1.23"],
+        ["Finland v San Marino: Over 2.5", "1.24"]
+      ], total: "2.27" }
+    ],
+    acca: { code: "XEUW1N", legs: 8, odds: "4.00", booked: "01:25 UK" },
+    mega: {
+      code: "GULCHP", odds: "225.31", booked: "01:28 UK", results: null, landed: null,
+      legs: [
+        { fx: "New Zealand v India", comp: "International Friendly", ko: "03:00", mk: "Over 2.5 Goals", odds: "1.45" },
+        { fx: "Häcken v Piteå", comp: "Damallsvenskan (W)", ko: "13:00", mk: "Over 3.5 Goals", odds: "1.77" },
+        { fx: "Hammarby v Kristianstad", comp: "Damallsvenskan (W)", ko: "13:00", mk: "Over 3.5 Goals", odds: "1.83" },
+        { fx: "Sedan v Bourges", comp: "Coupe de France", ko: "13:00", mk: "Over 2.5 Goals", odds: "1.51" },
+        { fx: "Pescara v Sambenedettese", comp: "Serie C", ko: "13:30", mk: "Home Win", odds: "1.50" },
+        { fx: "Rumilly v Saint-Étienne", comp: "Coupe de France", ko: "14:00", mk: "Over 2.5 Goals", odds: "1.45" },
+        { fx: "Montpellier Atlas Paillade v AS Cannes", comp: "Coupe de France", ko: "14:00", mk: "Over 2.5 Goals", odds: "1.54" },
+        { fx: "Ravenna v Forlì", comp: "Serie C", ko: "16:30", mk: "Home Win & Over 1.5 Goals", odds: "1.54" },
+        { fx: "Cittadella v Folgore Caratese", comp: "Serie C", ko: "16:30", mk: "Home Win & Over 1.5 Goals", odds: "1.68" },
+        { fx: "Finland v San Marino", comp: "UEFA Nations League", ko: "17:00", mk: "Over 3.5 Goals", odds: "1.62" },
+        { fx: "Cerro Porteño v Sol de América", comp: "Copa Paraguay (semi-final)", ko: "21:00", mk: "Home Win", odds: "1.46" },
+        { fx: "Panama v Curaçao", comp: "CONCACAF Nations League (QF 2nd leg)", ko: "23:00", mk: "Home Win", odds: "1.55" }
+      ]
+    },
+    results: null,
+    audit: {
+      of: "Saturday 14 November 2026",
+      note: "Each result has at least two sources. One report is linked below. Nacional v Albion (Mega only) was still unconfirmed when the audit ran.",
+      picks: [
+        { fx: "Livingston v Greenock Morton", mk: "Home Win", odds: "1.28", score: "2–0", status: "won", src: "https://livingstonfc.co.uk/livingston-2-0-greenock-morton/", srcName: "Livingston FC" },
+        { fx: "US Tourcoing v Reims", mk: "Over 2.5 Goals", odds: "1.18", score: "0–1", status: "lost", src: "https://footamateur.ouest-france.fr/coupe-de-france-les-resultats-du-samedi-14-novembre-2026/", srcName: "Ouest-France" },
+        { fx: "Stade Béthunois v Nancy", mk: "Over 1.5 Goals", odds: "1.08", score: "3–3", status: "won", src: "https://www.horizonactu.fr/actualite-50474-coupe-de-france-au-terme-d-un-match-completement-fou-les-bethunois-s-inclinent-aux-tirs-au-but-face-a-nancy", srcName: "Horizon" },
+        { fx: "Norway v Wales", mk: "Over 1.5 Goals", odds: "1.11", score: "3–1", status: "won", src: "https://www.skysports.com/football/news/13612155/norway-3-1-wales-craig-bellamys-side-suffer-defeat-in-oslo-with-threat-of-nations-league-relegation-now-looming", srcName: "Sky Sports" },
+        { fx: "Portugal v Denmark", mk: "Over 1.5 Goals", odds: "1.16", score: "1–4", status: "won", src: "https://www.uefa.com/uefanationsleague/news/02ab-220e66a3c090-9304054ed1ca-1000--uefa-nations-league-matchday-5-round-up-denmark-beat-por/", srcName: "UEFA" },
+        { fx: "Algeria v Togo", mk: "Home Win", odds: "1.22", score: "1–0", status: "won", src: "https://panafricafootball.com/article/algeria-togo-afcon-md3", srcName: "PanAfrica Football" },
+        { fx: "Angola v South Sudan", mk: "Home Win", odds: "1.12", score: "2–0", status: "won", src: "https://www.cafonline.com/afcon2025/news/algeria-edge-togo-as-late-goals-rescue-angola-against-ten-man-south-sudan-in-qualifiers/", srcName: "CAF" },
+        { fx: "Almere City v Helmond Sport", mk: "Over 1.5 Goals", odds: "1.11", score: "6–1", status: "won", src: "https://www.stadindex.nl/almere/3629916-city-fc-overklast-helmond-sport-met-6-1-en-staat-nu-tweede-in-de-kkd", srcName: "Stadindex" },
+        { fx: "Juventude v Botafogo-SP", mk: "Home Win", odds: "1.36", score: "2–0", status: "won", src: "https://www.juventude.com.br/blog/vitoria-de-elite-juventude-e-vice-campeao-da-serie-b-e-confirma-retorno-ao-brasileirao", srcName: "Juventude" },
+        { fx: "Millonarios v Alianza Valledupar", mk: "Home Win", odds: "1.31", score: "2–0", status: "won", src: "https://www.futbolred.com/futbol-colombiano/liga-betplay/millonarios-vencio-2-0-a-alianza-valledupar-en-el-campin-por-liga-betplay-275268", srcName: "Futbolred" },
+        { fx: "Haiti v USA (in Miami)", mk: "Over 1.5 Goals", odds: "1.18", score: "0–6", status: "won", src: "https://www.nbcsports.com/soccer/live/haiti-vs-usmnt-live-updates-score-goals-highlights-stats-2026-november-14", srcName: "NBC Sports" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.49", landed: true },
+        { name: "Must-win 4-leg", total: "2.78", landed: true },
+        { name: "Full accumulator T24VCJ", total: "6.70", landed: false },
+        { name: "Mega UTGYMV (6 won, 6 lost, 1 unverified)", total: "307.51", landed: false }
+      ],
+      lessons: [
+        "All four must-win home sides won (2–0, 2–0, 2–0, 1–0). They're reliable for the result but rarely run up a score, so pair them with Home Win, not goals markets.",
+        "A Coupe de France mismatch (Tourcoing v Reims) went 0–1. When the favourite is rotating and away from home, cup goals markets are weaker.",
+        "Today's Mega spreads its goals legs across women's football, cup mismatches and Finland v San Marino, rather than must-win favourites."
+      ]
+    }
+  },
+  {
     date: "2026-11-14",
     label: "Saturday 14 November 2026",
     built: "Built 01:25 UK",
