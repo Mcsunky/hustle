@@ -41,7 +41,21 @@ window.SLATES = [
     ],
     acca: { code: "XEUW1N", legs: 8, odds: "4.00", booked: "01:25 UK" },
     mega: {
-      code: "GULCHP", odds: "225.31", booked: "01:28 UK", results: null, landed: null,
+      code: "GULCHP", odds: "225.31", booked: "01:28 UK", landed: false,
+      results: [
+        { status: "won", score: "3–0", src: "https://www.the-aiff.com/article/india-fall-to-new-zealand-in-christchurch-friendly", srcName: "AIFF" },
+        { status: "lost", score: "2–0", src: "https://www.nsd.se/sport/fotboll/artikel/forlust-borta-for-pitea-mot-bk-hacken/r35kvd2j", srcName: "NSD" },
+        { status: "lost", score: "1–0", src: "https://www.gp.se/sport/10-seger-for-hammarby-ida-hermannsdottir-matchhjalte.e6b804e3-af98-581b-9dca-ef79c3469039", srcName: "GP" },
+        { status: "lost", score: "2–0", src: "https://footamateur.ouest-france.fr/coupe-de-france-tous-les-resultats-du-septieme-tour/", srcName: "Ouest-France" },
+        { status: "won", score: "3–1", src: "https://www.viveresanbenedetto.it/2026/11/15/sambenedettese-pesante-sconfitta-dei-rossoblu-battuti-dal-pescara-3-1/209356/", srcName: "Vivere San Benedetto" },
+        { status: "won", score: "1–2", src: "https://www.ici.fr/auvergne-rhone-alpes/loire-42/saint-etienne/direct-coupe-de-france-l-asse-affronte-rumilly-vallieres-suivez-le-7e-tour-sur-ici-saint-etienne-loire-1029643", srcName: "ICI" },
+        { status: "lost", score: "0–2", src: "https://footamateur.ouest-france.fr/coupe-de-france-tous-les-resultats-du-septieme-tour/", srcName: "Ouest-France" },
+        { status: "won", score: "2–0", src: "https://www.ravennaedintorni.it/sport/2026/11/15/il-ravenna-batte-il-forli-2-0-in-uno-stadio-in-festa-per-ronaldinho-foto-tabellino/", srcName: "Ravenna e Dintorni" },
+        { status: "lost", score: "2–2", src: "https://www.trivenetogoal.it/2026/11/15/cittadella-folgore-caratese-2-2-i-granata-frenano-con-lultima-in-classifica-ora-e-lotta-a-tre-con-brescia-e-trento/269002/", srcName: "Triveneto Goal" },
+        { status: "won", score: "7–2", src: "https://www.vavel.com/en-us/soccer/2026/11/15/1279342-finland-vs-san-marino-live-latest-score-goals-and-uefa-nations-league-updates.html", srcName: "VAVEL" },
+        { status: "unverified", score: "not yet reported", src: "https://www.sofascore.com/football/match/sol-de-america-cerro-porteno/QucsODo", srcName: "Sofascore" },
+        { status: "unverified", score: "kicked off 23:00, not settled", src: "https://www.espn.com/soccer/match/_/gameId/401929709/curacao-panama", srcName: "ESPN" }
+      ],
       legs: [
         { fx: "New Zealand v India", comp: "International Friendly", ko: "03:00", mk: "Over 2.5 Goals", odds: "1.45" },
         { fx: "Häcken v Piteå", comp: "Damallsvenskan (W)", ko: "13:00", mk: "Over 3.5 Goals", odds: "1.77" },
@@ -57,7 +71,17 @@ window.SLATES = [
         { fx: "Panama v Curaçao", comp: "CONCACAF Nations League (QF 2nd leg)", ko: "23:00", mk: "Home Win", odds: "1.55" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "won", score: "3–0", src: "https://www.the-aiff.com/article/india-fall-to-new-zealand-in-christchurch-friendly", srcName: "AIFF" },
+      2: { status: "won", score: "2–0", src: "https://www.nsd.se/sport/fotboll/artikel/forlust-borta-for-pitea-mot-bk-hacken/r35kvd2j", srcName: "NSD" },
+      3: { status: "won", score: "1–0", src: "https://www.gp.se/sport/10-seger-for-hammarby-ida-hermannsdottir-matchhjalte.e6b804e3-af98-581b-9dca-ef79c3469039", srcName: "GP" },
+      4: { status: "won", score: "3–0", src: "https://www.primocanale.it/sport/73653-spezia-vado.html", srcName: "Primocanale" },
+      5: { status: "won", score: "0–2", src: "https://footamateur.ouest-france.fr/coupe-de-france-tous-les-resultats-du-septieme-tour/", srcName: "Ouest-France" },
+      6: { status: "won", score: "2–0", src: "https://sportin.biz/2026/11/15/tsc-ponovo-lider/", srcName: "Sportin" },
+      7: { status: "won", score: "7–2", src: "https://www.vavel.com/en-us/soccer/2026/11/15/1279342-finland-vs-san-marino-live-latest-score-goals-and-uefa-nations-league-updates.html", srcName: "VAVEL" },
+      8: { status: "won", score: "2–1", src: "https://www.espn.com/soccer/report/_/gameId/401861177", srcName: "ESPN" }
+    },
+    settled: "Settled 23:00 UK: 8 picks, 8 won (100%). Safest 4-leg, Home strength 4-leg and accumulator XEUW1N (4.00) all landed. Mega GULCHP lost: 5 won, 5 lost, 2 still to be confirmed (Cerro Porteño, Panama).",
     audit: {
       of: "Saturday 14 November 2026",
       note: "Each result has at least two sources. One report is linked below. Nacional v Albion (Mega only) was still unconfirmed when the audit ran.",
