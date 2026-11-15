@@ -46,7 +46,22 @@ window.SLATES = [
     ],
     acca: { code: "T24VCJ", legs: 11, odds: "6.70", booked: "01:20 UK" },
     mega: {
-      code: "UTGYMV", odds: "307.51", booked: "01:22 UK", results: null, landed: null,
+      code: "UTGYMV", odds: "307.51", booked: "01:22 UK", landed: false,
+      results: [
+        { status: "won", score: "2–0", src: "https://uk.sports.yahoo.com/news/duru-linney-fire-blues-play-144345710.html", srcName: "Yahoo Sports" },
+        { status: "won", score: "2–1", src: "https://www.theshots.co.uk/match-report-southend-united-away/", srcName: "Aldershot Town" },
+        { status: "lost", score: "2–0", src: "https://livingstonfc.co.uk/livingston-2-0-greenock-morton/", srcName: "Livingston FC" },
+        { status: "lost", score: "1–0", src: "https://panafricafootball.com/article/algeria-togo-afcon-md3", srcName: "PanAfrica Football" },
+        { status: "lost", score: "2–0", src: "https://www.cafonline.com/afcon2025/news/algeria-edge-togo-as-late-goals-rescue-angola-against-ten-man-south-sudan-in-qualifiers/", srcName: "CAF" },
+        { status: "won", score: "6–1", src: "https://www.stadindex.nl/almere/3629916-city-fc-overklast-helmond-sport-met-6-1-en-staat-nu-tweede-in-de-kkd", srcName: "Stadindex" },
+        { status: "lost", score: "1–0", src: "https://www.gazetaesportiva.com/times/atletico-go/atletico-go-vence-cuiaba-e-conquista-ultima-vaga-nos-playoffs-da-serie-b/", srcName: "Gazeta Esportiva" },
+        { status: "won", score: "2–0", src: "https://www.juventude.com.br/blog/vitoria-de-elite-juventude-e-vice-campeao-da-serie-b-e-confirma-retorno-ao-brasileirao", srcName: "Juventude" },
+        { status: "lost", score: "1–1", src: "https://www.band.com.br/esportes/futebol/brasileirao-serie-b/ceara-empata-com-o-crb-e-se-livra-da-queda-para-a-serie-c-veja-rebaixados", srcName: "Band" },
+        { status: "lost", score: "1–4", src: "https://www.uefa.com/uefanationsleague/news/02ab-220e66a3c090-9304054ed1ca-1000--uefa-nations-league-matchday-5-round-up-denmark-beat-por/", srcName: "UEFA" },
+        { status: "won", score: "2–0", src: "https://www.futbolred.com/futbol-colombiano/liga-betplay/millonarios-vencio-2-0-a-alianza-valledupar-en-el-campin-por-liga-betplay-275268", srcName: "Futbolred" },
+        { status: "won", score: "0–6", src: "https://www.nbcsports.com/soccer/live/haiti-vs-usmnt-live-updates-score-goals-highlights-stats-2026-november-14", srcName: "NBC Sports" },
+        { status: "unverified", score: "1–0 at 70', final unverified", src: "https://www.elobservador.com.uy/futbol/nacional-vs-albion-el-torneo-clausura-vivo-su-publico-el-tricolor-se-juega-su-ultima-chance-pelear-el-campeonato-n6063887", srcName: "El Observador" }
+      ],
       legs: [
         { fx: "Carlisle v Boston United", comp: "National League", ko: "15:00", mk: "Home Win", odds: "1.46" },
         { fx: "Southend v Aldershot", comp: "National League", ko: "15:00", mk: "Both Teams to Score: Yes", odds: "1.56" },
@@ -63,7 +78,20 @@ window.SLATES = [
         { fx: "Nacional v Albion", comp: "Uruguay Primera", ko: "23:00", mk: "Home Win", odds: "1.49" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "won", score: "2–0", src: "https://livingstonfc.co.uk/livingston-2-0-greenock-morton/", srcName: "Livingston FC" },
+      2: { status: "lost", score: "0–1", src: "https://footamateur.ouest-france.fr/coupe-de-france-les-resultats-du-samedi-14-novembre-2026/", srcName: "Ouest-France" },
+      3: { status: "won", score: "3–3 (Nancy won on pens)", src: "https://www.horizonactu.fr/actualite-50474-coupe-de-france-au-terme-d-un-match-completement-fou-les-bethunois-s-inclinent-aux-tirs-au-but-face-a-nancy", srcName: "Horizon" },
+      4: { status: "won", score: "3–1", src: "https://www.skysports.com/football/news/13612155/norway-3-1-wales-craig-bellamys-side-suffer-defeat-in-oslo-with-threat-of-nations-league-relegation-now-looming", srcName: "Sky Sports" },
+      5: { status: "won", score: "1–4", src: "https://www.uefa.com/uefanationsleague/news/02ab-220e66a3c090-9304054ed1ca-1000--uefa-nations-league-matchday-5-round-up-denmark-beat-por/", srcName: "UEFA" },
+      6: { status: "won", score: "1–0", src: "https://panafricafootball.com/article/algeria-togo-afcon-md3", srcName: "PanAfrica Football" },
+      7: { status: "won", score: "2–0", src: "https://www.cafonline.com/afcon2025/news/algeria-edge-togo-as-late-goals-rescue-angola-against-ten-man-south-sudan-in-qualifiers/", srcName: "CAF" },
+      8: { status: "won", score: "6–1", src: "https://www.stadindex.nl/almere/3629916-city-fc-overklast-helmond-sport-met-6-1-en-staat-nu-tweede-in-de-kkd", srcName: "Stadindex" },
+      9: { status: "won", score: "2–0", src: "https://www.juventude.com.br/blog/vitoria-de-elite-juventude-e-vice-campeao-da-serie-b-e-confirma-retorno-ao-brasileirao", srcName: "Juventude" },
+      10: { status: "won", score: "2–0", src: "https://www.futbolred.com/futbol-colombiano/liga-betplay/millonarios-vencio-2-0-a-alianza-valledupar-en-el-campin-por-liga-betplay-275268", srcName: "Futbolred" },
+      11: { status: "won", score: "0–6", src: "https://www.nbcsports.com/soccer/live/haiti-vs-usmnt-live-updates-score-goals-highlights-stats-2026-november-14", srcName: "NBC Sports" }
+    },
+    settled: "Settled 00:45 UK: 11 picks, 10 won, 1 lost (91%). Both 4-leg tickets landed. Accumulator T24VCJ lost on Tourcoing v Reims Over 2.5 (0–1, an injury-time winner). Mega UTGYMV lost: 6 legs won, 6 lost, 1 unverified (Nacional v Albion's final score wasn't published yet).",
     audit: {
       of: "Friday 13 November 2026",
       note: "Each result has at least two sources. One report is linked below.",
