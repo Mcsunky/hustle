@@ -34,7 +34,21 @@ window.SLATES = [
     ],
     acca: { code: "HPZ88Z", legs: 6, odds: "3.77", booked: "01:20 UK" },
     mega: {
-      code: "QWQZ7Q", odds: "533.83", booked: "06:50 UK (experimental, on your request)", results: null, landed: null,
+      code: "QWQZ7Q", odds: "533.83", booked: "06:50 UK (experimental, on your request)", landed: false,
+      results: [
+        { status: "lost", score: "2–0", src: "https://www.sport-fm.gr/article/podosfairo/SuperbetLeague2/paniwnios-olumpiakos-b-2-0/5161433", srcName: "Sport FM" },
+        { status: "won", score: "2–1", src: "https://www.sport-fm.gr/article/5161438", srcName: "Sport FM" },
+        { status: "won", score: "2–4", src: "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles-video/senegal-vs-sudan-highlights-2027-afcon-qualifiers-2026-11-16", srcName: "beIN Sports" },
+        { status: "lost", score: "0–1", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279420-somalia-vs-ghana-live-score-africa-cup-of-nations-qualifiers.html", srcName: "VAVEL" },
+        { status: "won", score: "1–3", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279453-eritrea-vs-guinea-live-latest-score-goals-and-african-cup-of-nations-qualifiers-updates.html", srcName: "VAVEL" },
+        { status: "won", score: "3–0", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279422-iceland-vs-luxembourg-live-score-uefa-nations-league.html", srcName: "VAVEL" },
+        { status: "won", score: "1–0", src: "https://www.espn.com/soccer/match/_/gameId/401861188", srcName: "ESPN" },
+        { status: "lost", score: "0–3", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279446-north-macedonia-vs-slovenia-live-score-uefa-nations-league.html", srcName: "VAVEL" },
+        { status: "won", score: "9–0", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279391-cuba-vs-grenada-live-score-concacaf-nations-league.html", srcName: "VAVEL" },
+        { status: "lost", score: "2–2", src: "https://libero.pe/futbol-peruano/liga-1/2026/11/15/cusco-fc-vs-adt-en-vivo-gratis-partido-del-torneo-clausura-via-liga-1-max-internet-1414065", srcName: "Líbero" },
+        { status: "won", score: "2–1", src: "https://libero.pe/futbol-peruano/liga-1/2026/11/15/cd-moquegua-vs-atletico-grau-en-vivo-gratis-partido-del-torneo-clausura-via-liga-1-max-internet-567750", srcName: "Líbero" },
+        { status: "unverified", score: "kicked off 00:00 Tue, not settled", src: "https://www.sofascore.com/football/match/antigua-and-barbuda-trinidad-and-tobago/mdcsfLi", srcName: "Sofascore" }
+      ],
       legs: [
         { fx: "Panionios v Olympiacos B", comp: "Greek Super League 2", ko: "12:45", mk: "Over 2.5 Goals", odds: "1.71" },
         { fx: "Niki Volou v PAS Pyrgos", comp: "Greek Super League 2", ko: "13:00", mk: "Over 2.5 Goals", odds: "1.77" },
@@ -50,7 +64,15 @@ window.SLATES = [
         { fx: "Trinidad & Tobago v Antigua & Barbuda", comp: "CONCACAF Nations League", ko: "00:00 (Tue)", mk: "Both Teams to Score: Yes", odds: "1.82" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "won", score: "2–4", src: "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles-video/senegal-vs-sudan-highlights-2027-afcon-qualifiers-2026-11-16", srcName: "beIN Sports" },
+      2: { status: "lost", score: "0–1", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279420-somalia-vs-ghana-live-score-africa-cup-of-nations-qualifiers.html", srcName: "VAVEL" },
+      3: { status: "won", score: "2–1", src: "https://www.365scores.com/en-us/football/match/uefa-nations-league-7016/liechtenstein-lithuania-2312-5046-7016", srcName: "365Scores" },
+      4: { status: "won", score: "3–0", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279422-iceland-vs-luxembourg-live-score-uefa-nations-league.html", srcName: "VAVEL" },
+      5: { status: "won", score: "4–1", src: "https://www.fotmob.com/matches/guadeloupe-vs-bermuda/14r9ll", srcName: "FotMob" },
+      6: { status: "won", score: "9–0", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279391-cuba-vs-grenada-live-score-concacaf-nations-league.html", srcName: "VAVEL" }
+    },
+    settled: "Settled 23:15 UK: 6 picks, 5 won, 1 lost (83%). Accumulator HPZ88Z, the Safest 4-leg and the banker double all lost on Somalia v Ghana Over 1.5 (0–1, one penalty goal). Experimental Mega QWQZ7Q lost: 7 won, 4 lost, 1 unverified (Trinidad v Antigua kicks off after midnight).",
     audit: {
       of: "Sunday 15 November 2026",
       note: "Each result has at least two sources. One report is linked below.",
