@@ -5,6 +5,62 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-16",
+    label: "Monday 16 November 2026",
+    built: "Built 01:25 UK",
+    comps: [
+      { name: "AFCON Qualifiers", windows: [ { ko: "13:00 UK", picks: [
+        { n: 1, fx: "Sudan v Senegal (in Juba)", mk: "Over 1.5 Goals", odds: "1.34" } ] }, { ko: "15:00 UK", picks: [
+        { n: 2, fx: "Somalia v Ghana (in Ghana)", mk: "Over 1.5 Goals", odds: "1.16" } ] } ] },
+      { name: "UEFA Nations League", windows: [ { ko: "17:00 UK", picks: [
+        { n: 3, fx: "Lithuania v Liechtenstein", mk: "Home Win", odds: "1.14" },
+        { n: 4, fx: "Iceland v Luxembourg", mk: "Home Win", odds: "1.28" } ] } ] },
+      { name: "CONCACAF Nations League", windows: [ { ko: "19:00 UK", picks: [
+        { n: 5, fx: "Guadeloupe v Bermuda", mk: "Home Win", odds: "1.27" } ] }, { ko: "20:00 UK", picks: [
+        { n: 6, fx: "Cuba v Grenada", mk: "Home Win", odds: "1.31" } ] } ] }
+    ],
+    passes: "No Mega today: the international-break card is too thin for 12+ quality legs. Passed: Greece v Serbia (Greece just lost 0–7), Trinidad v Antigua and Martinique v Aruba (00:00 UK kickoffs, T&T have lost 4 of their last 5), Greek Super League 2 and Peru games (thin data, one venue change), plus lower-league fixtures. No Arsenal fixtures were considered.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Lithuania v Liechtenstein: Home Win", "1.14"],
+        ["Somalia v Ghana: Over 1.5", "1.16"],
+        ["Guadeloupe v Bermuda: Home Win", "1.27"],
+        ["Iceland v Luxembourg: Home Win", "1.28"]
+      ], total: "2.15" },
+      { name: "Banker double", legs: [
+        ["Lithuania v Liechtenstein: Home Win", "1.14"],
+        ["Somalia v Ghana: Over 1.5", "1.16"]
+      ], total: "1.32" }
+    ],
+    acca: { code: "HPZ88Z", legs: 6, odds: "3.77", booked: "01:20 UK" },
+    results: null,
+    audit: {
+      of: "Sunday 15 November 2026",
+      note: "Each result has at least two sources. One report is linked below.",
+      picks: [
+        { fx: "New Zealand v India", mk: "Over 1.5 Goals", odds: "1.14", score: "3–0", status: "won", src: "https://www.the-aiff.com/article/india-fall-to-new-zealand-in-christchurch-friendly", srcName: "AIFF" },
+        { fx: "Häcken v Piteå (W)", mk: "Home Win", odds: "1.11", score: "2–0", status: "won", src: "https://www.nsd.se/sport/fotboll/artikel/forlust-borta-for-pitea-mot-bk-hacken/r35kvd2j", srcName: "NSD" },
+        { fx: "Hammarby v Kristianstad (W)", mk: "Home Win", odds: "1.19", score: "1–0", status: "won", src: "https://www.gp.se/sport/10-seger-for-hammarby-ida-hermannsdottir-matchhjalte.e6b804e3-af98-581b-9dca-ef79c3469039", srcName: "GP" },
+        { fx: "Spezia v Vado", mk: "Home Win", odds: "1.23", score: "3–0", status: "won", src: "https://www.primocanale.it/sport/73653-spezia-vado.html", srcName: "Primocanale" },
+        { fx: "Montpellier Atlas Paillade v AS Cannes", mk: "Over 1.5 Goals", odds: "1.17", score: "0–2", status: "won", src: "https://footamateur.ouest-france.fr/coupe-de-france-tous-les-resultats-du-septieme-tour/", srcName: "Ouest-France" },
+        { fx: "TSC Bačka Topola v Jedinstvo Ub", mk: "Home Win", odds: "1.21", score: "2–0", status: "won", src: "https://sportin.biz/2026/11/15/tsc-ponovo-lider/", srcName: "Sportin" },
+        { fx: "Finland v San Marino", mk: "Over 2.5 Goals", odds: "1.24", score: "7–2", status: "won", src: "https://www.vavel.com/en-us/soccer/2026/11/15/1279342-finland-vs-san-marino-live-latest-score-goals-and-uefa-nations-league-updates.html", srcName: "VAVEL" },
+        { fx: "France v Türkiye", mk: "Home Win", odds: "1.23", score: "2–1", status: "won", src: "https://www.espn.com/soccer/report/_/gameId/401861177", srcName: "ESPN" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.68", landed: true },
+        { name: "Home strength 4-leg", total: "2.27", landed: true },
+        { name: "Full accumulator XEUW1N", total: "4.00", landed: true },
+        { name: "Mega GULCHP (5 won, 6 lost, 1 unverified)", total: "225.31", landed: false }
+      ],
+      lessons: [
+        "8 from 8 is variance. The process stays the same.",
+        "Strong home sides won as expected: Häcken 2–0, Hammarby 1–0, Spezia 3–0, Topola 2–0, France 2–1.",
+        "Over 3.5 in the Swedish women's games lost (2–0, 1–0) even with heavy favourites. High goal lines on favourites are the Mega's repeat weakness."
+      ]
+    }
+  },
+  {
     date: "2026-11-15",
     label: "Sunday 15 November 2026",
     built: "Built 01:30 UK",
@@ -53,7 +109,7 @@ window.SLATES = [
         { status: "won", score: "2–0", src: "https://www.ravennaedintorni.it/sport/2026/11/15/il-ravenna-batte-il-forli-2-0-in-uno-stadio-in-festa-per-ronaldinho-foto-tabellino/", srcName: "Ravenna e Dintorni" },
         { status: "lost", score: "2–2", src: "https://www.trivenetogoal.it/2026/11/15/cittadella-folgore-caratese-2-2-i-granata-frenano-con-lultima-in-classifica-ora-e-lotta-a-tre-con-brescia-e-trento/269002/", srcName: "Triveneto Goal" },
         { status: "won", score: "7–2", src: "https://www.vavel.com/en-us/soccer/2026/11/15/1279342-finland-vs-san-marino-live-latest-score-goals-and-uefa-nations-league-updates.html", srcName: "VAVEL" },
-        { status: "unverified", score: "not yet reported", src: "https://www.sofascore.com/football/match/sol-de-america-cerro-porteno/QucsODo", srcName: "Sofascore" },
+        { status: "lost", score: "1–1 (Sol won on pens)", src: "https://elnacional.com.py/deportes/copa-paraguay-sol-america-elimina-cerro-porteno-tanda-penales-disputara-final-recoleta-n115323", srcName: "El Nacional" },
         { status: "unverified", score: "kicked off 23:00, not settled", src: "https://www.espn.com/soccer/match/_/gameId/401929709/curacao-panama", srcName: "ESPN" }
       ],
       legs: [
@@ -81,7 +137,7 @@ window.SLATES = [
       7: { status: "won", score: "7–2", src: "https://www.vavel.com/en-us/soccer/2026/11/15/1279342-finland-vs-san-marino-live-latest-score-goals-and-uefa-nations-league-updates.html", srcName: "VAVEL" },
       8: { status: "won", score: "2–1", src: "https://www.espn.com/soccer/report/_/gameId/401861177", srcName: "ESPN" }
     },
-    settled: "Settled 23:00 UK: 8 picks, 8 won (100%). Safest 4-leg, Home strength 4-leg and accumulator XEUW1N (4.00) all landed. Mega GULCHP lost: 5 won, 5 lost, 2 still to be confirmed (Cerro Porteño, Panama).",
+    settled: "Settled 23:00 UK: 8 picks, 8 won (100%). Safest 4-leg, Home strength 4-leg and accumulator XEUW1N (4.00) all landed. Mega GULCHP lost: 5 won, 6 lost, 1 unverified (Panama v Curaçao).",
     audit: {
       of: "Saturday 14 November 2026",
       note: "Each result has at least two sources. One report is linked below. Nacional v Albion (Mega only) was still unconfirmed when the audit ran.",
