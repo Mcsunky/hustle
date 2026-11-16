@@ -19,7 +19,7 @@ window.SLATES = [
         { n: 5, fx: "Guadeloupe v Bermuda", mk: "Home Win", odds: "1.27" } ] }, { ko: "20:00 UK", picks: [
         { n: 6, fx: "Cuba v Grenada", mk: "Home Win", odds: "1.31" } ] } ] }
     ],
-    passes: "No Mega today: the international-break card is too thin for 12+ quality legs. Passed: Greece v Serbia (Greece just lost 0–7), Trinidad v Antigua and Martinique v Aruba (00:00 UK kickoffs, T&T have lost 4 of their last 5), Greek Super League 2 and Peru games (thin data, one venue change), plus lower-league fixtures. No Arsenal fixtures were considered.",
+    passes: "Experimental Mega added at 08:15 UK on your request, from a thin international-break card. Passed for the Slate: Greece v Serbia (Greece just lost 0–7), Trinidad v Antigua and Martinique v Aruba (00:00 UK kickoffs, T&T have lost 4 of their last 5), Greek Super League 2 and Peru games (thin data, one venue change), plus lower-league fixtures. No Arsenal fixtures were considered.",
     tickets: [
       { name: "Safest 4-leg", legs: [
         ["Lithuania v Liechtenstein: Home Win", "1.14"],
@@ -33,6 +33,23 @@ window.SLATES = [
       ], total: "1.32" }
     ],
     acca: { code: "HPZ88Z", legs: 6, odds: "3.77", booked: "01:20 UK" },
+    mega: {
+      code: "QWQZ7Q", odds: "533.83", booked: "08:15 UK (experimental, on your request)", results: null, landed: null,
+      legs: [
+        { fx: "Panionios v Olympiacos B", comp: "Greek Super League 2", ko: "12:45", mk: "Over 2.5 Goals", odds: "1.71" },
+        { fx: "Niki Volou v PAS Pyrgos", comp: "Greek Super League 2", ko: "13:00", mk: "Over 2.5 Goals", odds: "1.77" },
+        { fx: "Sudan v Senegal (in Juba)", comp: "AFCON Qualifiers", ko: "13:00", mk: "Over 2.5 Goals", odds: "1.97" },
+        { fx: "Somalia v Ghana (in Ghana)", comp: "AFCON Qualifiers", ko: "15:00", mk: "Over 2.5 Goals", odds: "1.52" },
+        { fx: "Eritrea v Guinea (in Cairo)", comp: "AFCON Qualifiers", ko: "16:00", mk: "Over 2.5 Goals", odds: "1.95" },
+        { fx: "Iceland v Luxembourg", comp: "UEFA Nations League", ko: "17:00", mk: "Over 2.5 Goals", odds: "1.66" },
+        { fx: "Greece v Serbia", comp: "UEFA Nations League", ko: "19:45", mk: "Home Win", odds: "1.47" },
+        { fx: "North Macedonia v Slovenia", comp: "UEFA Nations League", ko: "19:45", mk: "Under 2.5 Goals", odds: "1.70" },
+        { fx: "Cuba v Grenada", comp: "CONCACAF Nations League", ko: "20:00", mk: "Over 2.5 Goals", odds: "1.47" },
+        { fx: "Cusco FC v ADT Tarma", comp: "Peru Liga 1", ko: "20:15", mk: "Home Win", odds: "1.62" },
+        { fx: "CD Moquegua v Atlético Grau", comp: "Peru Liga 1", ko: "20:15", mk: "Home Win", odds: "1.68" },
+        { fx: "Trinidad & Tobago v Antigua & Barbuda", comp: "CONCACAF Nations League", ko: "00:00 (Tue)", mk: "Both Teams to Score: Yes", odds: "1.82" }
+      ]
+    },
     results: null,
     audit: {
       of: "Sunday 15 November 2026",
