@@ -19,7 +19,7 @@ window.SLATES = [
         { n: 5, fx: "Guadeloupe v Bermuda", mk: "Home Win", odds: "1.27" } ] }, { ko: "20:00 UK", picks: [
         { n: 6, fx: "Cuba v Grenada", mk: "Home Win", odds: "1.31" } ] } ] }
     ],
-    passes: "Experimental Mega added at 08:15 UK on your request, from a thin international-break card. Passed for the Slate: Greece v Serbia (Greece just lost 0–7), Trinidad v Antigua and Martinique v Aruba (00:00 UK kickoffs, T&T have lost 4 of their last 5), Greek Super League 2 and Peru games (thin data, one venue change), plus lower-league fixtures. No Arsenal fixtures were considered.",
+    passes: "Experimental Mega added at 06:50 UK on your request, from a thin international-break card. Passed for the Slate: Greece v Serbia (Greece just lost 0–7), Trinidad v Antigua and Martinique v Aruba (00:00 UK kickoffs, T&T have lost 4 of their last 5), Greek Super League 2 and Peru games (thin data, one venue change), plus lower-league fixtures. No Arsenal fixtures were considered.",
     tickets: [
       { name: "Safest 4-leg", legs: [
         ["Lithuania v Liechtenstein: Home Win", "1.14"],
@@ -34,7 +34,7 @@ window.SLATES = [
     ],
     acca: { code: "HPZ88Z", legs: 6, odds: "3.77", booked: "01:20 UK" },
     mega: {
-      code: "QWQZ7Q", odds: "533.83", booked: "08:15 UK (experimental, on your request)", results: null, landed: null,
+      code: "QWQZ7Q", odds: "533.83", booked: "06:50 UK (experimental, on your request)", results: null, landed: null,
       legs: [
         { fx: "Panionios v Olympiacos B", comp: "Greek Super League 2", ko: "12:45", mk: "Over 2.5 Goals", odds: "1.71" },
         { fx: "Niki Volou v PAS Pyrgos", comp: "Greek Super League 2", ko: "13:00", mk: "Over 2.5 Goals", odds: "1.77" },
