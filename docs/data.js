@@ -5,6 +5,77 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-17",
+    label: "Tuesday 17 November 2026",
+    built: "Built 01:35 UK",
+    comps: [
+      { name: "AFCON Qualifiers", windows: [ { ko: "20:00 UK", picks: [
+        { n: 1, fx: "Niger v Morocco (in Rabat)", mk: "Over 1.5 Goals", odds: "1.14" } ] } ] },
+      { name: "UEFA Nations League", windows: [ { ko: "19:45 UK", picks: [
+        { n: 2, fx: "Wales v Portugal", mk: "Over 1.5 Goals", odds: "1.17" } ] } ] },
+      { name: "International Friendlies", windows: [ { ko: "23:00 UK", picks: [
+        { n: 3, fx: "Argentina v Costa Rica", mk: "Home Win", odds: "1.09" } ] }, { ko: "23:30 UK", picks: [
+        { n: 4, fx: "Uruguay v Dominican Republic", mk: "Home Win", odds: "1.10" },
+        { n: 5, fx: "Ecuador v Bolivia", mk: "Home Win", odds: "1.20" } ] } ] }
+    ],
+    passes: "A short, safe slate on the last day of the break. Passed for the Slate: Malawi v Egypt and Tanzania v Nigeria (away favourites, and minnows sit deep), Guinea-Bissau v Madagascar (key striker out, first game 1–1), Luton v Peterborough (partly a dead rubber), Japan v Paraguay (neutral venue), UAE v Syria (Dalić trying players). Several of these are in the Mega instead, which shares no fixtures with the Slate. No Arsenal fixtures were considered.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Argentina v Costa Rica: Home Win", "1.09"],
+        ["Uruguay v Dominican Republic: Home Win", "1.10"],
+        ["Niger v Morocco: Over 1.5", "1.14"],
+        ["Wales v Portugal: Over 1.5", "1.17"]
+      ], total: "1.60" },
+      { name: "South America treble", legs: [
+        ["Argentina v Costa Rica: Home Win", "1.09"],
+        ["Uruguay v Dominican Republic: Home Win", "1.10"],
+        ["Ecuador v Bolivia: Home Win", "1.20"]
+      ], total: "1.44" }
+    ],
+    acca: { code: "ZQKSFA", legs: 5, odds: "1.92", booked: "01:30 UK" },
+    mega: {
+      code: "TNCEFY", odds: "656.96", booked: "01:33 UK", results: null, landed: null,
+      legs: [
+        { fx: "Lesotho v Gabon", comp: "AFCON Qualifiers", ko: "13:00", mk: "Over 2.5 Goals", odds: "2.25" },
+        { fx: "Malawi v Egypt", comp: "AFCON Qualifiers", ko: "13:00", mk: "Over 2.5 Goals", odds: "1.80" },
+        { fx: "Tanzania v Nigeria", comp: "AFCON Qualifiers", ko: "13:00", mk: "Over 2.5 Goals", odds: "2.15" },
+        { fx: "Japan v Paraguay (in Singapore)", comp: "International Friendly", ko: "13:10", mk: "Home Win", odds: "1.65" },
+        { fx: "UAE v Syria", comp: "International Friendly", ko: "14:10", mk: "Home Win & Over 1.5 Goals", odds: "1.61" },
+        { fx: "Russia v Venezuela", comp: "International Friendly", ko: "16:00", mk: "Home Win", odds: "1.56" },
+        { fx: "Guinea-Bissau v Madagascar", comp: "AFCON Qualifiers", ko: "16:00", mk: "Home Win & Over 1.5 Goals", odds: "1.75" },
+        { fx: "Sierra Leone v DR Congo", comp: "AFCON Qualifiers", ko: "16:00", mk: "Under 2.5 Goals", odds: "1.67" },
+        { fx: "Luton v Peterborough", comp: "EFL Trophy", ko: "19:00", mk: "Home Win", odds: "1.52" },
+        { fx: "St Kitts & Nevis v Bonaire (in Havana)", comp: "CONCACAF Nations League", ko: "19:00", mk: "Home Win", odds: "1.47" },
+        { fx: "Dominica v Cayman Islands (in Guyana)", comp: "CONCACAF Nations League", ko: "19:00", mk: "Home Win & Over 1.5 Goals", odds: "1.64" },
+        { fx: "St Lucia v Barbados", comp: "CONCACAF Nations League", ko: "19:00", mk: "Home Win", odds: "1.70" }
+      ]
+    },
+    results: null,
+    audit: {
+      of: "Monday 16 November 2026",
+      note: "Each result has at least two sources. One report is linked below.",
+      picks: [
+        { fx: "Sudan v Senegal (in Juba)", mk: "Over 1.5 Goals", odds: "1.34", score: "2–4", status: "won", src: "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles-video/senegal-vs-sudan-highlights-2027-afcon-qualifiers-2026-11-16", srcName: "beIN Sports" },
+        { fx: "Somalia v Ghana (in Ghana)", mk: "Over 1.5 Goals", odds: "1.16", score: "0–1", status: "lost", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279420-somalia-vs-ghana-live-score-africa-cup-of-nations-qualifiers.html", srcName: "VAVEL" },
+        { fx: "Lithuania v Liechtenstein", mk: "Home Win", odds: "1.14", score: "2–1", status: "won", src: "https://www.365scores.com/en-us/football/match/uefa-nations-league-7016/liechtenstein-lithuania-2312-5046-7016", srcName: "365Scores" },
+        { fx: "Iceland v Luxembourg", mk: "Home Win", odds: "1.28", score: "3–0", status: "won", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279422-iceland-vs-luxembourg-live-score-uefa-nations-league.html", srcName: "VAVEL" },
+        { fx: "Guadeloupe v Bermuda", mk: "Home Win", odds: "1.27", score: "4–1", status: "won", src: "https://www.fotmob.com/matches/guadeloupe-vs-bermuda/14r9ll", srcName: "FotMob" },
+        { fx: "Cuba v Grenada", mk: "Home Win", odds: "1.31", score: "9–0", status: "won", src: "https://www.vavel.com/en-us/soccer/2026/11/16/1279391-cuba-vs-grenada-live-score-concacaf-nations-league.html", srcName: "VAVEL" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "2.15", landed: false },
+        { name: "Banker double", total: "1.32", landed: false },
+        { name: "Full accumulator HPZ88Z", total: "3.77", landed: false },
+        { name: "Experimental Mega QWQZ7Q (7 won, 4 lost, 1 unverified)", total: "533.83", landed: false }
+      ],
+      lessons: [
+        "Somalia v Ghana Over 1.5 lost 0–1. Ghana beat Somalia only 2–0 and 1–0 across the two games. Minnows that sit deep make goals markets on mismatches weaker than they look.",
+        "One shaky leg sat in all three slips (the accumulator, the Safest 4-leg and the banker double). Keep at least one ticket free of each goals-market leg.",
+        "New rule from your feedback: a fixture appears only once per slip, and the Mega never shares a fixture with the Slate."
+      ]
+    }
+  },
+  {
     date: "2026-11-16",
     label: "Monday 16 November 2026",
     built: "Built 01:25 UK",
