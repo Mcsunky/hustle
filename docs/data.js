@@ -7,7 +7,7 @@ window.SLATES = [
   {
     date: "2026-11-18",
     label: "Wednesday 18 November 2026",
-    built: "Built 11:45 UK",
+    built: "Rebuilt 12:05 UK",
     comps: [
       { name: "Cameroon Elite One", windows: [ { ko: "14:00 UK", picks: [
         { n: 1, fx: "Coton Sport v Stade Renard", mk: "Home Win", odds: "1.25" } ] } ] },
@@ -15,28 +15,28 @@ window.SLATES = [
         { n: 2, fx: "Tabor Sežana v Fužinar", mk: "Home Win", odds: "1.25" },
         { n: 3, fx: "NK Rače v Radomlje", mk: "Over 1.5 Goals", odds: "1.22" } ] } ] },
       { name: "Copa del Rey", windows: [ { ko: "19:00 UK", picks: [
-        { n: 4, fx: "Alcoyano v Mallorca", mk: "Over 1.5 Goals", odds: "1.32" } ] } ] },
+        { n: 4, fx: "Alcoyano v Mallorca", mk: "Under 3.5 Goals", odds: "1.34" } ] } ] },
       { name: "Copa Venezuela", windows: [ { ko: "20:30 UK", picks: [
-        { n: 5, fx: "Carabobo v Zamora", mk: "Home Win", odds: "1.51" } ] } ] },
+        { n: 5, fx: "Carabobo v Zamora", mk: "Double Chance 1X", odds: "1.15" } ] } ] },
       { name: "Brazil Série A", windows: [ { ko: "23:00 UK", picks: [
         { n: 6, fx: "Clube do Remo v Chapecoense", mk: "Home Win", odds: "1.46" } ] }, { ko: "23:30 UK", picks: [
-        { n: 7, fx: "Flamengo v Atlético Paranaense", mk: "Home Win", odds: "1.21" } ] } ] }
+        { n: 7, fx: "Flamengo v Atlético Paranaense", mk: "Home Win", odds: "1.20" } ] } ] }
     ],
-    passes: "No Mega today: after removing the 7 Slate fixtures, the rest of this thin midweek card (Albanian/Jordanian/Kosovan cups, lower African leagues) isn't 12+ legs I can stand behind, so the one-fixture-per-slip rule leaves no clean Mega. Passed for the Slate: Badajoz v Tenerife and Utebo v Sabadell (both away sides rotate in the cup), Deportivo Táchira (resting for the Clausura final), Salamanca UDS (lost 0–5 midweek), Vipers v BUL (top-two clash, likely tight), Ranchers Bees (disputed venue, patchy form). Mallorca, Tenerife and Sabadell all rotate heavily in round one, so their ties are played as Over 1.5, not away wins (which the rules ban anyway). No Arsenal fixtures were considered.",
+    passes: "No Mega today: after removing the 7 Slate fixtures, the rest of this thin midweek card (Albanian/Jordanian/Kosovan cups, lower African leagues) isn't 12+ legs I can stand behind, so the one-fixture-per-slip rule leaves no clean Mega. Passed for the Slate: Badajoz v Tenerife and Utebo v Sabadell (both away sides rotate in the cup), Deportivo Táchira (resting for the Clausura final), Salamanca UDS (lost 0–5 midweek), Vipers v BUL (top-two clash, likely tight), Ranchers Bees (disputed venue, patchy form). Mallorca, Tenerife and Sabadell all rotate heavily in round one, so those ties are played through goals lines, not away wins (which the rules ban anyway). Rebuild changes: Alcoyano v Mallorca moved to Under 3.5, because rotated favourites away at lower-tier cup sides keep winning narrowly (Tourcoing 0–1 Reims, Trival 0–1 Leganés); Carabobo moved to 1X because they face Táchira in the Clausura final soon and may rotate in a single-leg tie. No Arsenal fixtures were considered.",
     tickets: [
       { name: "Safest 4-leg", legs: [
-        ["Flamengo v Atlético-PR: Home Win", "1.21"],
+        ["Carabobo v Zamora: 1X", "1.15"],
+        ["Flamengo v Atlético-PR: Home Win", "1.20"],
         ["Coton Sport v Stade Renard: Home Win", "1.25"],
-        ["Tabor Sežana v Fužinar: Home Win", "1.25"],
-        ["Carabobo v Zamora: Home Win", "1.51"]
-      ], total: "2.85" },
+        ["Tabor Sežana v Fužinar: Home Win", "1.25"]
+      ], total: "2.16" },
       { name: "Value treble", legs: [
         ["Remo v Chapecoense: Home Win", "1.46"],
-        ["Alcoyano v Mallorca: Over 1.5", "1.32"],
+        ["Alcoyano v Mallorca: Under 3.5", "1.34"],
         ["NK Rače v Radomlje: Over 1.5", "1.22"]
-      ], total: "2.35" }
+      ], total: "2.39" }
     ],
-    acca: { code: "XMLSXF", legs: 7, odds: "6.71", booked: "11:42 UK" },
+    acca: { code: "K2H1J1", legs: 7, odds: "5.15", booked: "12:03 UK", note: "Rebuilt at 12:05 UK on an upgraded model. Replaces the earlier code XMLSXF: Alcoyano v Mallorca changed from Over 1.5 to Under 3.5, and Carabobo v Zamora from Home Win to 1X. Use K2H1J1." },
     results: null,
     audit: {
       of: "Tuesday 17 November 2026",
