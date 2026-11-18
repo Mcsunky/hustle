@@ -5,6 +5,63 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-18",
+    label: "Wednesday 18 November 2026",
+    built: "Built 11:45 UK",
+    comps: [
+      { name: "Cameroon Elite One", windows: [ { ko: "14:00 UK", picks: [
+        { n: 1, fx: "Coton Sport v Stade Renard", mk: "Home Win", odds: "1.25" } ] } ] },
+      { name: "Slovenia Cup", windows: [ { ko: "16:00 UK", picks: [
+        { n: 2, fx: "Tabor Sežana v Fužinar", mk: "Home Win", odds: "1.25" },
+        { n: 3, fx: "NK Rače v Radomlje", mk: "Over 1.5 Goals", odds: "1.22" } ] } ] },
+      { name: "Copa del Rey", windows: [ { ko: "19:00 UK", picks: [
+        { n: 4, fx: "Alcoyano v Mallorca", mk: "Over 1.5 Goals", odds: "1.32" } ] } ] },
+      { name: "Copa Venezuela", windows: [ { ko: "20:30 UK", picks: [
+        { n: 5, fx: "Carabobo v Zamora", mk: "Home Win", odds: "1.51" } ] } ] },
+      { name: "Brazil Série A", windows: [ { ko: "23:00 UK", picks: [
+        { n: 6, fx: "Clube do Remo v Chapecoense", mk: "Home Win", odds: "1.46" } ] }, { ko: "23:30 UK", picks: [
+        { n: 7, fx: "Flamengo v Atlético Paranaense", mk: "Home Win", odds: "1.21" } ] } ] }
+    ],
+    passes: "No Mega today: after removing the 7 Slate fixtures, the rest of this thin midweek card (Albanian/Jordanian/Kosovan cups, lower African leagues) isn't 12+ legs I can stand behind, so the one-fixture-per-slip rule leaves no clean Mega. Passed for the Slate: Badajoz v Tenerife and Utebo v Sabadell (both away sides rotate in the cup), Deportivo Táchira (resting for the Clausura final), Salamanca UDS (lost 0–5 midweek), Vipers v BUL (top-two clash, likely tight), Ranchers Bees (disputed venue, patchy form). Mallorca, Tenerife and Sabadell all rotate heavily in round one, so their ties are played as Over 1.5, not away wins (which the rules ban anyway). No Arsenal fixtures were considered.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Flamengo v Atlético-PR: Home Win", "1.21"],
+        ["Coton Sport v Stade Renard: Home Win", "1.25"],
+        ["Tabor Sežana v Fužinar: Home Win", "1.25"],
+        ["Carabobo v Zamora: Home Win", "1.51"]
+      ], total: "2.85" },
+      { name: "Value treble", legs: [
+        ["Remo v Chapecoense: Home Win", "1.46"],
+        ["Alcoyano v Mallorca: Over 1.5", "1.32"],
+        ["NK Rače v Radomlje: Over 1.5", "1.22"]
+      ], total: "2.35" }
+    ],
+    acca: { code: "XMLSXF", legs: 7, odds: "6.71", booked: "11:42 UK" },
+    results: null,
+    audit: {
+      of: "Tuesday 17 November 2026",
+      note: "Each result has at least one reliable source; one is linked below.",
+      picks: [
+        { fx: "Niger v Morocco (in Rabat)", mk: "Over 1.5 Goals", odds: "1.14", score: "0–1", status: "lost", src: "https://www.espn.com/soccer/match/_/gameId/401927180/morocco-niger", srcName: "ESPN" },
+        { fx: "Wales v Portugal", mk: "Over 1.5 Goals", odds: "1.17", score: "2–3", status: "won", src: "https://www.espn.com/soccer/report/_/gameId/401861189", srcName: "ESPN" },
+        { fx: "Argentina v Costa Rica", mk: "Home Win", odds: "1.09", score: "7–0", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401930895/costa-rica-argentina", srcName: "ESPN" },
+        { fx: "Uruguay v Dominican Republic", mk: "Home Win", odds: "1.10", score: "5–0", status: "won", src: "https://www.sofascore.com/news/uruguay-5-0-dominican-republic-late-surge-de-la-cruz-shines", srcName: "Sofascore" },
+        { fx: "Ecuador v Bolivia", mk: "Home Win", odds: "1.20", score: "2–0", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401930899/bolivia-ecuador", srcName: "ESPN" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.60", landed: false },
+        { name: "South America treble", total: "1.44", landed: true },
+        { name: "Full accumulator ZQKSFA", total: "1.92", landed: false },
+        { name: "Experimental Mega TNCEFY (9 of 12 legs)", total: "656.96", landed: false }
+      ],
+      lessons: [
+        "Niger v Morocco Over 1.5 lost 0–1: Morocco, already through, won it with one early goal and shut up shop. Over 1.5 on a one-sided qualifier is fragile when the favourite only needs a single goal.",
+        "The three African-mismatch Over 2.5 legs failed again (Malawi 0–0, Tanzania 0–0). But the new Under 2.5 pick won (Sierra Leone 1–1). For minnow-heavy games, Under 2.5 and second-half goals beat Over 2.5.",
+        "The South America treble (Argentina 7–0, Uruguay 5–0, Ecuador 2–0) landed cleanly — strong home nations in friendlies remain the most reliable market."
+      ]
+    }
+  },
+  {
     date: "2026-11-17",
     label: "Tuesday 17 November 2026",
     built: "Built 01:35 UK",
