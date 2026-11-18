@@ -68,6 +68,8 @@ a { color: var(--main); }
 .code-card { background: var(--panel); border: 1px solid var(--line); border-top: 3px solid var(--c); border-radius: 8px; padding: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
 .code-card.main { --c: var(--main); }
 .code-card.mega { --c: var(--gold); }
+.code-card.prev { --c: var(--muted); }
+.code-card.prev .code { text-decoration: line-through; text-decoration-thickness: 2px; color: var(--muted); }
 .code-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
 .code-label { font: 700 12px var(--font-data); letter-spacing: 0.12em; text-transform: uppercase; color: var(--c); }
 .code-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
@@ -214,7 +216,27 @@ function codesBlock(sl) {
       <div class="code-meta"><span><b>${sl.mega.legs.length}</b> legs</span><span>odds <b>${esc(sl.mega.odds)}</b></span><span>booked ${esc(sl.mega.booked)}</span></div>
     </div>`);
   }
+  if (sl.earlier) {
+    const e = sl.earlier, rs = e.results || [];
+    let st = "pending";
+    if (rs.some(r => r && r.status === "lost")) st = "lost"; else if (rs.length === e.picks.length && rs.every(r => r && r.status === "won")) st = "landed";
+    cards.push(`<div class="code-card prev">
+      <div class="code-head"><span class="code-label">Earlier version · reference only</span>${statusPill(st)}</div>
+      <div class="code-row"><span class="code">${esc(e.code)}</span>${copyBtn(e.code)}</div>
+      <div class="code-meta"><span><b>${e.picks.length}</b> legs</span><span>odds <b>${esc(e.odds)}</b></span><span>booked ${esc(e.booked)}</span></div>
+      ${e.note ? `<p class="code-note">${esc(e.note)}</p>` : ""}
+    </div>`);
+  }
   return cards.length ? `<div class="codes">${cards.join("")}</div>` : "";
+}
+
+function earlierBlock(sl) {
+  const e = sl.earlier; if (!e) return "";
+  return `<section aria-labelledby="prev-h">
+    <div class="sec-head"><h2 id="prev-h">Earlier Version</h2><span class="note">${esc(e.code)} · ${e.picks.length} picks · odds ${esc(e.odds)}</span></div>
+    <p class="longshot">The first build of today's slate, kept for reference. It doesn't count towards the track record; the main accumulator above is the live pick.</p>
+    <ol class="picks">${e.picks.map((p, i) => pickLi(i + 1, p.fx + " · " + p.ko, p.mk, p.odds, e.results && e.results[i])).join("")}</ol>
+  </section>`;
 }
 
 function recordBlock() {
@@ -295,7 +317,7 @@ function show(date) {
   $("#days").innerHTML = SLATES.map(s => `<button type="button" data-d="${s.date}" aria-pressed="${s.date === sl.date}">${new Date(s.date + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" })}</button>`).join("");
   const body = sl.noSlate
     ? `<section aria-labelledby="slate-h"><div class="sec-head"><h2 id="slate-h">No Slate Today</h2></div><p class="settled">${esc(sl.noSlate)}</p></section>`
-    : slateBlock(sl) + ticketsBlock(sl) + megaBlock(sl);
+    : slateBlock(sl) + ticketsBlock(sl) + megaBlock(sl) + earlierBlock(sl);
   $("#app").innerHTML = codesBlock(sl) + recordBlock() + body + auditBlock(sl.audit);
   document.querySelectorAll("#days button").forEach(b => b.onclick = () => { location.hash = "d" + b.dataset.d; });
   document.querySelectorAll(".copy").forEach(b => b.onclick = () => {

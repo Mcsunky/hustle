@@ -36,7 +36,20 @@ window.SLATES = [
         ["NK Rače v Radomlje: Over 1.5", "1.22"]
       ], total: "2.39" }
     ],
-    acca: { code: "K2H1J1", legs: 7, odds: "5.15", booked: "12:03 UK", note: "Rebuilt at 12:05 UK on an upgraded model. Replaces the earlier code XMLSXF: Alcoyano v Mallorca changed from Over 1.5 to Under 3.5, and Carabobo v Zamora from Home Win to 1X. Use K2H1J1." },
+    acca: { code: "K2H1J1", legs: 7, odds: "5.15", booked: "12:03 UK", note: "Rebuilt at 12:05 UK on an upgraded model. The earlier code XMLSXF is still shown below for reference. Changes: Alcoyano v Mallorca changed from Over 1.5 to Under 3.5, and Carabobo v Zamora from Home Win to 1X. Use K2H1J1." },
+    earlier: {
+      code: "XMLSXF", odds: "6.71", booked: "11:42 UK", results: null,
+      note: "The first build, before the 12:05 rebuild. Kept so you can compare the two.",
+      picks: [
+        { fx: "Coton Sport v Stade Renard", ko: "14:00", mk: "Home Win", odds: "1.25" },
+        { fx: "Tabor Sežana v Fužinar", ko: "16:00", mk: "Home Win", odds: "1.25" },
+        { fx: "NK Rače v Radomlje", ko: "16:00", mk: "Over 1.5 Goals", odds: "1.22" },
+        { fx: "Alcoyano v Mallorca", ko: "19:00", mk: "Over 1.5 Goals", odds: "1.32" },
+        { fx: "Carabobo v Zamora", ko: "20:30", mk: "Home Win", odds: "1.51" },
+        { fx: "Clube do Remo v Chapecoense", ko: "23:00", mk: "Home Win", odds: "1.46" },
+        { fx: "Flamengo v Atlético Paranaense", ko: "23:30", mk: "Home Win", odds: "1.21" }
+      ]
+    },
     results: null,
     audit: {
       of: "Tuesday 17 November 2026",
