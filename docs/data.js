@@ -34,7 +34,21 @@ window.SLATES = [
     ],
     acca: { code: "ZQKSFA", legs: 5, odds: "1.92", booked: "01:30 UK" },
     mega: {
-      code: "TNCEFY", odds: "656.96", booked: "01:33 UK", results: null, landed: null,
+      code: "TNCEFY", odds: "656.96", booked: "01:33 UK", landed: false,
+      results: [
+        { status: "won", score: "2–1", src: "https://www.espn.com/soccer/match/_/gameId/401927181", srcName: "ESPN" },
+        { status: "lost", score: "0–0", src: "https://www.espn.com/soccer/match/_/gameId/401927179/egypt-malawi", srcName: "ESPN" },
+        { status: "lost", score: "0–0", src: "https://africasoccer.com/afcon-2027-qualifiers-tanzania-hold-nigeria-to-goalless-draw-in-group-l/", srcName: "AfricaSoccer" },
+        { status: "lost", score: "1–2", src: "https://www.sofascore.com/news/paraguay-beat-japan-2-1-in-singapore-on-set-pieces", srcName: "Sofascore" },
+        { status: "won", score: "4–2", src: "https://www.espn.com/soccer/match/_/gameId/401932718/syria-united-arab-emirates", srcName: "ESPN" },
+        { status: "won", score: "2–0", src: "https://www.espn.com/soccer/match/_/gameId/401930978/venezuela-russia", srcName: "ESPN" },
+        { status: "won", score: "2–0", src: "https://africasoccer.com/afcon-2027-qualifiers-guinea-bissau-secure-2-0-victory-over-madagascar-in-group-l/", srcName: "AfricaSoccer" },
+        { status: "won", score: "1–1", src: "https://www.espn.com/soccer/match/_/gameId/401927174/congo-dr-sierra-leone", srcName: "ESPN" },
+        { status: "won", score: "3–0", src: "https://www.skysports.com/football/luton-town-vs-peterborough-united/7431796559806415232", srcName: "Sky Sports" },
+        { status: "won", score: "3–2", src: "https://www.espn.com/soccer/match/_/gameId/401929767", srcName: "ESPN" },
+        { status: "won", score: "5–0", src: "https://www.espn.com/soccer/match/_/gameId/401929769", srcName: "ESPN" },
+        { status: "won", score: "2–0", src: "https://www.espn.com/soccer/match/_/gameId/401929768", srcName: "ESPN" }
+      ],
       legs: [
         { fx: "Lesotho v Gabon", comp: "AFCON Qualifiers", ko: "13:00", mk: "Over 2.5 Goals", odds: "2.25" },
         { fx: "Malawi v Egypt", comp: "AFCON Qualifiers", ko: "13:00", mk: "Over 2.5 Goals", odds: "1.80" },
@@ -50,7 +64,14 @@ window.SLATES = [
         { fx: "St Lucia v Barbados", comp: "CONCACAF Nations League", ko: "19:00", mk: "Home Win", odds: "1.70" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "lost", score: "0–1", src: "https://www.espn.com/soccer/match/_/gameId/401927180/morocco-niger", srcName: "ESPN" },
+      2: { status: "won", score: "2–3", src: "https://www.espn.com/soccer/report/_/gameId/401861189", srcName: "ESPN" },
+      3: { status: "won", score: "7–0", src: "https://www.espn.com/soccer/match/_/gameId/401930895/costa-rica-argentina", srcName: "ESPN" },
+      4: { status: "won", score: "5–0", src: "https://www.sofascore.com/news/uruguay-5-0-dominican-republic-late-surge-de-la-cruz-shines", srcName: "Sofascore" },
+      5: { status: "won", score: "2–0", src: "https://www.espn.com/soccer/match/_/gameId/401930899/bolivia-ecuador", srcName: "ESPN" }
+    },
+    settled: "Settled 12:00 UK (18 Nov): 5 picks, 4 won, 1 lost (80%). Accumulator ZQKSFA and the Safest 4-leg lost on Niger v Morocco Over 1.5 (0–1, Morocco won it with a single early goal). The South America treble (Argentina 7–0, Uruguay 5–0, Ecuador 2–0) landed. Experimental Mega TNCEFY lost: 9 of 12 legs won — the three Over 2.5 legs on African mismatches failed (Malawi 0–0, Tanzania 0–0) plus Japan lost 1–2; the Under 2.5 on Sierra Leone v DR Congo (1–1) won.",
     audit: {
       of: "Monday 16 November 2026",
       note: "Each result has at least two sources. One report is linked below.",
