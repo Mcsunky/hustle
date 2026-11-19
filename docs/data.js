@@ -5,6 +5,42 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-19",
+    label: "Thursday 19 November 2026",
+    built: "Built 01:20 UK",
+    comps: [
+      { name: "UAE Pro League", windows: [ { ko: "12:45 UK", picks: [
+        { n: 1, fx: "Al Wasl v Hatta", mk: "Home Win", odds: "1.13" } ] }, { ko: "15:25 UK", picks: [
+        { n: 2, fx: "Al Ain v Al Dhafra", mk: "Home Win", odds: "1.14" } ] } ] },
+      { name: "Algeria Ligue 1", windows: [ { ko: "16:45 UK", picks: [
+        { n: 3, fx: "MC Alger v Olympique Akbou", mk: "Home Win", odds: "1.40" } ] } ] },
+      { name: "Women's Champions League", windows: [ { ko: "17:45 UK", picks: [
+        { n: 4, fx: "Paris FC v HB Køge", mk: "Over 1.5 Goals", odds: "1.15" },
+        { n: 5, fx: "Austria Wien v Bayern Munich", mk: "Over 2.5 Goals", odds: "1.25" } ] } ] },
+      { name: "Uruguay Primera", windows: [ { ko: "19:30 UK", picks: [
+        { n: 6, fx: "Peñarol v Cerro Largo", mk: "Under 3.5 Goals", odds: "1.27" } ] } ] },
+      { name: "Brazil Série A", windows: [ { ko: "22:30 UK", picks: [
+        { n: 7, fx: "Vasco da Gama v Internacional", mk: "Under 3.5 Goals", odds: "1.41" } ] } ] }
+    ],
+    passes: "No Mega today: after the 7 Slate fixtures, what's left (lower African leagues, Jordan and Egypt cup ties, Australian second tier) isn't 12 legs at 1.45+ worth backing, and the one-fixture-per-slip rule stops reuse. Passed: Peñarol and Vasco home wins (Peñarol haven't won in 46 days; Vasco v Internacional is a nervy relegation-zone game), so both are Under 3.5 instead. La Guaira v Anzoátegui (only the 1X2 market is offered), Persib v Shan United (1.07, no value), Al Mokawloon (playing away from their usual ground), Real Cartagena (00:45 UK, after this slate's audit window), UPPC v Kataka (venue unclear). Al Wasl Home & Over 1.5 adds only +0.03 over the straight win, so the value rule takes the Home Win. No Arsenal fixtures were considered.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Al Wasl v Hatta: Home Win", "1.13"],
+        ["Al Ain v Al Dhafra: Home Win", "1.14"],
+        ["Paris FC v HB Køge: Over 1.5", "1.15"],
+        ["Austria Wien v Bayern: Over 2.5", "1.25"]
+      ], total: "1.85" },
+      { name: "Home & Under treble", legs: [
+        ["MC Alger v Akbou: Home Win", "1.40"],
+        ["Peñarol v Cerro Largo: Under 3.5", "1.27"],
+        ["Vasco v Internacional: Under 3.5", "1.41"]
+      ], total: "2.51" }
+    ],
+    acca: { code: "LFM4A6", legs: 7, odds: "4.64", booked: "01:18 UK" },
+    results: null,
+    audit: null
+  },
+  {
     date: "2026-11-18",
     label: "Wednesday 18 November 2026",
     built: "Rebuilt 12:05 UK",
