@@ -9,11 +9,15 @@ async (page) => {
   const bar = page.getByText(/\d+ folds|\d+\s*Betslip|Single/).first();
   const closeDlg = async () => { await page.getByRole('button', { name: 'Close' }).click({ timeout: 1500 }).catch(() => {}); };
   await closeDlg();
-  if (await page.getByText(/\d+ folds/).first().isVisible().catch(() => false) || await page.getByText('Remove All').isVisible().catch(() => false)) {
-    if (!(await page.getByText('Remove All').isVisible().catch(() => false))) { await page.getByText(/\d+ folds/).first().click(); await page.waitForTimeout(1000); }
+  // Always try to clear: open the slip if a bar is showing, then Remove All + OK. Repeat until no bar remains.
+  for (let k = 0; k < 3; k++) {
+    const hasBar = await page.evaluate(() => [...document.querySelectorAll('div')].some(d => /^\d+\s*Betslip/.test(d.innerText.trim())));
+    if (!hasBar && !(await page.getByText('Remove All').isVisible().catch(() => false))) break;
+    if (!(await page.getByText('Remove All').isVisible().catch(() => false))) { await page.getByText(/Betslip/).first().click().catch(() => {}); await page.waitForTimeout(1000); }
     await closeDlg();
-    await page.locator('text=Remove All').click({ timeout: 5000 }); await page.waitForTimeout(600);
-    await page.getByRole('button', { name: 'OK' }).click({ timeout: 5000 }); await page.waitForTimeout(1200);
+    await page.locator('text=Remove All').click({ timeout: 5000 }).catch(() => {}); await page.waitForTimeout(600);
+    await page.getByRole('button', { name: 'OK' }).click({ timeout: 5000 }).catch(() => {}); await page.waitForTimeout(1200);
+    await page.goto('https://www.football.com/ng/m'); await page.waitForTimeout(2000); await closeDlg();
   }
   for (const p of PICKS) {
     await page.goto(base + p.id);
@@ -29,7 +33,7 @@ async (page) => {
       if (!/\d\.\d\d/.test(blk().innerText)) { hp.click(); await sleep(1000); }
       const b = blk(); let el;
       if (p.grid) { const rp = [...b.querySelectorAll('p')].find(x => x.textContent.trim() === 'Home'); el = rp?.parentElement.children[1]?.children[1]; }
-      else if (p.row) { const rp = [...b.querySelectorAll('p')].find(x => x.textContent.trim() === p.row); el = rp?.parentElement.parentElement.children[1]?.children[0]; }
+      else if (p.row) { const rp = [...b.querySelectorAll('p')].find(x => x.textContent.trim() === p.row); el = rp?.parentElement.parentElement.children[1]?.children[p.col||0]; }
       else { const c = [...b.querySelectorAll('div')].filter(d => new RegExp('^' + p.label + '\\s+\\d+\\.\\d+$').test(d.innerText.trim())); c.sort((a, z) => a.querySelectorAll('*').length - z.querySelectorAll('*').length); el = c[0]; }
       if (!el) return 'ERR no outcome';
       el.scrollIntoView({ block: 'center' }); el.click(); await sleep(900);
