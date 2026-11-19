@@ -38,7 +38,30 @@ window.SLATES = [
     ],
     acca: { code: "LFM4A6", legs: 7, odds: "4.64", booked: "01:18 UK" },
     results: null,
-    audit: null
+    audit: {
+      of: "Wednesday 18 November 2026",
+      note: "Settled on 90-minute results, as the bookmaker does (extra time and penalties don't count). Tabor Sežana v Fužinar was called off because of fog, so that leg is void and the slip pays on the other six. Coton Sport's 1–0 is confirmed by one source only.",
+      picks: [
+        { fx: "Coton Sport v Stade Renard", mk: "Home Win", odds: "1.25", score: "1–0", status: "won", src: "https://www.365scores.com/pl/football/match/premier-division-5621/coton-sport-garoua-stade-renard-10480-46997-5621", srcName: "365Scores" },
+        { fx: "Tabor Sežana v Fužinar", mk: "Home Win", odds: "1.25", score: "postponed (fog)", status: "void", src: "https://planetnogomet.si/novice/tabor-fuzinar-pokal-odpoved-megla/", srcName: "PlanetNogomet" },
+        { fx: "NK Rače v Radomlje", mk: "Over 1.5 Goals", odds: "1.22", score: "1–2", status: "won", src: "https://siol.net/sportal/nogomet/pokal-pivovarne-union-osmina-finala-706586", srcName: "Siol" },
+        { fx: "Alcoyano v Mallorca", mk: "Under 3.5 Goals", odds: "1.34", score: "1–1 (90'), 1–3 AET", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401928505/mallorca-alcoyano", srcName: "ESPN" },
+        { fx: "Carabobo v Zamora", mk: "Double Chance 1X", odds: "1.15", score: "0–0 (90'), won on pens", status: "won", src: "https://www.elnacional.com/2026/11/carabobo-supera-a-zamora-en-los-penales-y-avanza-a-las-semifinales-de-a-copa-venezuela/", srcName: "El Nacional" },
+        { fx: "Clube do Remo v Chapecoense", mk: "Home Win", odds: "1.46", score: "2–0", status: "won", src: "https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-a/remo-bate-chapecoense-e-mantem-chances-evitar-queda-no-brasileiro/", srcName: "Gazeta Esportiva" },
+        { fx: "Flamengo v Atlético Paranaense", mk: "Home Win", odds: "1.20", score: "2–1", status: "won", src: "https://www.metropoles.com/esportes/flamengo-vence-athletico-pr-no-maracana-e-segue-na-lideranca-do-brasileirao", srcName: "Metrópoles" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg (Tabor leg void)", total: "2.16", landed: true },
+        { name: "Value treble", total: "2.39", landed: true },
+        { name: "Full accumulator K2H1J1 (pays ~4.12 with the void leg)", total: "5.15", landed: true },
+        { name: "Reference: earlier code XMLSXF (lost on Carabobo Home Win, 0–0)", total: "6.71", landed: false }
+      ],
+      lessons: [
+        "The rerun earned its keep: switching Carabobo from Home Win to 1X saved the slip, because the single-leg cup tie was 0–0 after 90 minutes before penalties.",
+        "In single-leg cup ties, 1X (and Under lines) settle on the 90 minutes, so they protect against the draw-then-penalties result that kills a Home Win.",
+        "Weather can void a leg (fog in Slovenia). A void leg doesn't sink the slip; the bookmaker just removes it and recalculates the odds."
+      ]
+    }
   },
   {
     date: "2026-11-18",
@@ -74,7 +97,16 @@ window.SLATES = [
     ],
     acca: { code: "K2H1J1", legs: 7, odds: "5.15", booked: "12:03 UK", note: "Rebuilt at 12:05 UK on an upgraded model. The earlier code XMLSXF is still shown below for reference. Changes: Alcoyano v Mallorca changed from Over 1.5 to Under 3.5, and Carabobo v Zamora from Home Win to 1X. Use K2H1J1." },
     earlier: {
-      code: "XMLSXF", odds: "6.71", booked: "11:42 UK", results: null,
+      code: "XMLSXF", odds: "6.71", booked: "11:42 UK",
+      results: [
+        { status: "won", score: "1–0", src: "https://www.365scores.com/pl/football/match/premier-division-5621/coton-sport-garoua-stade-renard-10480-46997-5621", srcName: "365Scores" },
+        { status: "void", score: "postponed (fog)", src: "https://planetnogomet.si/novice/tabor-fuzinar-pokal-odpoved-megla/", srcName: "PlanetNogomet" },
+        { status: "won", score: "1–2", src: "https://siol.net/sportal/nogomet/pokal-pivovarne-union-osmina-finala-706586", srcName: "Siol" },
+        { status: "won", score: "1–1 (90'), 1–3 AET", src: "https://www.espn.com/soccer/match/_/gameId/401928505/mallorca-alcoyano", srcName: "ESPN" },
+        { status: "lost", score: "0–0 (90'), won on pens", src: "https://www.elnacional.com/2026/11/carabobo-supera-a-zamora-en-los-penales-y-avanza-a-las-semifinales-de-a-copa-venezuela/", srcName: "El Nacional" },
+        { status: "won", score: "2–0", src: "https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-a/remo-bate-chapecoense-e-mantem-chances-evitar-queda-no-brasileiro/", srcName: "Gazeta Esportiva" },
+        { status: "won", score: "2–1", src: "https://www.metropoles.com/esportes/flamengo-vence-athletico-pr-no-maracana-e-segue-na-lideranca-do-brasileirao", srcName: "Metrópoles" }
+      ],
       note: "The first build, before the 12:05 rebuild. Kept so you can compare the two.",
       picks: [
         { fx: "Coton Sport v Stade Renard", ko: "14:00", mk: "Home Win", odds: "1.25" },
@@ -86,7 +118,16 @@ window.SLATES = [
         { fx: "Flamengo v Atlético Paranaense", ko: "23:30", mk: "Home Win", odds: "1.21" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "won", score: "1–0", src: "https://www.365scores.com/pl/football/match/premier-division-5621/coton-sport-garoua-stade-renard-10480-46997-5621", srcName: "365Scores" },
+      2: { status: "void", score: "postponed (fog)", src: "https://planetnogomet.si/novice/tabor-fuzinar-pokal-odpoved-megla/", srcName: "PlanetNogomet" },
+      3: { status: "won", score: "1–2", src: "https://siol.net/sportal/nogomet/pokal-pivovarne-union-osmina-finala-706586", srcName: "Siol" },
+      4: { status: "won", score: "1–1 (90'), 1–3 AET", src: "https://www.espn.com/soccer/match/_/gameId/401928505/mallorca-alcoyano", srcName: "ESPN" },
+      5: { status: "won", score: "0–0 (90'), won on pens", src: "https://www.elnacional.com/2026/11/carabobo-supera-a-zamora-en-los-penales-y-avanza-a-las-semifinales-de-a-copa-venezuela/", srcName: "El Nacional" },
+      6: { status: "won", score: "2–0", src: "https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-a/remo-bate-chapecoense-e-mantem-chances-evitar-queda-no-brasileiro/", srcName: "Gazeta Esportiva" },
+      7: { status: "won", score: "2–1", src: "https://www.metropoles.com/esportes/flamengo-vence-athletico-pr-no-maracana-e-segue-na-lideranca-do-brasileirao", srcName: "Metrópoles" }
+    },
+    settled: "Settled 02:45 UK: K2H1J1 LANDED. 6 picks won, 0 lost, 1 void (Tabor Sežana v Fužinar was postponed because of fog, so that leg is voided and the accumulator pays at about 4.12 instead of 5.15). Both tickets landed too. The rerun did better: the morning code XMLSXF would have LOST, because Carabobo v Zamora finished 0–0 after 90 minutes (Carabobo went through on penalties), which beats 1X but not Home Win. The Alcoyano swap made no difference: it was 1–1 after 90 minutes, so both Over 1.5 and Under 3.5 won.",
     audit: {
       of: "Tuesday 17 November 2026",
       note: "Each result has at least one reliable source; one is linked below.",

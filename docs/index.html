@@ -83,7 +83,7 @@ a { color: var(--main); }
 .pill { font: 700 11px var(--font-data); letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; white-space: nowrap; }
 .pill.won, .pill.landed { color: var(--win); background: var(--win-soft); }
 .pill.lost { color: var(--loss); background: var(--loss-soft); }
-.pill.pending, .pill.unverified { color: var(--pend); background: var(--panel-2); }
+.pill.pending, .pill.unverified, .pill.void { color: var(--pend); background: var(--panel-2); }
 
 /* Record */
 .record { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
@@ -171,7 +171,7 @@ function record() {
     if (sl.results && !auditedOf.has(sl.label)) {
       const rs = Object.values(sl.results);
       rs.forEach(r => { if (r.status === "won") won++; else if (r.status === "lost") lost++; });
-      if (sl.acca && rs.length === allPicks(sl).length && rs.every(r => r.status !== "unverified")) { accN++; if (rs.every(r => r.status === "won")) accW++; }
+      if (sl.acca && rs.length === allPicks(sl).length && rs.every(r => r.status !== "unverified")) { accN++; if (rs.every(r => r.status === "won" || r.status === "void")) accW++; }
     }
     if (sl.mega && sl.mega.landed !== null && sl.mega.landed !== undefined) { megaN++; if (sl.mega.landed) megaW++; }
   });
@@ -200,7 +200,7 @@ function codesBlock(sl) {
     const rs = sl.results ? Object.values(sl.results) : [];
     const n = allPicks(sl).length;
     let st = "pending";
-    if (rs.some(r => r.status === "lost")) st = "lost"; else if (rs.length === n && rs.every(r => r.status === "won")) st = "landed";
+    if (rs.some(r => r.status === "lost")) st = "lost"; else if (rs.length === n && rs.every(r => r.status === "won" || r.status === "void")) st = "landed";
     cards.push(`<div class="code-card main">
       <div class="code-head"><span class="code-label">Main accumulator</span>${statusPill(st)}</div>
       <div class="code-row"><span class="code">${esc(sl.acca.code)}</span>${copyBtn(sl.acca.code)}</div>
@@ -219,7 +219,7 @@ function codesBlock(sl) {
   if (sl.earlier) {
     const e = sl.earlier, rs = e.results || [];
     let st = "pending";
-    if (rs.some(r => r && r.status === "lost")) st = "lost"; else if (rs.length === e.picks.length && rs.every(r => r && r.status === "won")) st = "landed";
+    if (rs.some(r => r && r.status === "lost")) st = "lost"; else if (rs.length === e.picks.length && rs.every(r => r && (r.status === "won" || r.status === "void"))) st = "landed";
     cards.push(`<div class="code-card prev">
       <div class="code-head"><span class="code-label">Earlier version · reference only</span>${statusPill(st)}</div>
       <div class="code-row"><span class="code">${esc(e.code)}</span>${copyBtn(e.code)}</div>
