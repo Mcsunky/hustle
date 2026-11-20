@@ -5,6 +5,86 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-20",
+    label: "Friday 20 November 2026",
+    built: "Built 01:40 UK",
+    comps: [
+      { name: "Iran Pro League", windows: [ { ko: "12:45 UK", picks: [
+        { n: 1, fx: "Persepolis v Paykan", mk: "Home Win", odds: "1.20" } ] } ] },
+      { name: "Qatar Stars League", windows: [ { ko: "13:00 UK", picks: [
+        { n: 2, fx: "Al Sadd v Lusail", mk: "Home Win", odds: "1.28" } ] } ] },
+      { name: "Saudi Pro League", windows: [ { ko: "17:30 UK", picks: [
+        { n: 3, fx: "Al Ahli v Al Nassr", mk: "Over 1.5 Goals", odds: "1.14" } ] } ] },
+      { name: "Swiss Challenge League", windows: [ { ko: "18:30 UK", picks: [
+        { n: 4, fx: "Stade Lausanne-Ouchy v Kriens", mk: "Home Win", odds: "1.45" } ] } ] },
+      { name: "Eliteserien", windows: [ { ko: "18:00 UK", picks: [
+        { n: 5, fx: "Molde v Bodø/Glimt", mk: "Over 2.5 Goals", odds: "1.26" } ] } ] },
+      { name: "Eerste Divisie", windows: [ { ko: "18:00/19:00 UK", picks: [
+        { n: 6, fx: "Heracles v Jong PSV", mk: "Home Win", odds: "1.17" } ] } ] },
+      { name: "Bundesliga", windows: [ { ko: "19:30 UK", picks: [
+        { n: 7, fx: "Bayern Munich v Cologne", mk: "Over 2.5 Goals", odds: "1.13" } ] } ] },
+      { name: "LaLiga", windows: [ { ko: "20:00 UK", picks: [
+        { n: 8, fx: "Athletic Bilbao v Espanyol", mk: "Over 7.5 Corners", odds: "1.26" } ] } ] }
+    ],
+    passes: "Porto v Paredes (Porto rotate before Feyenoord, and Paredes knocked out a top-flight side 1–0), Shakhtar (won 2 of 6, Fenerbahçe next week), Troyes v Le Havre (relegation scrap; in the Mega as Under 2.5), Independiente del Valle (already champions, likely mixed side), AGF (3 wins all season), Inverness v Ayr (they meet again Tuesday). Athletic v Espanyol is played as Over 7.5 corners rather than a Home Win: Athletic are missing three strikers, and Espanyol sit deep (5 goals in 8). No Arsenal fixtures were considered.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Bayern v Cologne: Over 2.5", "1.13"],
+        ["Al Ahli v Al Nassr: Over 1.5", "1.14"],
+        ["Heracles v Jong PSV: Home Win", "1.17"],
+        ["Persepolis v Paykan: Home Win", "1.20"]
+      ], total: "1.81" },
+      { name: "Value 4-leg", legs: [
+        ["Stade Lausanne-Ouchy v Kriens: Home Win", "1.45"],
+        ["Al Sadd v Lusail: Home Win", "1.28"],
+        ["Molde v Bodø/Glimt: Over 2.5", "1.26"],
+        ["Athletic v Espanyol: Over 7.5 corners", "1.26"]
+      ], total: "2.95" }
+    ],
+    acca: { code: "L8WJ70", legs: 8, odds: "5.33", booked: "01:30 UK" },
+    mega: {
+      code: "UPVZ10", odds: "247.57", booked: "01:38 UK", results: null, landed: null,
+      legs: [
+        { fx: "Kashima Antlers v Shimizu", comp: "J1 League", ko: "10:00", mk: "Home Win", odds: "1.51" },
+        { fx: "Kashiwa Reysol v JEF United", comp: "J1 League", ko: "10:00", mk: "Home Win", odds: "1.53" },
+        { fx: "Vissel Kobe v Mito Hollyhock", comp: "J1 League", ko: "10:00", mk: "Home Win & Over 1.5 Goals", odds: "1.63" },
+        { fx: "Dewa United v Persita", comp: "Indonesia Super League", ko: "12:00", mk: "Home Win", odds: "1.58" },
+        { fx: "Shabab Al Ahli v Ajman", comp: "UAE Pro League", ko: "15:25", mk: "Home Win", odds: "1.44" },
+        { fx: "Al Duhail v Qatar SC", comp: "Qatar Stars League", ko: "15:30", mk: "Home Win", odds: "1.35" },
+        { fx: "Karviná v Baník Ostrava B", comp: "Czech FNL", ko: "17:00", mk: "Home Win", odds: "1.49" },
+        { fx: "Azam v Singida Black Stars", comp: "Tanzania Premier League", ko: "18:00", mk: "Home Win", odds: "1.63" },
+        { fx: "Hellas Verona v Cesena", comp: "Serie B", ko: "19:30", mk: "Home Win", odds: "1.67" },
+        { fx: "Pogoń Szczecin v Śląsk Wrocław", comp: "Ekstraklasa", ko: "19:30", mk: "Home Win", odds: "1.81" },
+        { fx: "Penybont v Haverfordwest", comp: "Cymru Premier", ko: "19:45", mk: "Home Win", odds: "1.48" },
+        { fx: "Troyes v Le Havre", comp: "Ligue 1", ko: "19:45", mk: "Under 2.5 Goals", odds: "1.97" }
+      ]
+    },
+    results: null,
+    audit: {
+      of: "Thursday 19 November 2026",
+      note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below.",
+      picks: [
+        { fx: "Al Wasl v Hatta", mk: "Home Win", odds: "1.13", score: "2–1", status: "won", src: "https://sharjah24.ae/en/Articles/2026/11/19/Al-Wasl-defeats-Hatta-2-1-in-ADNOC-Pro-League", srcName: "Sharjah24" },
+        { fx: "Al Ain v Al Dhafra", mk: "Home Win", odds: "1.14", score: "2–1", status: "won", src: "https://sharjah24.ae/en/Articles/2026/11/19/AL027", srcName: "Sharjah24" },
+        { fx: "MC Alger v Olympique Akbou", mk: "Home Win", odds: "1.40", score: "0–1", status: "lost", src: "https://algeriebrevesnews.dz/ligue-1-mobilis-chute-du-mca-et-du-crb/", srcName: "Algérie Brèves" },
+        { fx: "Paris FC v HB Køge (W)", mk: "Over 1.5 Goals", odds: "1.15", score: "2–1", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401916977", srcName: "ESPN" },
+        { fx: "Austria Wien v Bayern Munich (W)", mk: "Over 2.5 Goals", odds: "1.25", score: "0–4", status: "won", src: "https://fcbayern.com/frauen/en/news/match-reports/2026/11/match-report-austria-vienna-vs.-fc-bayern-women", srcName: "FC Bayern" },
+        { fx: "Peñarol v Cerro Largo", mk: "Under 3.5 Goals", odds: "1.27", score: "3–0", status: "won", src: "https://www.elobservador.com.uy/futbol/penarol-vs-cerro-largo-la-fecha-15-del-torneo-clausura-la-liga-auf-uruguaya-2026-n6064465", srcName: "El Observador" },
+        { fx: "Vasco da Gama v Internacional", mk: "Under 3.5 Goals", odds: "1.41", score: "2–1", status: "won", src: "https://www.vavel.com/br/futebol/2026/11/19/1279712-vasco-x-sc-internacional-ao-vivo-brasileirao-serie-a.html", srcName: "VAVEL" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.85", landed: true },
+        { name: "Home & Under treble", total: "2.51", landed: false },
+        { name: "Full accumulator LFM4A6", total: "4.64", landed: false }
+      ],
+      lessons: [
+        "MC Alger lost 0–1 at home, their first home defeat of the season. A perfect home record isn't a guarantee, especially straight after a team's first loss of the season.",
+        "Both Under 3.5 picks won (Peñarol 3–0, Vasco 2–1). The new market keeps paying in cagey, high-stakes games.",
+        "Elite women's sides against weaker teams went 2 for 2 again (Paris FC 2–1, Bayern 4–0)."
+      ]
+    }
+  },
+  {
     date: "2026-11-19",
     label: "Thursday 19 November 2026",
     built: "Built 01:20 UK",
@@ -37,7 +117,16 @@ window.SLATES = [
       ], total: "2.51" }
     ],
     acca: { code: "LFM4A6", legs: 7, odds: "4.64", booked: "01:18 UK" },
-    results: null,
+    results: {
+      1: { status: "won", score: "2–1", src: "https://sharjah24.ae/en/Articles/2026/11/19/Al-Wasl-defeats-Hatta-2-1-in-ADNOC-Pro-League", srcName: "Sharjah24" },
+      2: { status: "won", score: "2–1", src: "https://sharjah24.ae/en/Articles/2026/11/19/AL027", srcName: "Sharjah24" },
+      3: { status: "lost", score: "0–1", src: "https://algeriebrevesnews.dz/ligue-1-mobilis-chute-du-mca-et-du-crb/", srcName: "Algérie Brèves" },
+      4: { status: "won", score: "2–1", src: "https://www.espn.com/soccer/match/_/gameId/401916977", srcName: "ESPN" },
+      5: { status: "won", score: "0–4", src: "https://fcbayern.com/frauen/en/news/match-reports/2026/11/match-report-austria-vienna-vs.-fc-bayern-women", srcName: "FC Bayern" },
+      6: { status: "won", score: "3–0", src: "https://www.elobservador.com.uy/futbol/penarol-vs-cerro-largo-la-fecha-15-del-torneo-clausura-la-liga-auf-uruguaya-2026-n6064465", srcName: "El Observador" },
+      7: { status: "won", score: "2–1", src: "https://www.vavel.com/br/futebol/2026/11/19/1279712-vasco-x-sc-internacional-ao-vivo-brasileirao-serie-a.html", srcName: "VAVEL" }
+    },
+    settled: "Settled 01:20 UK (20 Nov): 7 picks, 6 won, 1 lost (86%). Accumulator LFM4A6 lost on MC Alger, who were beaten 0–1 at home by Akbou (their first home defeat of the season). The Safest 4-leg landed. The Home & Under treble lost on the same MC Alger leg. Both Under 3.5 picks won (Peñarol 3–0, Vasco 2–1).",
     audit: {
       of: "Wednesday 18 November 2026",
       note: "Settled on 90-minute results, as the bookmaker does (extra time and penalties don't count). Tabor Sežana v Fužinar was called off because of fog, so that leg is void and the slip pays on the other six. Coton Sport's 1–0 is confirmed by one source only.",
