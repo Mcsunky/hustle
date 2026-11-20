@@ -43,21 +43,47 @@ window.SLATES = [
     ],
     acca: { code: "L8WJ70", legs: 8, odds: "5.33", booked: "01:30 UK" },
     mega: {
-      code: "UPVZ10", odds: "247.57", booked: "01:38 UK", results: null, landed: null,
+      code: "XCFA1A", odds: "351.82", booked: "15:05 UK", results: null, landed: null,
+      note: "Rebuilt at 15:05 UK with a market mix (4 home wins, 3 Over 2.5, 3 GG, 2 second-half goals, 1 Under 2.5), per the user's rule. Use this code.",
       legs: [
-        { fx: "Kashima Antlers v Shimizu", comp: "J1 League", ko: "10:00", mk: "Home Win", odds: "1.51" },
-        { fx: "Kashiwa Reysol v JEF United", comp: "J1 League", ko: "10:00", mk: "Home Win", odds: "1.53" },
-        { fx: "Vissel Kobe v Mito Hollyhock", comp: "J1 League", ko: "10:00", mk: "Home Win & Over 1.5 Goals", odds: "1.63" },
-        { fx: "Dewa United v Persita", comp: "Indonesia Super League", ko: "12:00", mk: "Home Win", odds: "1.58" },
-        { fx: "Shabab Al Ahli v Ajman", comp: "UAE Pro League", ko: "15:25", mk: "Home Win", odds: "1.44" },
-        { fx: "Al Duhail v Qatar SC", comp: "Qatar Stars League", ko: "15:30", mk: "Home Win", odds: "1.35" },
-        { fx: "Karviná v Baník Ostrava B", comp: "Czech FNL", ko: "17:00", mk: "Home Win", odds: "1.49" },
-        { fx: "Azam v Singida Black Stars", comp: "Tanzania Premier League", ko: "18:00", mk: "Home Win", odds: "1.63" },
-        { fx: "Hellas Verona v Cesena", comp: "Serie B", ko: "19:30", mk: "Home Win", odds: "1.67" },
-        { fx: "Pogoń Szczecin v Śląsk Wrocław", comp: "Ekstraklasa", ko: "19:30", mk: "Home Win", odds: "1.81" },
-        { fx: "Penybont v Haverfordwest", comp: "Cymru Premier", ko: "19:45", mk: "Home Win", odds: "1.48" },
-        { fx: "Troyes v Le Havre", comp: "Ligue 1", ko: "19:45", mk: "Under 2.5 Goals", odds: "1.97" }
-      ]
+        { fx: "Shabab Al Ahli v Ajman", comp: "UAE Pro League", ko: "15:25", mk: "Home Win", odds: "1.53" },
+        { fx: "Shakhtar Donetsk v Livyi Bereh", comp: "Ukrainian Premier League", ko: "16:00", mk: "Over 2.5 Goals", odds: "1.63" },
+        { fx: "Karviná v Baník Ostrava B", comp: "Czech FNL", ko: "17:00", mk: "Both Teams to Score (GG)", odds: "1.51" },
+        { fx: "Azam v Singida Black Stars", comp: "Tanzania Premier League", ko: "18:00", mk: "Home Win", odds: "1.50" },
+        { fx: "AGF v Lyngby", comp: "Danish Superliga", ko: "18:00", mk: "Over 2.5 Goals", odds: "1.54" },
+        { fx: "Hellas Verona v Cesena", comp: "Serie B", ko: "19:30", mk: "Home Win", odds: "1.62" },
+        { fx: "Pogoń Szczecin v Śląsk Wrocław", comp: "Ekstraklasa", ko: "19:30", mk: "Both Teams to Score (GG)", odds: "1.70" },
+        { fx: "Penybont v Haverfordwest", comp: "Cymru Premier", ko: "19:45", mk: "Home Win", odds: "1.52" },
+        { fx: "Troyes v Le Havre", comp: "Ligue 1", ko: "19:45", mk: "Under 2.5 Goals", odds: "1.95" },
+        { fx: "Porto v Paredes", comp: "Taça de Portugal", ko: "20:45", mk: "2nd Half Over 1.5 Goals", odds: "1.56" },
+        { fx: "FC Volendam v Jong Ajax", comp: "Eerste Divisie", ko: "19:00", mk: "2nd Half Over 1.5 Goals", odds: "1.46" },
+        { fx: "Vitesse v Jong AZ", comp: "Eerste Divisie", ko: "19:00", mk: "Both Teams to Score (GG)", odds: "1.46" },
+        { fx: "Barnsley v Sheffield Wednesday", comp: "League One", ko: "20:00", mk: "Over 2.5 Goals", odds: "1.49" }
+      ],
+      prev: {
+        code: "UPVZ10", odds: "247.57", booked: "01:38 UK", landed: false,
+        note: "Original 01:38 Mega: almost all home wins. Already lost: the first four legs (J1 and Indonesia) failed before the rebuild. Kept for reference only.",
+        results: [
+          { status: "lost", score: "1–1", src: "https://www.espn.co.uk/football/team-stats/_/gameId/401877534", srcName: "ESPN" },
+          { status: "lost", score: "0–1", src: "https://www.espn.co.uk/football/match/_/gameId/401877553", srcName: "ESPN" },
+          { status: "lost", score: "1–2", src: "https://www.espn.co.uk/football/match/_/gameId/401877548", srcName: "ESPN" },
+          { status: "lost", score: "0–1", src: "https://bola.okezone.com/read/2026/11/20/49/3255252/hasil-dewa-united-vs-persita-tangerang-di-super-league-2026-2027-pendekar-cisadane-menangi-derby-1-0", srcName: "Okezone" }
+        ],
+        legs: [
+          { fx: "Kashima Antlers v Shimizu", comp: "J1 League", ko: "10:00", mk: "Home Win", odds: "1.51" },
+          { fx: "Kashiwa Reysol v JEF United", comp: "J1 League", ko: "10:00", mk: "Home Win", odds: "1.53" },
+          { fx: "Vissel Kobe v Mito Hollyhock", comp: "J1 League", ko: "10:00", mk: "Home Win & Over 1.5 Goals", odds: "1.63" },
+          { fx: "Dewa United v Persita", comp: "Indonesia Super League", ko: "12:00", mk: "Home Win", odds: "1.58" },
+          { fx: "Shabab Al Ahli v Ajman", comp: "UAE Pro League", ko: "15:25", mk: "Home Win", odds: "1.44" },
+          { fx: "Al Duhail v Qatar SC", comp: "Qatar Stars League", ko: "15:30", mk: "Home Win", odds: "1.35" },
+          { fx: "Karviná v Baník Ostrava B", comp: "Czech FNL", ko: "17:00", mk: "Home Win", odds: "1.49" },
+          { fx: "Azam v Singida Black Stars", comp: "Tanzania Premier League", ko: "18:00", mk: "Home Win", odds: "1.63" },
+          { fx: "Hellas Verona v Cesena", comp: "Serie B", ko: "19:30", mk: "Home Win", odds: "1.67" },
+          { fx: "Pogoń Szczecin v Śląsk Wrocław", comp: "Ekstraklasa", ko: "19:30", mk: "Home Win", odds: "1.81" },
+          { fx: "Penybont v Haverfordwest", comp: "Cymru Premier", ko: "19:45", mk: "Home Win", odds: "1.48" },
+          { fx: "Troyes v Le Havre", comp: "Ligue 1", ko: "19:45", mk: "Under 2.5 Goals", odds: "1.97" }
+        ]
+      }
     },
     results: null,
     audit: {

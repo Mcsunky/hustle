@@ -214,6 +214,13 @@ function codesBlock(sl) {
       <div class="code-head"><span class="code-label">Mega accumulator · long shot</span>${statusPill(st)}</div>
       <div class="code-row"><span class="code">${esc(sl.mega.code)}</span>${copyBtn(sl.mega.code)}</div>
       <div class="code-meta"><span><b>${sl.mega.legs.length}</b> legs</span><span>odds <b>${esc(sl.mega.odds)}</b></span><span>booked ${esc(sl.mega.booked)}</span></div>
+      ${sl.mega.note ? `<p class="code-note">${esc(sl.mega.note)}</p>` : ""}
+    </div>`);
+    const pv = sl.mega.prev;
+    if (pv) cards.push(`<div class="code-card prev">
+      <div class="code-head"><span class="code-label">Earlier Mega · reference only</span>${statusPill(pv.landed === false ? "lost" : "pending")}</div>
+      <div class="code-row"><span class="code">${esc(pv.code)}</span></div>
+      <div class="code-meta"><span><b>${pv.legs.length}</b> legs</span><span>odds <b>${esc(pv.odds)}</b></span><span>booked ${esc(pv.booked)}</span></div>
     </div>`);
   }
   if (sl.earlier) {
@@ -291,6 +298,14 @@ function megaBlock(sl) {
     <ol class="picks">${m.legs.map((l, i) => pickLi(i + 1, l.fx + " · " + l.ko, l.comp + " · " + l.mk, l.odds, m.results && m.results[i])).join("")}</ol>
   </section>`;
 }
+function megaPrevBlock(sl) {
+  const m = sl.mega && sl.mega.prev; if (!m) return "";
+  return `<section aria-labelledby="megap-h">
+    <div class="sec-head"><h2 id="megap-h">Earlier Mega</h2><span class="note">${esc(m.code)} · ${m.legs.length} legs · odds ${esc(m.odds)}</span></div>
+    <p class="passes">${esc(m.note || "")}</p>
+    <ol class="picks">${m.legs.map((l, i) => pickLi(i + 1, l.fx + " · " + l.ko, l.comp + " · " + l.mk, l.odds, m.results && m.results[i])).join("")}</ol>
+  </section>`;
+}
 
 function auditBlock(a) {
   if (!a) return "";
@@ -317,7 +332,7 @@ function show(date) {
   $("#days").innerHTML = SLATES.map(s => `<button type="button" data-d="${s.date}" aria-pressed="${s.date === sl.date}">${new Date(s.date + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" })}</button>`).join("");
   const body = sl.noSlate
     ? `<section aria-labelledby="slate-h"><div class="sec-head"><h2 id="slate-h">No Slate Today</h2></div><p class="settled">${esc(sl.noSlate)}</p></section>`
-    : slateBlock(sl) + ticketsBlock(sl) + megaBlock(sl) + earlierBlock(sl);
+    : slateBlock(sl) + ticketsBlock(sl) + megaBlock(sl) + megaPrevBlock(sl) + earlierBlock(sl);
   $("#app").innerHTML = codesBlock(sl) + recordBlock() + body + auditBlock(sl.audit);
   document.querySelectorAll("#days button").forEach(b => b.onclick = () => { location.hash = "d" + b.dataset.d; });
   document.querySelectorAll(".copy").forEach(b => b.onclick = () => {
