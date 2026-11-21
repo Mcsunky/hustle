@@ -13,12 +13,20 @@ window.SLATES = [
         { n: 2, fx: "Galatasaray v Samsunspor", mk: "Home Win", odds: "1.25" } ] } ] },
       { name: "Serbian SuperLiga", windows: [ { ko: "13:00 UK", picks: [
         { n: 3, fx: "Crvena Zvezda v Radnik Surdulica", mk: "Home Win", odds: "1.14" } ] } ] },
+      { name: "Serie A", windows: [ { ko: "14:00 UK", picks: [
+        { n: 9, fx: "Como v Cagliari", mk: "Home Win", odds: "1.32" } ] } ] },
       { name: "Bundesliga", windows: [ { ko: "14:30 UK", picks: [
         { n: 4, fx: "Eintracht Frankfurt v Hoffenheim", mk: "Over 2.5 Goals", odds: "1.34" } ] } ] },
       { name: "Scottish Premiership", windows: [ { ko: "15:00 UK", picks: [
         { n: 1, fx: "Celtic v St Mirren", mk: "Home Win", odds: "1.18" } ] } ] },
       { name: "NIFL Premiership", windows: [ { ko: "15:00 UK", picks: [
         { n: 5, fx: "Linfield v Limavady United", mk: "Home Win", odds: "1.12" } ] } ] },
+      { name: "Scottish League One", windows: [ { ko: "15:00 UK", picks: [
+        { n: 10, fx: "Ross County v Cove Rangers", mk: "Home Win", odds: "1.19" } ] } ] },
+      { name: "Championship", windows: [ { ko: "15:00 UK", picks: [
+        { n: 11, fx: "West Ham v Preston", mk: "Home Win", odds: "1.25" } ] } ] },
+      { name: "Eredivisie", windows: [ { ko: "15:30 UK", picks: [
+        { n: 12, fx: "NEC Nijmegen v PSV", mk: "2nd Half Over 0.5 Goals", odds: "1.10" } ] } ] },
       { name: "Swiss Super League", windows: [ { ko: "17:00 UK", picks: [
         { n: 6, fx: "Young Boys v Thun", mk: "Home Win", odds: "1.41" } ] } ] },
       { name: "Eredivisie", windows: [ { ko: "17:45 UK", picks: [
@@ -26,7 +34,7 @@ window.SLATES = [
       { name: "LaLiga", windows: [ { ko: "20:00 UK", picks: [
         { n: 8, fx: "Real Madrid v Celta Vigo", mk: "Home Win", odds: "1.19" } ] } ] }
     ],
-    passes: "Bayer Leverkusen (lost their last 2 home games), Young Boys v Thun Over 2.5 (1.22 is below the new 1.30 floor for Over 2.5, so it was played as a Home Win), Schalke v Stuttgart Over 2.5 (Schalke haven't scored at home this season), Genk (both teams have new coaches on debut), Monaco (no league win in 5), Lens v Toulouse GG (six Lens players missing), Kilmarnock v Aberdeen GG (their September meeting ended 0–0), Sevilla v Betis corners (Sevilla's games average about 7 corners), and every 2nd Half Over 1.5 (dropped under the new rule). No Arsenal fixtures were considered.",
+    passes: "Bayer Leverkusen (lost their last 2 home games), Young Boys v Thun Over 2.5 (1.22 is below the new 1.30 floor for Over 2.5, so it was played as a Home Win), Schalke v Stuttgart Over 2.5 (Schalke haven't scored at home this season), Genk (both teams have new coaches on debut), Monaco (no league win in 5), Lens v Toulouse GG (six Lens players missing), Kilmarnock v Aberdeen GG (their September meeting ended 0–0), Sevilla v Betis corners (Sevilla's games average about 7 corners), LASK (Champions League at Bodø on Tuesday, so likely rotation), Alianza Lima (dead rubber for them; Cajamarca are fighting relegation), Lugano (lost 5–0 last time, two players suspended), and every 2nd Half Over 1.5 (dropped under the new rule). No Arsenal fixtures were considered.",
     tickets: [
       { name: "Safest 4-leg", legs: [
         ["Linfield v Limavady: Home Win", "1.12"],
@@ -41,7 +49,21 @@ window.SLATES = [
         ["Real Madrid v Celta Vigo: Home Win", "1.19"]
       ], total: "2.81" }
     ],
-    acca: { code: "J28V3C", legs: 8, odds: "5.04", booked: "01:55 UK" },
+    acca: { code: "NF53BM", legs: 12, odds: "10.88", booked: "02:35 UK", note: "Rebuilt to reach the new 10+ odds target for weekends: added Como, Ross County, West Ham and NEC v PSV 2nd Half Over 0.5 to the original 8 legs." },
+    earlier: {
+      code: "J28V3C", odds: "5.04", booked: "01:55 UK", results: null,
+      note: "The original 8-leg Slate, before the 10+ odds rule. Every leg is still in NF53BM. Kept for reference only.",
+      picks: [
+        { fx: "Celtic v St Mirren", ko: "15:00", mk: "Home Win", odds: "1.18" },
+        { fx: "Galatasaray v Samsunspor", ko: "13:00", mk: "Home Win", odds: "1.25" },
+        { fx: "Crvena Zvezda v Radnik Surdulica", ko: "13:00", mk: "Home Win", odds: "1.14" },
+        { fx: "Eintracht Frankfurt v Hoffenheim", ko: "14:30", mk: "Over 2.5 Goals", odds: "1.34" },
+        { fx: "Linfield v Limavady United", ko: "15:00", mk: "Home Win", odds: "1.12" },
+        { fx: "Young Boys v Thun", ko: "17:00", mk: "Home Win", odds: "1.41" },
+        { fx: "Feyenoord v Excelsior", ko: "17:45", mk: "Home Win", odds: "1.19" },
+        { fx: "Real Madrid v Celta Vigo", ko: "20:00", mk: "Home Win", odds: "1.19" }
+      ]
+    },
     mega: {
       code: "R6KC3K", odds: "247.96", booked: "02:00 UK", results: null, landed: null,
       note: "Mixed markets: 3 home wins, 4 Over 2.5, 4 GG, 1 Under 3.5 and 1 Home & Over 1.5.",
