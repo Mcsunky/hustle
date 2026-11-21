@@ -46,7 +46,24 @@ window.SLATES = [
     ],
     acca: { code: "JAE3A6", legs: 10, odds: "11.88", booked: "03:40 UK", note: "Final Slate under the new 1.20 minimum per leg: 10 legs, each played in its safest market. Replaces Z0RKUF, NF53BM and J28V3C." },
     earlier: {
-      code: "Z0RKUF", odds: "10.52", booked: "03:05 UK", results: null,
+      code: "Z0RKUF", odds: "10.52", booked: "03:05 UK", landed: false, results: [
+        { status: "won", score: "1–1 (City 8 corners)", src: "https://www.sportsmole.co.uk/football/man-city/result/man-city-frustrations-grow-as-fulham-claim-point-despite-anderson-screamer_609558.html", srcName: "Sports Mole" },
+        { status: "won", score: "2–1", src: "https://www.espn.co.uk/football/match/_/gameId/401888245", srcName: "ESPN" },
+        { status: "won", score: "2–0", src: "https://www.novosti.rs/sport/fudbal/1673381/zvezda-mucila-ali-ipak-slavila-crveno-beli-pobedli-radnik-surdulice", srcName: "Novosti" },
+        { status: "won", score: "2–0", src: "https://www.espn.co.uk/football/match/_/gameId/401875056", srcName: "ESPN" },
+        { status: "lost", score: "1–0", src: "https://www.bundesliga.com/en/bundesliga/news/eintracht-frankfurt-hoffenheim-match-report-highlights-matchday-10-burkardt-atubolu-40079", srcName: "Bundesliga" },
+        { status: "won", score: "4–0", src: "https://www.espn.co.uk/football/match/_/gameId/401884735", srcName: "ESPN" },
+        { status: "won", score: "4–1", src: "https://www.skysports.com/football/news/13610580/celtic-4-1-st-mirren-scottish-premiership-champions-ease-to-victory-against-buddies", srcName: "Sky Sports" },
+        { status: "won", score: "5–0", src: "https://www.irishnews.com/sport/soccer/blues-hit-five-in-powerful-display-after-tributes-paid-to-irish-league-legend-roy-coyle-RPGMG3VV4VDAJO6ZSV3Q3YWJWM/", srcName: "Irish News" },
+        { status: "won", score: "5–1", src: "https://www.ross-shirejournal.co.uk/sport/ross-county-thrash-cove-to-maintain-momentum-at-top-of-leagu-450755/", srcName: "Ross-shire Journal" },
+        { status: "won", score: "1–1", src: "https://www.espn.co.uk/football/team-stats/_/gameId/401880150/league/eng.2", srcName: "ESPN" },
+        { status: "won", score: "1–4 (HT 0–3)", src: "https://www.nec-nijmegen.nl/wedstrijden/wedstrijd/matchcenter-n.e.c.-psv-21-11-2026.htm", srcName: "NEC" },
+        { status: "won", score: "3–2", src: "https://www.nau.ch/sport/matchcenter/super-league-bsc-young-boys-gegen-fc-thun-berner-oberland-ab-1800-live-67205264", srcName: "nau.ch" },
+        { status: "lost", score: "2–3", src: "https://www.espn.co.uk/football/match/_/gameId/401875543", srcName: "ESPN" },
+        { status: "won", score: "1–1", src: "https://sports.yahoo.com/articles/match-report-monaco-1-1-214500104.html", srcName: "Yahoo Sports" },
+        { status: "won", score: "2–1 (RM 8 corners)", src: "https://www.espn.com/soccer/team-stats/_/gameId/401882798/league/esp.1", srcName: "ESPN" },
+        null
+      ],
       note: "16-leg version with legs as short as 1.09, replaced under the 1.20 minimum. (NF53BM and J28V3C came before it.) Kept for reference only.",
       picks: [
         { fx: "Man City v Fulham", ko: "12:30", mk: "Man City Over 4.5 Corners", odds: "1.23" },
@@ -68,7 +85,20 @@ window.SLATES = [
       ]
     },
     mid: {
-      code: "G1QZXU", odds: "18.20", booked: "03:45 UK", results: null, landed: null,
+      code: "G1QZXU", odds: "18.20", booked: "03:45 UK", landed: false,
+      results: [
+        { status: "won", score: "2–1", src: "https://www.skysports.com/football/video/13614714/norwich-city-2-1-cardiff-city-championship-highlights", srcName: "Sky Sports" },
+        { status: "won", score: "2–1", src: "https://www.wolves.co.uk/news/mens-first-team/20261121-report-wolves-2-1-charlton/", srcName: "Wolves" },
+        { status: "won", score: "2–2", src: "https://www.foxsports.com/soccer/juliper-league-charleroi-vs-sint-truiden-nov-21-2026-game-boxscore-919852", srcName: "FOX Sports" },
+        { status: "won", score: "0–0", src: "https://www.avfc.co.uk/news/2026/november/21/report-aston-villa-sunderland-26-27", srcName: "Aston Villa" },
+        { status: "lost", score: "1–4", src: "https://www.espn.com/soccer/match/_/gameId/401879236/leeds-united-chelsea", srcName: "ESPN" },
+        { status: "won", score: "2–0", src: "https://www.skysports.com/football/bournemouth-vs-nottingham-forest/report/559545", srcName: "Sky Sports" },
+        { status: "won", score: "0–1", src: "https://www.espn.com/soccer/match/_/gameId/401882799/valencia-rayo-vallecano", srcName: "ESPN" },
+        { status: "won", score: "2–2", src: "https://www.espn.co.uk/football/match/_/gameId/401888244", srcName: "ESPN" },
+        { status: "won", score: "1–5", src: "https://sporza.be/nl/matches/voetbal/jupiler-pro-league/2026-2027/regulier/12/kv-mechelen-club-brugge-blauw-zwart-statement-achter-de-kazerne-club-brugge-zet-kv-mechelen-met-1-5-opzij~1781871794249/", srcName: "Sporza" },
+        { status: "won", score: "1–3 (HT 1–2)", src: "https://www.voetbalprimeur.nl/nieuws/2161416/pastoor-effect-in-zwolle-pec-verslaat-telstar.html", srcName: "Voetbalprimeur" },
+        { status: "won", score: "1–3", src: "https://www.voetbalprimeur.nl/nieuws/2161428/heerenveen-wint-van-fc-groningen-in-derby-van-het-noorden.html", srcName: "Voetbalprimeur" }
+      ],
       note: "Amended by the user after booking: Chelsea v Leeds changed to 1X & Under 4.5, West Ham corners and Monaco to score removed, Bournemouth to score added. Booking code G1QZXU still holds the original 12 legs (20.34), so load these 11 legs by hand.",
       legs: [
         { fx: "Norwich v Cardiff", comp: "Championship", ko: "12:30", mk: "Both Teams to Score (GG)", odds: "1.40" },
@@ -85,7 +115,22 @@ window.SLATES = [
       ]
     },
     mega: {
-      code: "R6KC3K", odds: "247.96", booked: "02:00 UK", results: null, landed: null,
+      code: "R6KC3K", odds: "247.96", booked: "02:00 UK", landed: false,
+      results: [
+        { status: "lost", score: "2–0", src: "https://www.southamptonfc.com/en/news/article/report-larin-strikes-on-return-as-saints-defeat-derby", srcName: "Southampton" },
+        { status: "won", score: "3–0", src: "https://www.espn.com/soccer/team-stats/_/gameId/401874981/league/ita.1", srcName: "ESPN" },
+        { status: "won", score: "1–0", src: "https://www.ceskenoviny.cz/zpravy/fotbaliste-m-boleslavi-zdolali-zlin-a-doma-v-ligove-sezone-vyhrali-i-sedmy-duel/2904838", srcName: "ČTK" },
+        { status: "lost", score: "0–1", src: "https://www.espn.com/soccer/match/_/gameId/401884728/sc-freiburg-sv-elversberg", srcName: "ESPN" },
+        { status: "lost", score: "0–1", src: "https://www.bundesliga.com/en/bundesliga/news/borussia-monchengladbach-borussia-dortmund-match-report-highlights-matchday-10-40073", srcName: "Bundesliga" },
+        { status: "lost", score: "0–4", src: "https://www.hibernianfc.co.uk/news/2026/november/21/match-report--hibs-0-4-dundee-united", srcName: "Hibernian" },
+        { status: "lost", score: "2–0", src: "https://www.espn.co.uk/football/match/_/gameId/401878754", srcName: "ESPN" },
+        { status: "won", score: "3–1", src: "https://sports.yahoo.com/articles/dungannon-beat-crusaders-return-winning-172415581.html", srcName: "Yahoo Sports" },
+        { status: "lost", score: "1–2", src: "https://vglive.vg.no/fotball/event/v%C3%A5lerenga-start/731152", srcName: "VG" },
+        { status: "won", score: "2–3", src: "https://fcutrecht.nl/nieuws/2026/november/fc-utrecht-verliest-van-sc-cambuur", srcName: "FC Utrecht" },
+        { status: "won", score: "2–2", src: "https://sporza.be/nl/matches/voetbal/jupiler-pro-league/2026-2027/regulier/12/zulte-waregem-antwerp-zelfs-vanop-11-meter-lukte-het-niet-zulte-waregem-blijft-opnieuw-zonder-zege-achter-na-comeback-zonder-climax-tegen-antwerp~1781871845516/", srcName: "Sporza" },
+        { status: "won", score: "1–0", src: "https://www.flashscore.com/news/soccer-serie-a-napoli-torino-report-november-21-2026/pnkQH4N7/", srcName: "Flashscore" },
+        { status: "lost", score: "0–1", src: "https://www.espn.co.uk/football/match/_/gameId/401841327", srcName: "ESPN" }
+      ],
       note: "Mixed markets: 3 home wins, 4 Over 2.5, 4 GG, 1 Under 3.5 and 1 Home & Over 1.5.",
       legs: [
         { fx: "Southampton v Derby", comp: "Championship", ko: "12:30", mk: "Over 2.5 Goals", odds: "1.53" },
@@ -103,7 +148,18 @@ window.SLATES = [
         { fx: "Bahia v Coritiba", comp: "Brasileiro Série A", ko: "20:30", mk: "Home Win & Over 1.5 Goals", odds: "1.66" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "won", score: "1–1 (City 8 corners)", src: "https://www.sportsmole.co.uk/football/man-city/result/man-city-frustrations-grow-as-fulham-claim-point-despite-anderson-screamer_609558.html", srcName: "Sports Mole" },
+      2: { status: "won", score: "2–1", src: "https://www.espn.co.uk/football/match/_/gameId/401888245", srcName: "ESPN" },
+      3: { status: "won", score: "2–0", src: "https://www.espn.co.uk/football/match/_/gameId/401875056", srcName: "ESPN" },
+      4: { status: "lost", score: "1–0", src: "https://www.bundesliga.com/en/bundesliga/news/eintracht-frankfurt-hoffenheim-match-report-highlights-matchday-10-burkardt-atubolu-40079", srcName: "Bundesliga" },
+      5: { status: "won", score: "4–0", src: "https://www.espn.co.uk/football/match/_/gameId/401884735", srcName: "ESPN" },
+      6: { status: "won", score: "5–1", src: "https://www.ross-shirejournal.co.uk/sport/ross-county-thrash-cove-to-maintain-momentum-at-top-of-leagu-450755/", srcName: "Ross-shire Journal" },
+      7: { status: "won", score: "3–2", src: "https://www.nau.ch/sport/matchcenter/super-league-bsc-young-boys-gegen-fc-thun-berner-oberland-ab-1800-live-67205264", srcName: "nau.ch" },
+      8: { status: "won", score: "2–3", src: "https://www.espn.co.uk/football/match/_/gameId/401875543", srcName: "ESPN" },
+      9: { status: "won", score: "2–1 (11 corners)", src: "https://www.espn.com/soccer/team-stats/_/gameId/401882798/league/esp.1", srcName: "ESPN" }
+    },
+    settled: "Partly settled 23:40 UK: Slate JAE3A6 LOST on Frankfurt v Hoffenheim (1–0, Over 2.5). The other 8 settled legs all won; Inter Miami v Columbus was still being played. Medium (user's 11 legs) went 10 of 11 and lost only on Chelsea 1–4 Leeds. Mega R6KC3K went 6 of 13. Z0RKUF would also have lost (Frankfurt Over 1.5 and Feyenoord 2–3).",
     audit: {
       of: "Friday 20 November 2026",
       note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Athletic v Espanyol had 11 corners according to ESPN's full-time stats.",
