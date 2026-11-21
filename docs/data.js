@@ -5,6 +5,90 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-21",
+    label: "Saturday 21 November 2026",
+    built: "Built 02:05 UK",
+    comps: [
+      { name: "Süper Lig", windows: [ { ko: "13:00 UK", picks: [
+        { n: 2, fx: "Galatasaray v Samsunspor", mk: "Home Win", odds: "1.25" } ] } ] },
+      { name: "Serbian SuperLiga", windows: [ { ko: "13:00 UK", picks: [
+        { n: 3, fx: "Crvena Zvezda v Radnik Surdulica", mk: "Home Win", odds: "1.14" } ] } ] },
+      { name: "Bundesliga", windows: [ { ko: "14:30 UK", picks: [
+        { n: 4, fx: "Eintracht Frankfurt v Hoffenheim", mk: "Over 2.5 Goals", odds: "1.34" } ] } ] },
+      { name: "Scottish Premiership", windows: [ { ko: "15:00 UK", picks: [
+        { n: 1, fx: "Celtic v St Mirren", mk: "Home Win", odds: "1.18" } ] } ] },
+      { name: "NIFL Premiership", windows: [ { ko: "15:00 UK", picks: [
+        { n: 5, fx: "Linfield v Limavady United", mk: "Home Win", odds: "1.12" } ] } ] },
+      { name: "Swiss Super League", windows: [ { ko: "17:00 UK", picks: [
+        { n: 6, fx: "Young Boys v Thun", mk: "Home Win", odds: "1.41" } ] } ] },
+      { name: "Eredivisie", windows: [ { ko: "17:45 UK", picks: [
+        { n: 7, fx: "Feyenoord v Excelsior", mk: "Home Win", odds: "1.19" } ] } ] },
+      { name: "LaLiga", windows: [ { ko: "20:00 UK", picks: [
+        { n: 8, fx: "Real Madrid v Celta Vigo", mk: "Home Win", odds: "1.19" } ] } ] }
+    ],
+    passes: "Bayer Leverkusen (lost their last 2 home games), Young Boys v Thun Over 2.5 (1.22 is below the new 1.30 floor for Over 2.5, so it was played as a Home Win), Schalke v Stuttgart Over 2.5 (Schalke haven't scored at home this season), Genk (both teams have new coaches on debut), Monaco (no league win in 5), Lens v Toulouse GG (six Lens players missing), Kilmarnock v Aberdeen GG (their September meeting ended 0–0), Sevilla v Betis corners (Sevilla's games average about 7 corners), and every 2nd Half Over 1.5 (dropped under the new rule). No Arsenal fixtures were considered.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Linfield v Limavady: Home Win", "1.12"],
+        ["Crvena Zvezda v Radnik Surdulica: Home Win", "1.14"],
+        ["Celtic v St Mirren: Home Win", "1.18"],
+        ["Feyenoord v Excelsior: Home Win", "1.19"]
+      ], total: "1.79" },
+      { name: "Value 4-leg", legs: [
+        ["Young Boys v Thun: Home Win", "1.41"],
+        ["Frankfurt v Hoffenheim: Over 2.5", "1.34"],
+        ["Galatasaray v Samsunspor: Home Win", "1.25"],
+        ["Real Madrid v Celta Vigo: Home Win", "1.19"]
+      ], total: "2.81" }
+    ],
+    acca: { code: "J28V3C", legs: 8, odds: "5.04", booked: "01:55 UK" },
+    mega: {
+      code: "R6KC3K", odds: "247.96", booked: "02:00 UK", results: null, landed: null,
+      note: "Mixed markets: 3 home wins, 4 Over 2.5, 4 GG, 1 Under 3.5 and 1 Home & Over 1.5.",
+      legs: [
+        { fx: "Southampton v Derby", comp: "Championship", ko: "12:30", mk: "Over 2.5 Goals", odds: "1.53" },
+        { fx: "Lazio v Lecce", comp: "Serie A", ko: "14:00", mk: "Home Win", odds: "1.45" },
+        { fx: "Mladá Boleslav v Zlín", comp: "Czech First League", ko: "14:00", mk: "Home Win", odds: "1.51" },
+        { fx: "Elversberg v Freiburg", comp: "Bundesliga", ko: "14:30", mk: "Both Teams to Score (GG)", odds: "1.54" },
+        { fx: "Gladbach v Dortmund", comp: "Bundesliga", ko: "14:30", mk: "Over 2.5 Goals", odds: "1.50" },
+        { fx: "Hibernian v Dundee United", comp: "Scottish Premiership", ko: "15:00", mk: "Both Teams to Score (GG)", odds: "1.54" },
+        { fx: "Tottenham v Ipswich", comp: "Premier League", ko: "15:00", mk: "Over 2.5 Goals", odds: "1.59" },
+        { fx: "Dungannon Swifts v Crusaders", comp: "NIFL Premiership", ko: "15:00", mk: "Over 2.5 Goals", odds: "1.48" },
+        { fx: "Vålerenga v Start", comp: "Eliteserien", ko: "17:00", mk: "Home Win", odds: "1.55" },
+        { fx: "Utrecht v Cambuur", comp: "Eredivisie", ko: "17:45", mk: "Both Teams to Score (GG)", odds: "1.45" },
+        { fx: "Zulte Waregem v Antwerp", comp: "Belgian Pro League", ko: "19:45", mk: "Both Teams to Score (GG)", odds: "1.58" },
+        { fx: "Napoli v Torino", comp: "Serie A", ko: "19:45", mk: "Under 3.5 Goals", odds: "1.50" },
+        { fx: "Bahia v Coritiba", comp: "Brasileiro Série A", ko: "20:30", mk: "Home Win & Over 1.5 Goals", odds: "1.66" }
+      ]
+    },
+    results: null,
+    audit: {
+      of: "Friday 20 November 2026",
+      note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Athletic v Espanyol had 11 corners according to ESPN's full-time stats.",
+      picks: [
+        { fx: "Persepolis v Paykan", mk: "Home Win", odds: "1.20", score: "3–0", status: "won", src: "https://www.soccerstats.com/en-gb/leagues/iran/pro-league/iran", srcName: "SoccerStats" },
+        { fx: "Al Sadd v Lusail", mk: "Home Win", odds: "1.28", score: "3–2", status: "won", src: "https://www.ceroacero.es/noticias/al-sadd-gano-lusail-sc/1264049", srcName: "Ceroacero" },
+        { fx: "Al Ahli v Al Nassr", mk: "Over 1.5 Goals", odds: "1.14", score: "3–1", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401900905", srcName: "ESPN" },
+        { fx: "Stade Lausanne-Ouchy v Kriens", mk: "Home Win", odds: "1.45", score: "3–1", status: "won", src: "https://www.livescore.com/en/football/switzerland/challenge-league/fc-stade-lausanne-ouchy-vs-kriens/1796154/", srcName: "LiveScore" },
+        { fx: "Molde v Bodø/Glimt", mk: "Over 2.5 Goals", odds: "1.26", score: "2–4", status: "won", src: "https://www.nrk.no/nordland/glimt-slo-molde-4-2-og-overnatter-pa-tabelltopp-1.18086159", srcName: "NRK" },
+        { fx: "Heracles v Jong PSV", mk: "Home Win", odds: "1.17", score: "2–1", status: "won", src: "https://almelo1.nl/heracles-almelo-breidt-thuisreeks-uit-met-zege-op-jong-psv/", srcName: "Almelo1" },
+        { fx: "Bayern Munich v Cologne", mk: "Over 2.5 Goals", odds: "1.13", score: "1–1", status: "lost", src: "https://www.espn.co.uk/football/match/_/gameId/401884736", srcName: "ESPN" },
+        { fx: "Athletic Bilbao v Espanyol", mk: "Over 7.5 Corners", odds: "1.26", score: "0–1 (11 corners)", status: "won", src: "https://www.espn.com/soccer/team-stats/_/gameId/401882805/league/esp.1", srcName: "ESPN" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "1.81", landed: false },
+        { name: "Value 4-leg", total: "2.95", landed: true },
+        { name: "Full accumulator L8WJ70", total: "5.33", landed: false },
+        { name: "Mega XCFA1A", total: "351.82", landed: false }
+      ],
+      lessons: [
+        "Bayern v Cologne Over 2.5 at 1.13 lost 1–1 (Kane and Olise were both injured during the match). Very short Over 2.5 prices carry far more risk than they pay, so from today Over 2.5 below 1.30 is banned.",
+        "The mixed Mega did better leg for leg: XCFA1A won 7 of 13, while the all-home-win UPVZ10 won 2 of 12. Home wins at 1.50–1.67 still went only 2 for 4 (Azam and Verona lost), so these remain the weakest Mega legs.",
+        "2nd Half Over 1.5 went 1 for 2 (Porto's second half had only one goal), so the rule is now 2nd Half Over 0.5 only. Corners held up even in a 0–1 game: Athletic forced 9 corners on their own."
+      ]
+    }
+  },
+  {
     date: "2026-11-20",
     label: "Friday 20 November 2026",
     built: "Built 01:40 UK",
@@ -43,7 +127,22 @@ window.SLATES = [
     ],
     acca: { code: "L8WJ70", legs: 8, odds: "5.33", booked: "01:30 UK" },
     mega: {
-      code: "XCFA1A", odds: "351.82", booked: "15:05 UK", results: null, landed: null,
+      code: "XCFA1A", odds: "351.82", booked: "15:05 UK", landed: false,
+      results: [
+        { status: "won", score: "3–1", src: "https://www.shababalahli.ae/shabab-al-ahli-wins-ajman-3-1-2/", srcName: "Shabab Al Ahli" },
+        { status: "lost", score: "1–1", src: "https://www.sportytrader.com/en/results-live/shakhtar-donetsk-fc-levy-bereg-kiev-8583969/", srcName: "SportyTrader" },
+        { status: "won", score: "1–3", src: "https://isport.blesk.cz/clanek/fotbal-domaci-souteze-chance-narodni-liga/482384/divocina-v-derby-dve-cervene-breite-sel-ven-za-nadavky-west-sudi-si-nas-mazal-na-chleba.html", srcName: "iSport" },
+        { status: "lost", score: "2–4", src: "https://ghanasoccernet.com/azam-2-4-singida-black-stars-visitors-claim-six-goal-thriller-in-ligi-kuu-bara", srcName: "GhanaSoccernet" },
+        { status: "won", score: "2–1", src: "https://www.espn.co.uk/football/match/_/gameId/401874492", srcName: "ESPN" },
+        { status: "lost", score: "0–2", src: "https://www.tuttomercatoweb.com/serie-b/serie-b-12a-giornata-hellas-verona-cesena-0-2-romagnoli-2-2295801", srcName: "TMW" },
+        { status: "won", score: "1–2", src: "https://www.mecze24.pl/aktualnosci/pogon-szczecin-slask-wroclaw-oceny-dla-pilkarzy-po-spotkaniu-20-11-2026", srcName: "Mecze24" },
+        { status: "won", score: "2–0", src: "https://sports.yahoo.com/articles/cymru-premier-friday-round-081255848.html", srcName: "BBC via Yahoo" },
+        { status: "lost", score: "3–1", src: "https://www.espn.co.uk/football/match/_/gameId/401876395", srcName: "ESPN" },
+        { status: "lost", score: "1–1 (HT 1–0, 2H: 1 goal)", src: "https://observador.pt/liveblogs/fc-porto-paredes-francisco-moura-a-central-souza-e-fofana-no-onze/", srcName: "Observador" },
+        { status: "won", score: "1–2 (HT 1–0, 2H: 2 goals)", src: "https://groot-waterland.nl/2026/11/20/fc-volendam-geeft-voorsprong-uit-handen-en-verliest-thuis-van-jong-ajax/", srcName: "Groot Waterland" },
+        { status: "lost", score: "0–3", src: "https://www.azfanpage.nl/jong-az-boekt-overtuigende-overwinning-op-bezoek-bij-vitesse", srcName: "AZFanpage" },
+        { status: "won", score: "1–2", src: "https://www.skysports.com/football/news/13611580/barnsley-vs-sheffield-wednesday", srcName: "Sky Sports" }
+      ],
       note: "Rebuilt at 15:05 UK with a market mix (4 home wins, 3 Over 2.5, 3 GG, 2 second-half goals, 1 Under 2.5), per the user's rule. Use this code.",
       legs: [
         { fx: "Shabab Al Ahli v Ajman", comp: "UAE Pro League", ko: "15:25", mk: "Home Win", odds: "1.53" },
@@ -67,7 +166,15 @@ window.SLATES = [
           { status: "lost", score: "1–1", src: "https://www.espn.co.uk/football/team-stats/_/gameId/401877534", srcName: "ESPN" },
           { status: "lost", score: "0–1", src: "https://www.espn.co.uk/football/match/_/gameId/401877553", srcName: "ESPN" },
           { status: "lost", score: "1–2", src: "https://www.espn.co.uk/football/match/_/gameId/401877548", srcName: "ESPN" },
-          { status: "lost", score: "0–1", src: "https://bola.okezone.com/read/2026/11/20/49/3255252/hasil-dewa-united-vs-persita-tangerang-di-super-league-2026-2027-pendekar-cisadane-menangi-derby-1-0", srcName: "Okezone" }
+          { status: "lost", score: "0–1", src: "https://bola.okezone.com/read/2026/11/20/49/3255252/hasil-dewa-united-vs-persita-tangerang-di-super-league-2026-2027-pendekar-cisadane-menangi-derby-1-0", srcName: "Okezone" },
+          { status: "won", score: "3–1", src: "https://www.shababalahli.ae/shabab-al-ahli-wins-ajman-3-1-2/", srcName: "Shabab Al Ahli" },
+          { status: "lost", score: "1–2", src: "https://www.duhailsc.qa/", srcName: "Al Duhail" },
+          { status: "lost", score: "1–3", src: "https://isport.blesk.cz/clanek/fotbal-domaci-souteze-chance-narodni-liga/482384/divocina-v-derby-dve-cervene-breite-sel-ven-za-nadavky-west-sudi-si-nas-mazal-na-chleba.html", srcName: "iSport" },
+          { status: "lost", score: "2–4", src: "https://ghanasoccernet.com/azam-2-4-singida-black-stars-visitors-claim-six-goal-thriller-in-ligi-kuu-bara", srcName: "GhanaSoccernet" },
+          { status: "lost", score: "0–2", src: "https://www.tuttomercatoweb.com/serie-b/serie-b-12a-giornata-hellas-verona-cesena-0-2-romagnoli-2-2295801", srcName: "TMW" },
+          { status: "lost", score: "1–2", src: "https://www.mecze24.pl/aktualnosci/pogon-szczecin-slask-wroclaw-oceny-dla-pilkarzy-po-spotkaniu-20-11-2026", srcName: "Mecze24" },
+          { status: "won", score: "2–0", src: "https://sports.yahoo.com/articles/cymru-premier-friday-round-081255848.html", srcName: "BBC via Yahoo" },
+          { status: "lost", score: "3–1", src: "https://www.espn.co.uk/football/match/_/gameId/401876395", srcName: "ESPN" }
         ],
         legs: [
           { fx: "Kashima Antlers v Shimizu", comp: "J1 League", ko: "10:00", mk: "Home Win", odds: "1.51" },
@@ -85,7 +192,17 @@ window.SLATES = [
         ]
       }
     },
-    results: null,
+    results: {
+      1: { status: "won", score: "3–0", src: "https://www.soccerstats.com/en-gb/leagues/iran/pro-league/iran", srcName: "SoccerStats" },
+      2: { status: "won", score: "3–2", src: "https://www.ceroacero.es/noticias/al-sadd-gano-lusail-sc/1264049", srcName: "Ceroacero" },
+      3: { status: "won", score: "3–1", src: "https://www.espn.com/soccer/match/_/gameId/401900905", srcName: "ESPN" },
+      4: { status: "won", score: "3–1", src: "https://www.livescore.com/en/football/switzerland/challenge-league/fc-stade-lausanne-ouchy-vs-kriens/1796154/", srcName: "LiveScore" },
+      5: { status: "won", score: "2–4", src: "https://www.nrk.no/nordland/glimt-slo-molde-4-2-og-overnatter-pa-tabelltopp-1.18086159", srcName: "NRK" },
+      6: { status: "won", score: "2–1", src: "https://almelo1.nl/heracles-almelo-breidt-thuisreeks-uit-met-zege-op-jong-psv/", srcName: "Almelo1" },
+      7: { status: "lost", score: "1–1", src: "https://www.espn.co.uk/football/match/_/gameId/401884736", srcName: "ESPN" },
+      8: { status: "won", score: "0–1 (11 corners)", src: "https://www.espn.com/soccer/team-stats/_/gameId/401882805/league/esp.1", srcName: "ESPN" }
+    },
+    settled: "Settled 01:30 UK (21 Nov): Slate 8 picks, 7 won, 1 lost (88%). Accumulator L8WJ70 lost on Bayern v Cologne, which finished 1–1 (Over 2.5 at 1.13). The Value 4-leg landed; the Safest 4-leg lost on the same Bayern leg. Athletic v Espanyol had 11 corners, so Over 7.5 corners won. Mega XCFA1A went 7 of 13 and lost. The earlier Mega UPVZ10 went 2 of 12.",
     audit: {
       of: "Thursday 19 November 2026",
       note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below.",
