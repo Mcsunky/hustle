@@ -68,19 +68,18 @@ window.SLATES = [
       ]
     },
     mid: {
-      code: "G1QZXU", odds: "20.34", booked: "03:45 UK", results: null, landed: null,
-      note: "Medium risk, 12 legs across 10 markets. No fixture is shared with the Slate or the Mega.",
+      code: "G1QZXU", odds: "18.20", booked: "03:45 UK", results: null, landed: null,
+      note: "Amended by the user after booking: Chelsea v Leeds changed to 1X & Under 4.5, West Ham corners and Monaco to score removed, Bournemouth to score added. Booking code G1QZXU still holds the original 12 legs (20.34), so load these 11 legs by hand.",
       legs: [
         { fx: "Norwich v Cardiff", comp: "Championship", ko: "12:30", mk: "Both Teams to Score (GG)", odds: "1.40" },
         { fx: "Wolves v Charlton", comp: "Championship", ko: "15:00", mk: "Home Win", odds: "1.35" },
         { fx: "Charleroi v Sint-Truiden", comp: "Belgian Pro League", ko: "15:00", mk: "Both Teams to Score (GG)", odds: "1.51" },
         { fx: "Aston Villa v Sunderland", comp: "Premier League", ko: "15:00", mk: "Double Chance 1X", odds: "1.22" },
-        { fx: "Chelsea v Leeds", comp: "Premier League", ko: "15:00", mk: "Under 3.5 Goals", odds: "1.42" },
-        { fx: "West Ham v Preston", comp: "Championship", ko: "15:00", mk: "West Ham Over 5.5 Corners", odds: "1.27" },
+        { fx: "Chelsea v Leeds", comp: "Premier League", ko: "15:00", mk: "1X & Under 4.5 Goals", odds: "1.44" },
+        { fx: "Bournemouth v Nottingham Forest", comp: "Premier League", ko: "15:00", mk: "Home to Score (Bournemouth Over 0.5)", odds: "1.21" },
         { fx: "Rayo Vallecano v Valencia", comp: "LaLiga", ko: "15:15", mk: "Under 4.5 Goals", odds: "1.13" },
         { fx: "Kocaelispor v Fenerbahçe", comp: "Süper Lig", ko: "16:00", mk: "Away to Score (Fenerbahçe Over 0.5)", odds: "1.13" },
         { fx: "KV Mechelen v Club Brugge", comp: "Belgian Pro League", ko: "19:45", mk: "Over 2.5 Goals", odds: "1.40" },
-        { fx: "Monaco v Auxerre", comp: "Ligue 1", ko: "19:45", mk: "Home to Score (Monaco Over 0.5)", odds: "1.08" },
         { fx: "Telstar v PEC Zwolle", comp: "Eredivisie", ko: "20:00", mk: "2nd Half Over 0.5 Goals", odds: "1.19" },
         { fx: "Groningen v Heerenveen", comp: "Eredivisie", ko: "20:00", mk: "Both Teams to Score (GG)", odds: "1.41" }
       ]
