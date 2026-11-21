@@ -10,70 +10,79 @@ window.SLATES = [
     built: "Built 02:05 UK",
     comps: [
       { name: "Premier League", windows: [ { ko: "12:30 UK", picks: [
-        { n: 3, fx: "Man City v Fulham", mk: "Man City Over 4.5 Corners", odds: "1.23" } ] } ] },
+        { n: 1, fx: "Man City v Fulham", mk: "Man City Over 4.5 Corners", odds: "1.23" } ] } ] },
       { name: "Süper Lig", windows: [ { ko: "13:00 UK", picks: [
-        { n: 1, fx: "Galatasaray v Samsunspor", mk: "Over 1.5 Goals", odds: "1.11" } ] } ] },
-      { name: "Serbian SuperLiga", windows: [ { ko: "13:00 UK", picks: [
-        { n: 2, fx: "Crvena Zvezda v Radnik Surdulica", mk: "Home Win", odds: "1.14" } ] } ] },
+        { n: 2, fx: "Galatasaray v Samsunspor", mk: "Home Win", odds: "1.25" } ] } ] },
       { name: "Serie A", windows: [ { ko: "14:00 UK", picks: [
-        { n: 4, fx: "Como v Cagliari", mk: "Home Win", odds: "1.32" } ] } ] },
+        { n: 3, fx: "Como v Cagliari", mk: "Home Win", odds: "1.32" } ] } ] },
       { name: "Bundesliga", windows: [ { ko: "14:30 UK", picks: [
-        { n: 5, fx: "Eintracht Frankfurt v Hoffenheim", mk: "Over 1.5 Goals", odds: "1.09" } ] } ] },
+        { n: 4, fx: "Eintracht Frankfurt v Hoffenheim", mk: "Over 2.5 Goals", odds: "1.34" } ] } ] },
       { name: "Bundesliga", windows: [ { ko: "14:30 UK", picks: [
-        { n: 6, fx: "Bayer Leverkusen v Paderborn", mk: "Over 1.5 Goals", odds: "1.10" } ] } ] },
-      { name: "Scottish Premiership", windows: [ { ko: "15:00 UK", picks: [
-        { n: 7, fx: "Celtic v St Mirren", mk: "Home Win", odds: "1.18" } ] } ] },
-      { name: "NIFL Premiership", windows: [ { ko: "15:00 UK", picks: [
-        { n: 8, fx: "Linfield v Limavady United", mk: "Home Win", odds: "1.12" } ] } ] },
+        { n: 5, fx: "Bayer Leverkusen v Paderborn", mk: "Over 2.5 Goals", odds: "1.35" } ] } ] },
       { name: "Scottish League One", windows: [ { ko: "15:00 UK", picks: [
-        { n: 9, fx: "Ross County v Cove Rangers", mk: "Home Win", odds: "1.19" } ] } ] },
-      { name: "Championship", windows: [ { ko: "15:00 UK", picks: [
-        { n: 10, fx: "West Ham v Preston", mk: "Over 1.5 Goals", odds: "1.14" } ] } ] },
-      { name: "Eredivisie", windows: [ { ko: "15:30 UK", picks: [
-        { n: 11, fx: "NEC Nijmegen v PSV", mk: "2nd Half Over 0.5 Goals", odds: "1.10" } ] } ] },
+        { n: 6, fx: "Ross County v Cove Rangers", mk: "Ross County Over 1.5 Goals", odds: "1.23" } ] } ] },
       { name: "Swiss Super League", windows: [ { ko: "17:00 UK", picks: [
-        { n: 12, fx: "Young Boys v Thun", mk: "Young Boys Over 1.5 Goals", odds: "1.23" } ] } ] },
+        { n: 7, fx: "Young Boys v Thun", mk: "Young Boys Over 1.5 Goals", odds: "1.23" } ] } ] },
       { name: "Eredivisie", windows: [ { ko: "17:45 UK", picks: [
-        { n: 13, fx: "Feyenoord v Excelsior", mk: "Home Win", odds: "1.19" } ] } ] },
-      { name: "Ligue 1", windows: [ { ko: "19:45 UK", picks: [
-        { n: 14, fx: "Monaco v Auxerre", mk: "Double Chance 1X", odds: "1.13" } ] } ] },
+        { n: 8, fx: "Feyenoord v Excelsior", mk: "Feyenoord Over 1.5 Goals", odds: "1.21" } ] } ] },
       { name: "LaLiga", windows: [ { ko: "20:00 UK", picks: [
-        { n: 15, fx: "Real Madrid v Celta Vigo", mk: "Real Madrid Over 4.5 Corners", odds: "1.19" } ] } ] },
+        { n: 9, fx: "Real Madrid v Celta Vigo", mk: "Over 7.5 Corners", odds: "1.30" } ] } ] },
       { name: "MLS Cup Playoffs", windows: [ { ko: "23:00 UK", picks: [
-        { n: 16, fx: "Inter Miami v Columbus Crew", mk: "Over 1.5 Goals", odds: "1.10" } ] } ] }
+        { n: 10, fx: "Inter Miami v Columbus Crew", mk: "Over 2.5 Goals", odds: "1.36" } ] } ] }
     ],
     passes: "Bayer Leverkusen (lost their last 2 home games), Young Boys v Thun Over 2.5 (1.22 is below the new 1.30 floor for Over 2.5, so it was played as a Home Win), Schalke v Stuttgart Over 2.5 (Schalke haven't scored at home this season), Genk (both teams have new coaches on debut), Monaco (no league win in 5), Lens v Toulouse GG (six Lens players missing), Kilmarnock v Aberdeen GG (their September meeting ended 0–0), Sevilla v Betis corners (Sevilla's games average about 7 corners), LASK (Champions League at Bodø on Tuesday, so likely rotation), Alianza Lima (dead rubber for them; Cajamarca are fighting relegation), Lugano (lost 5–0 last time, two players suspended), and every 2nd Half Over 1.5 (dropped under the new rule). No Arsenal fixtures were considered.",
     tickets: [
       { name: "Safest 4-leg", legs: [
-        ["Frankfurt v Hoffenheim: Over 1.5", "1.09"],
-        ["Leverkusen v Paderborn: Over 1.5", "1.10"],
-        ["NEC v PSV: 2nd Half Over 0.5", "1.10"],
-        ["Inter Miami v Columbus: Over 1.5", "1.10"]
-      ], total: "1.45" },
-      { name: "Value 4-leg", legs: [
-        ["Como v Cagliari: Home Win", "1.32"],
-        ["Young Boys v Thun: Young Boys Over 1.5", "1.23"],
+        ["Feyenoord v Excelsior: Feyenoord Over 1.5", "1.21"],
+        ["Ross County v Cove Rangers: Ross County Over 1.5", "1.23"],
         ["Man City v Fulham: City Over 4.5 Corners", "1.23"],
-        ["Ross County v Cove Rangers: Home Win", "1.19"]
-      ], total: "2.38" }
+        ["Galatasaray v Samsunspor: Home Win", "1.25"]
+      ], total: "2.34" },
+      { name: "Goals 3-leg", legs: [
+        ["Frankfurt v Hoffenheim: Over 2.5", "1.34"],
+        ["Leverkusen v Paderborn: Over 2.5", "1.35"],
+        ["Inter Miami v Columbus: Over 2.5", "1.36"]
+      ], total: "2.46" }
     ],
-    acca: { code: "Z0RKUF", legs: 16, odds: "10.52", booked: "03:05 UK", note: "Final Slate. Each fixture is played in its safest market: Over 1.5 where both sides score freely, 1X where a draw is the main danger, corners where a favourite dominates the ball but faces a deep, tight defence, and team goals where a home side scores heavily but the win is less certain. Replaces NF53BM and J28V3C." },
+    acca: { code: "JAE3A6", legs: 10, odds: "11.88", booked: "03:40 UK", note: "Final Slate under the new 1.20 minimum per leg: 10 legs, each played in its safest market. Replaces Z0RKUF, NF53BM and J28V3C." },
     earlier: {
-      code: "NF53BM", odds: "10.88", booked: "02:35 UK", results: null,
-      note: "The 12-leg version, mostly straight home wins (J28V3C was its first 8 legs). Replaced by Z0RKUF, which spreads the same games and some new ones across safer markets. Kept for reference only.",
+      code: "Z0RKUF", odds: "10.52", booked: "03:05 UK", results: null,
+      note: "16-leg version with legs as short as 1.09, replaced under the 1.20 minimum. (NF53BM and J28V3C came before it.) Kept for reference only.",
       picks: [
-        { fx: "Galatasaray v Samsunspor", ko: "13:00", mk: "Home Win", odds: "1.25" },
+        { fx: "Man City v Fulham", ko: "12:30", mk: "Man City Over 4.5 Corners", odds: "1.23" },
+        { fx: "Galatasaray v Samsunspor", ko: "13:00", mk: "Over 1.5 Goals", odds: "1.11" },
         { fx: "Crvena Zvezda v Radnik Surdulica", ko: "13:00", mk: "Home Win", odds: "1.14" },
         { fx: "Como v Cagliari", ko: "14:00", mk: "Home Win", odds: "1.32" },
-        { fx: "Eintracht Frankfurt v Hoffenheim", ko: "14:30", mk: "Over 2.5 Goals", odds: "1.34" },
+        { fx: "Eintracht Frankfurt v Hoffenheim", ko: "14:30", mk: "Over 1.5 Goals", odds: "1.09" },
+        { fx: "Bayer Leverkusen v Paderborn", ko: "14:30", mk: "Over 1.5 Goals", odds: "1.10" },
         { fx: "Celtic v St Mirren", ko: "15:00", mk: "Home Win", odds: "1.18" },
         { fx: "Linfield v Limavady United", ko: "15:00", mk: "Home Win", odds: "1.12" },
         { fx: "Ross County v Cove Rangers", ko: "15:00", mk: "Home Win", odds: "1.19" },
-        { fx: "West Ham v Preston", ko: "15:00", mk: "Home Win", odds: "1.25" },
+        { fx: "West Ham v Preston", ko: "15:00", mk: "Over 1.5 Goals", odds: "1.14" },
         { fx: "NEC Nijmegen v PSV", ko: "15:30", mk: "2nd Half Over 0.5 Goals", odds: "1.10" },
-        { fx: "Young Boys v Thun", ko: "17:00", mk: "Home Win", odds: "1.41" },
+        { fx: "Young Boys v Thun", ko: "17:00", mk: "Young Boys Over 1.5 Goals", odds: "1.23" },
         { fx: "Feyenoord v Excelsior", ko: "17:45", mk: "Home Win", odds: "1.19" },
-        { fx: "Real Madrid v Celta Vigo", ko: "20:00", mk: "Home Win", odds: "1.19" }
+        { fx: "Monaco v Auxerre", ko: "19:45", mk: "Double Chance 1X", odds: "1.13" },
+        { fx: "Real Madrid v Celta Vigo", ko: "20:00", mk: "Real Madrid Over 4.5 Corners", odds: "1.19" },
+        { fx: "Inter Miami v Columbus Crew", ko: "23:00", mk: "Over 1.5 Goals", odds: "1.10" }
+      ]
+    },
+    mid: {
+      code: "G1QZXU", odds: "20.34", booked: "03:45 UK", results: null, landed: null,
+      note: "Medium risk, 12 legs across 10 markets. No fixture is shared with the Slate or the Mega.",
+      legs: [
+        { fx: "Norwich v Cardiff", comp: "Championship", ko: "12:30", mk: "Both Teams to Score (GG)", odds: "1.40" },
+        { fx: "Wolves v Charlton", comp: "Championship", ko: "15:00", mk: "Home Win", odds: "1.35" },
+        { fx: "Charleroi v Sint-Truiden", comp: "Belgian Pro League", ko: "15:00", mk: "Both Teams to Score (GG)", odds: "1.51" },
+        { fx: "Aston Villa v Sunderland", comp: "Premier League", ko: "15:00", mk: "Double Chance 1X", odds: "1.22" },
+        { fx: "Chelsea v Leeds", comp: "Premier League", ko: "15:00", mk: "Under 3.5 Goals", odds: "1.42" },
+        { fx: "West Ham v Preston", comp: "Championship", ko: "15:00", mk: "West Ham Over 5.5 Corners", odds: "1.27" },
+        { fx: "Rayo Vallecano v Valencia", comp: "LaLiga", ko: "15:15", mk: "Under 4.5 Goals", odds: "1.13" },
+        { fx: "Kocaelispor v Fenerbahçe", comp: "Süper Lig", ko: "16:00", mk: "Away to Score (Fenerbahçe Over 0.5)", odds: "1.13" },
+        { fx: "KV Mechelen v Club Brugge", comp: "Belgian Pro League", ko: "19:45", mk: "Over 2.5 Goals", odds: "1.40" },
+        { fx: "Monaco v Auxerre", comp: "Ligue 1", ko: "19:45", mk: "Home to Score (Monaco Over 0.5)", odds: "1.08" },
+        { fx: "Telstar v PEC Zwolle", comp: "Eredivisie", ko: "20:00", mk: "2nd Half Over 0.5 Goals", odds: "1.19" },
+        { fx: "Groningen v Heerenveen", comp: "Eredivisie", ko: "20:00", mk: "Both Teams to Score (GG)", odds: "1.41" }
       ]
     },
     mega: {

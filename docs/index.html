@@ -68,6 +68,7 @@ a { color: var(--main); }
 .code-card { background: var(--panel); border: 1px solid var(--line); border-top: 3px solid var(--c); border-radius: 8px; padding: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
 .code-card.main { --c: var(--main); }
 .code-card.mega { --c: var(--gold); }
+.code-card.mid { --c: #5FD3A6; }
 .code-card.prev { --c: var(--muted); }
 .code-card.prev .code { text-decoration: line-through; text-decoration-thickness: 2px; color: var(--muted); }
 .code-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
@@ -86,11 +87,11 @@ a { color: var(--main); }
 .pill.pending, .pill.unverified, .pill.void { color: var(--pend); background: var(--panel-2); }
 
 /* Record */
-.record { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.record { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
 .stat { background: var(--panel); padding: 14px 14px 12px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .stat .v { font: 700 24px var(--font-data); font-variant-numeric: tabular-nums; }
 .stat .k { font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
-@media (max-width: 560px) { .record { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .record { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
 /* Sections */
 section { display: flex; flex-direction: column; gap: 18px; }
@@ -159,7 +160,7 @@ const allPicks = sl => sl.comps.flatMap(c => c.windows.flatMap(w => w.picks.map(
 
 /* Track record, from every settled day */
 function record() {
-  let won = 0, lost = 0, accW = 0, accN = 0, megaW = 0, megaN = 0;
+  let won = 0, lost = 0, accW = 0, accN = 0, megaW = 0, megaN = 0, midW = 0, midN = 0;
   const auditedOf = new Set();
   SLATES.forEach(sl => {
     if (!sl.audit) return;
@@ -174,9 +175,10 @@ function record() {
       if (sl.acca && rs.length === allPicks(sl).length && rs.every(r => r.status !== "unverified")) { accN++; if (rs.every(r => r.status === "won" || r.status === "void")) accW++; }
     }
     if (sl.mega && sl.mega.landed !== null && sl.mega.landed !== undefined) { megaN++; if (sl.mega.landed) megaW++; }
+    if (sl.mid && sl.mid.landed !== null && sl.mid.landed !== undefined) { midN++; if (sl.mid.landed) midW++; }
   });
   const rate = won + lost ? Math.round(won / (won + lost) * 100) + "%" : "–";
-  return { won, lost, rate, acc: accN ? `${accW}/${accN}` : "–", mega: megaN ? `${megaW}/${megaN}` : "0/0" };
+  return { won, lost, rate, acc: accN ? `${accW}/${accN}` : "–", mega: megaN ? `${megaW}/${megaN}` : "0/0", mid: midN ? `${midW}/${midN}` : "0/0" };
 }
 
 /* Kickoff times are UK time on the slate date. UK is on GMT Nov–Mar. */
@@ -206,6 +208,15 @@ function codesBlock(sl) {
       <div class="code-row"><span class="code">${esc(sl.acca.code)}</span>${copyBtn(sl.acca.code)}</div>
       <div class="code-meta"><span><b>${sl.acca.legs}</b> legs</span><span>odds <b>${esc(sl.acca.odds)}</b></span><span>booked ${esc(sl.acca.booked)}</span></div>
       ${sl.acca.note ? `<p class="code-note">${esc(sl.acca.note)}</p>` : ""}
+    </div>`);
+  }
+  if (sl.mid) {
+    const st = sl.mid.landed === true ? "landed" : sl.mid.landed === false ? "lost" : "pending";
+    cards.push(`<div class="code-card mid">
+      <div class="code-head"><span class="code-label">Medium accumulator · 20–50</span>${statusPill(st)}</div>
+      <div class="code-row"><span class="code">${esc(sl.mid.code)}</span>${copyBtn(sl.mid.code)}</div>
+      <div class="code-meta"><span><b>${sl.mid.legs.length}</b> legs</span><span>odds <b>${esc(sl.mid.odds)}</b></span><span>booked ${esc(sl.mid.booked)}</span></div>
+      ${sl.mid.note ? `<p class="code-note">${esc(sl.mid.note)}</p>` : ""}
     </div>`);
   }
   if (sl.mega) {
@@ -252,6 +263,7 @@ function recordBlock() {
     <div class="stat"><span class="v">${r.won}–${r.lost}</span><span class="k">Picks won–lost</span></div>
     <div class="stat"><span class="v">${r.rate}</span><span class="k">Strike rate</span></div>
     <div class="stat"><span class="v">${r.acc}</span><span class="k">Main accas landed</span></div>
+    <div class="stat"><span class="v">${r.mid}</span><span class="k">Mediums landed</span></div>
     <div class="stat"><span class="v">${r.mega}</span><span class="k">Megas landed</span></div>
   </div>`;
 }
@@ -290,6 +302,14 @@ function ticketsBlock(sl) {
   </section>`;
 }
 
+function midBlock(sl) {
+  const m = sl.mid; if (!m) return "";
+  return `<section aria-labelledby="mid-h">
+    <div class="sec-head"><h2 id="mid-h">Medium Legs</h2><span class="note">${m.legs.length} legs · odds ${esc(m.odds)}</span></div>
+    <p class="passes">Medium risk, 20–50 odds, mixed markets. Tracked separately from the Slate.</p>
+    <ol class="picks">${m.legs.map((l, i) => pickLi(i + 1, l.fx + " · " + l.ko, l.comp + " · " + l.mk, l.odds, m.results && m.results[i])).join("")}</ol>
+  </section>`;
+}
 function megaBlock(sl) {
   const m = sl.mega; if (!m) return "";
   return `<section class="mega-sec" aria-labelledby="mega-h">
@@ -332,7 +352,7 @@ function show(date) {
   $("#days").innerHTML = SLATES.map(s => `<button type="button" data-d="${s.date}" aria-pressed="${s.date === sl.date}">${new Date(s.date + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" })}</button>`).join("");
   const body = sl.noSlate
     ? `<section aria-labelledby="slate-h"><div class="sec-head"><h2 id="slate-h">No Slate Today</h2></div><p class="settled">${esc(sl.noSlate)}</p></section>`
-    : slateBlock(sl) + ticketsBlock(sl) + megaBlock(sl) + megaPrevBlock(sl) + earlierBlock(sl);
+    : slateBlock(sl) + ticketsBlock(sl) + midBlock(sl) + megaBlock(sl) + megaPrevBlock(sl) + earlierBlock(sl);
   $("#app").innerHTML = codesBlock(sl) + recordBlock() + body + auditBlock(sl.audit);
   document.querySelectorAll("#days button").forEach(b => b.onclick = () => { location.hash = "d" + b.dataset.d; });
   document.querySelectorAll(".copy").forEach(b => b.onclick = () => {
