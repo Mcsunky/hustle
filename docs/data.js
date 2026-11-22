@@ -5,6 +5,113 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-22",
+    label: "Sunday 22 November 2026",
+    built: "Built 02:05 UK",
+    comps: [
+      { name: "Eredivisie", windows: [ { ko: "11:15 UK", picks: [
+        { n: 1, fx: "Twente v Willem II", mk: "Over 8.5 Corners", odds: "1.29" } ] } ] },
+      { name: "Serie A", windows: [ { ko: "11:30 UK", picks: [
+        { n: 2, fx: "Juventus v Venezia", mk: "Home Win", odds: "1.39" } ] } ] },
+      { name: "LaLiga", windows: [ { ko: "13:00 UK", picks: [
+        { n: 3, fx: "Barcelona v Villarreal", mk: "Barcelona Over 5.5 Corners", odds: "1.29" } ] } ] },
+      { name: "Eredivisie", windows: [ { ko: "13:30 UK", picks: [
+        { n: 4, fx: "Ajax v ADO Den Haag", mk: "Ajax Over 5.5 Corners", odds: "1.32" } ] } ] },
+      { name: "HNL", windows: [ { ko: "14:00 UK", picks: [
+        { n: 5, fx: "Dinamo Zagreb v Istra", mk: "Home Win", odds: "1.21" } ] } ] },
+      { name: "Ligue 1", windows: [ { ko: "14:00 UK", picks: [
+        { n: 6, fx: "Paris FC v Angers", mk: "Home Win", odds: "1.35" } ] } ] },
+      { name: "Bundesliga", windows: [ { ko: "14:30 UK", picks: [
+        { n: 7, fx: "Augsburg v Mainz", mk: "Over 2.5 Goals", odds: "1.42" } ] } ] },
+      { name: "Greek Super League", windows: [ { ko: "15:30 UK", picks: [
+        { n: 8, fx: "Panathinaikos v OFI", mk: "Home Win", odds: "1.23" } ] } ] },
+      { name: "Turkish 1. Lig", windows: [ { ko: "16:00 UK", picks: [
+        { n: 9, fx: "Bursaspor v Sivasspor", mk: "Bursaspor Over 1.5 Goals", odds: "1.27" } ] } ] },
+      { name: "LaLiga", windows: [ { ko: "20:00 UK", picks: [
+        { n: 10, fx: "Getafe v Atlético Madrid", mk: "Under 3.5 Goals", odds: "1.30" } ] } ] }
+    ],
+    passes: "Dynamo Kyiv (poor form under a new coach, Kyiv derby), Olympiacos (El Kaabi out, Milan on Thursday), Levski (lost 0–3 at home last time, Marseille on Thursday), Burnley 1X (worst defence in the league, derby), Liverpool v Man Utd GG (United's attack depleted, so played as corners), Sarpsborg v Lillestrøm GG (Lillestrøm play Lyon on Thursday), FCSB to score (3 straight defeats), Sassuolo v Genoa Under 3.5 (Sassuolo have conceded in all 11), Nashville (15 days without a game), Celje (Europa League rotation), PAOK corners (no corner data), AZ 2+ (poor away form), Kaiserslautern v Dresden GG (Dresden missing 8), Fluminense (may have nothing left to play for). No Arsenal fixtures were considered.",
+    tickets: [
+      { name: "Safest 4-leg", legs: [
+        ["Dinamo Zagreb v Istra: Home Win", "1.21"],
+        ["Panathinaikos v OFI: Home Win", "1.23"],
+        ["Bursaspor v Sivasspor: Bursaspor Over 1.5", "1.27"],
+        ["Barcelona v Villarreal: Barcelona Over 5.5 Corners", "1.29"]
+      ], total: "2.44" },
+      { name: "Value 3-leg", legs: [
+        ["Juventus v Venezia: Home Win", "1.39"],
+        ["Paris FC v Angers: Home Win", "1.35"],
+        ["Augsburg v Mainz: Over 2.5", "1.42"]
+      ], total: "2.66" }
+    ],
+    acca: { code: "R9MZ7V", legs: 10, odds: "14.38", booked: "01:55 UK" },
+    mid: {
+      code: "MFHEKF", odds: "25.78", booked: "02:00 UK", results: null, landed: null,
+      note: "Medium risk, 11 legs over 9 market types, each 1.20 or more. No fixture is shared with the Slate or the Mega.",
+      legs: [
+        { fx: "Hull v Brighton", comp: "Premier League", ko: "14:00", mk: "2nd Half Over 0.5 Goals", odds: "1.22" },
+        { fx: "Liverpool v Man Utd", comp: "Premier League", ko: "16:30", mk: "Over 7.5 Corners", odds: "1.25" },
+        { fx: "Milan v Frosinone", comp: "Serie A", ko: "17:00", mk: "Home Win", odds: "1.59" },
+        { fx: "Anderlecht v OH Leuven", comp: "Belgian Pro League", ko: "17:30", mk: "Home Win", odds: "1.49" },
+        { fx: "Osasuna v Málaga", comp: "LaLiga", ko: "17:30", mk: "Home to Score (Osasuna Over 0.5)", odds: "1.21" },
+        { fx: "Atalanta v Inter", comp: "Serie A", ko: "19:45", mk: "Over 2.5 Goals", odds: "1.40" },
+        { fx: "Nordsjælland v Copenhagen", comp: "Danish Superliga", ko: "17:00", mk: "Away to Score (Copenhagen Over 0.5)", odds: "1.26" },
+        { fx: "Bologna v Udinese", comp: "Serie A", ko: "14:00", mk: "Double Chance 1X", odds: "1.20" },
+        { fx: "Racing Santander v Real Sociedad", comp: "LaLiga", ko: "15:15", mk: "Both Teams to Score (GG)", odds: "1.36" },
+        { fx: "Erzurumspor v Göztepe", comp: "Süper Lig", ko: "10:30", mk: "Under 3.5 Goals", odds: "1.33" },
+        { fx: "Córdoba v Real Oviedo", comp: "LaLiga Hypermotion", ko: "13:00", mk: "Both Teams to Score (GG)", odds: "1.54" }
+      ]
+    },
+    mega: {
+      code: "N5SRW1", odds: "262.45", booked: "02:02 UK", results: null, landed: null,
+      note: "Fewer plain Over 2.5 legs after 21 Nov (1 of 4). Mix: 3 home wins, 3 team 2+ goals, 1 corners, 2 Over 2.5, 4 GG.",
+      legs: [
+        { fx: "Werder Bremen v Hamburger SV", comp: "Bundesliga", ko: "16:30", mk: "Home Win", odds: "1.65" },
+        { fx: "Viborg v Randers", comp: "Danish Superliga", ko: "13:00", mk: "Home Win", odds: "1.59" },
+        { fx: "Košice v Skalica", comp: "Slovak Niké Liga", ko: "14:30", mk: "Home Win", odds: "1.53" },
+        { fx: "Rijeka v Gorica", comp: "HNL", ko: "17:00", mk: "Rijeka Over 1.5 Goals", odds: "1.47" },
+        { fx: "Kortrijk v Union Saint-Gilloise", comp: "Belgian Pro League", ko: "15:00", mk: "Union Over 1.5 Goals", odds: "1.47" },
+        { fx: "Rosario Central v Gimnasia Mendoza", comp: "Argentine Clausura", ko: "19:00", mk: "Rosario Over 5.5 Corners", odds: "1.47" },
+        { fx: "KFUM Oslo v Brann", comp: "Eliteserien", ko: "16:00", mk: "Over 2.5 Goals", odds: "1.49" },
+        { fx: "Kristiansund v Sandefjord", comp: "Eliteserien", ko: "16:00", mk: "Over 2.5 Goals", odds: "1.45" },
+        { fx: "Lommel v Standard Liège", comp: "Belgian Pro League", ko: "18:15", mk: "Both Teams to Score (GG)", odds: "1.50" },
+        { fx: "Guadalajara v Cruz Azul", comp: "Liga MX", ko: "23:07", mk: "Both Teams to Score (GG)", odds: "1.50" },
+        { fx: "Austria Wien v Salzburg", comp: "Austrian Bundesliga", ko: "16:00", mk: "Salzburg Over 1.5 Goals", odds: "1.55" },
+        { fx: "Athletico Paranaense v Remo", comp: "Brasileirão", ko: "19:00", mk: "Both Teams to Score (GG)", odds: "1.74" },
+        { fx: "Bragantino v Vasco da Gama", comp: "Brasileirão", ko: "22:30", mk: "Both Teams to Score (GG)", odds: "1.57" }
+      ]
+    },
+    results: null,
+    audit: {
+      of: "Saturday 21 November 2026",
+      note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Corner counts are from ESPN and Sports Mole full-time stats.",
+      picks: [
+        { fx: "Man City v Fulham", mk: "Man City Over 4.5 Corners", odds: "1.23", score: "1–1 (City 8 corners)", status: "won", src: "https://www.sportsmole.co.uk/football/man-city/result/man-city-frustrations-grow-as-fulham-claim-point-despite-anderson-screamer_609558.html", srcName: "Sports Mole" },
+        { fx: "Galatasaray v Samsunspor", mk: "Home Win", odds: "1.25", score: "2–1", status: "won", src: "https://www.espn.co.uk/football/match/_/gameId/401888245", srcName: "ESPN" },
+        { fx: "Como v Cagliari", mk: "Home Win", odds: "1.32", score: "2–0", status: "won", src: "https://www.espn.co.uk/football/match/_/gameId/401875056", srcName: "ESPN" },
+        { fx: "Eintracht Frankfurt v Hoffenheim", mk: "Over 2.5 Goals", odds: "1.34", score: "1–0", status: "lost", src: "https://www.bundesliga.com/en/bundesliga/news/eintracht-frankfurt-hoffenheim-match-report-highlights-matchday-10-burkardt-atubolu-40079", srcName: "Bundesliga" },
+        { fx: "Bayer Leverkusen v Paderborn", mk: "Over 2.5 Goals", odds: "1.35", score: "4–0", status: "won", src: "https://www.espn.co.uk/football/match/_/gameId/401884735", srcName: "ESPN" },
+        { fx: "Ross County v Cove Rangers", mk: "Ross County Over 1.5 Goals", odds: "1.23", score: "5–1", status: "won", src: "https://www.ross-shirejournal.co.uk/sport/ross-county-thrash-cove-to-maintain-momentum-at-top-of-leagu-450755/", srcName: "Ross-shire Journal" },
+        { fx: "Young Boys v Thun", mk: "Young Boys Over 1.5 Goals", odds: "1.23", score: "3–2", status: "won", src: "https://www.nau.ch/sport/matchcenter/super-league-bsc-young-boys-gegen-fc-thun-berner-oberland-ab-1800-live-67205264", srcName: "nau.ch" },
+        { fx: "Feyenoord v Excelsior", mk: "Feyenoord Over 1.5 Goals", odds: "1.21", score: "2–3", status: "won", src: "https://www.espn.co.uk/football/match/_/gameId/401875543", srcName: "ESPN" },
+        { fx: "Real Madrid v Celta Vigo", mk: "Over 7.5 Corners", odds: "1.30", score: "2–1 (11 corners)", status: "won", src: "https://www.espn.com/soccer/team-stats/_/gameId/401882798/league/esp.1", srcName: "ESPN" },
+        { fx: "Inter Miami v Columbus Crew", mk: "Over 2.5 Goals", odds: "1.36", score: "0–3", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401933739", srcName: "ESPN" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "2.34", landed: true },
+        { name: "Goals 3-leg", total: "2.46", landed: false },
+        { name: "Full accumulator JAE3A6", total: "11.88", landed: false },
+        { name: "Medium G1QZXU (user's 11 legs)", total: "18.20", landed: false },
+        { name: "Mega R6KC3K", total: "247.96", landed: false }
+      ],
+      lessons: [
+        "Slate JAE3A6 (1.20 minimum, 10 legs) went 9 of 10 and lost only on Frankfurt 1–0 Hoffenheim (Over 2.5). The 16-leg Z0RKUF would have lost twice (Frankfurt Over 1.5, and Feyenoord 2–3 Excelsior). Fewer, slightly longer legs did better. Feyenoord Over 1.5 team goals won even though Feyenoord lost, which shows why team-goals markets were the right choice.",
+        "Medium (the user's edited 11 legs) went 10 of 11 and lost only on Chelsea 1–4 Leeds. Leeds won and the game had 5 goals, so 1X & Under 4.5 failed on both counts. My original Under 3.5 would have lost too. The legs the user removed would both have won (West Ham had 14 corners; Monaco drew 1–1), so those edits made no difference. Bournemouth to score won (2–0), as the user predicted. Lesson: Leeds had scored 3 at Chelsea in the cup in September, and that warning should have kept this fixture out.",
+        "Mega R6KC3K went 6 of 13. Over 2.5 went 1 of 4 (Saints 2–0, Gladbach 0–1 and Spurs 2–0 all fell short) and GG went 2 of 4 (Hibs lost 0–4). One goal short was the common failure. Over 2.5 and GG at 1.45–1.60 on low-xG fixtures are coin flips, so the next Mega needs more home-to-score, 1X and corners legs."
+      ]
+    }
+  },
+  {
     date: "2026-11-21",
     label: "Saturday 21 November 2026",
     built: "Built 02:05 UK",
@@ -62,7 +169,7 @@ window.SLATES = [
         { status: "lost", score: "2–3", src: "https://www.espn.co.uk/football/match/_/gameId/401875543", srcName: "ESPN" },
         { status: "won", score: "1–1", src: "https://sports.yahoo.com/articles/match-report-monaco-1-1-214500104.html", srcName: "Yahoo Sports" },
         { status: "won", score: "2–1 (RM 8 corners)", src: "https://www.espn.com/soccer/team-stats/_/gameId/401882798/league/esp.1", srcName: "ESPN" },
-        null
+        { status: "won", score: "0–3", src: "https://www.espn.com/soccer/match/_/gameId/401933739", srcName: "ESPN" }
       ],
       note: "16-leg version with legs as short as 1.09, replaced under the 1.20 minimum. (NF53BM and J28V3C came before it.) Kept for reference only.",
       picks: [
@@ -157,9 +264,10 @@ window.SLATES = [
       6: { status: "won", score: "5–1", src: "https://www.ross-shirejournal.co.uk/sport/ross-county-thrash-cove-to-maintain-momentum-at-top-of-leagu-450755/", srcName: "Ross-shire Journal" },
       7: { status: "won", score: "3–2", src: "https://www.nau.ch/sport/matchcenter/super-league-bsc-young-boys-gegen-fc-thun-berner-oberland-ab-1800-live-67205264", srcName: "nau.ch" },
       8: { status: "won", score: "2–3", src: "https://www.espn.co.uk/football/match/_/gameId/401875543", srcName: "ESPN" },
-      9: { status: "won", score: "2–1 (11 corners)", src: "https://www.espn.com/soccer/team-stats/_/gameId/401882798/league/esp.1", srcName: "ESPN" }
+      9: { status: "won", score: "2–1 (11 corners)", src: "https://www.espn.com/soccer/team-stats/_/gameId/401882798/league/esp.1", srcName: "ESPN" },
+      10: { status: "won", score: "0–3", src: "https://www.espn.com/soccer/match/_/gameId/401933739", srcName: "ESPN" }
     },
-    settled: "Partly settled 23:40 UK: Slate JAE3A6 LOST on Frankfurt v Hoffenheim (1–0, Over 2.5). The other 8 settled legs all won; Inter Miami v Columbus was still being played. Medium (user's 11 legs) went 10 of 11 and lost only on Chelsea 1–4 Leeds. Mega R6KC3K went 6 of 13. Z0RKUF would also have lost (Frankfurt Over 1.5 and Feyenoord 2–3).",
+    settled: "Settled 01:30 UK (22 Nov): Slate JAE3A6 went 9 of 10 and lost only on Frankfurt 1–0 Hoffenheim (Over 2.5). Inter Miami 0–3 Columbus gave the late Over 2.5. The Safest 4-leg landed. Medium (the user's 11 legs) went 10 of 11 and lost only on Chelsea 1–4 Leeds. Mega R6KC3K went 6 of 13. The 16-leg Z0RKUF would have gone 14 of 16 and lost (Frankfurt Over 1.5, Feyenoord 2–3).",
     audit: {
       of: "Friday 20 November 2026",
       note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Athletic v Espanyol had 11 corners according to ESPN's full-time stats.",
