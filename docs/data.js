@@ -46,7 +46,20 @@ window.SLATES = [
     ],
     acca: { code: "R9MZ7V", legs: 10, odds: "14.38", booked: "01:55 UK" },
     mid: {
-      code: "MFHEKF", odds: "25.78", booked: "02:00 UK", results: null, landed: null,
+      code: "MFHEKF", odds: "25.78", booked: "02:00 UK", landed: false,
+      results: [
+        { status: "won", score: "2–0 (HT 0–0)", src: "https://www.skysports.com/football/hull-city-vs-brighton-and-hove-albion/559549", srcName: "Sky Sports" },
+        { status: "won", score: "4–0 (20 corners)", src: "https://www.sportsmole.co.uk/football/liverpool/result/mauricio-mauled-in-man-utd-debut-as-liverpool-demolish-10-man-red-devils_609619.html", srcName: "Sports Mole" },
+        { status: "won", score: "5–1", src: "https://www.espn.in/football/match/_/gameId/401874989", srcName: "ESPN" },
+        { status: "won", score: "1–0", src: "https://www.skysports.com/football/anderlecht-vs-oud-heverlee-leuven/559203", srcName: "Sky Sports" },
+        { status: "won", score: "1–0", src: "https://www.espn.com/soccer/match/_/gameId/401882801", srcName: "ESPN" },
+        { status: "won", score: "4–4", src: "https://www.flashscore.com/news/soccer-serie-a-atalanta-inter-report-22-11-2026/x2BedwMc/", srcName: "Flashscore" },
+        { status: "lost", score: "5–0", src: "https://sport.tv2.dk/live/fodbold/2026-11-22-superligaen-fc-nordsjaelland-fc-koebenhavn", srcName: "TV2" },
+        { status: "won", score: "1–1", src: "https://www.espn.com/soccer/match/_/gameId/401875047/udinese-bologna", srcName: "ESPN" },
+        { status: "won", score: "3–2", src: "https://www.espn.com/soccer/match/_/gameId/401882800", srcName: "ESPN" },
+        { status: "won", score: "0–1", src: "https://www.aa.com.tr/tr/spor/goztepe-deplasmandan-3-puanla-ayrildi/4133530", srcName: "Anadolu" },
+        { status: "lost", score: "3–0", src: "https://espndeportes.espn.com/futbol/partido/_/juegoId/401882300", srcName: "ESPN Deportes" }
+      ],
       note: "Medium risk, 11 legs over 9 market types, each 1.20 or more. No fixture is shared with the Slate or the Mega.",
       legs: [
         { fx: "Hull v Brighton", comp: "Premier League", ko: "14:00", mk: "2nd Half Over 0.5 Goals", odds: "1.22" },
@@ -63,7 +76,22 @@ window.SLATES = [
       ]
     },
     mega: {
-      code: "N5SRW1", odds: "262.45", booked: "02:02 UK", results: null, landed: null,
+      code: "N5SRW1", odds: "262.45", booked: "02:02 UK", landed: false,
+      results: [
+        { status: "won", score: "4–0", src: "https://www.foxsports.com/soccer/bundesliga-werder-bremen-vs-hamburg-sv-nov-22-2026-game-boxscore-912633", srcName: "FOX Sports" },
+        { status: "lost", score: "0–0", src: "https://africa.espn.com/football/match/_/gameId/401874558", srcName: "ESPN" },
+        { status: "lost", score: "1–1", src: "https://sportnet.sme.sk/spravy/futbal-kosice-skalica-vysledok-dnes-15-kolo-nike-liga-2026-2027/", srcName: "Sportnet" },
+        { status: "won", score: "2–0", src: "https://nk-rijeka.hr/rijeka-gorica-20-kabadayi-i-fruk-za-kisnu-pobjedu/", srcName: "HNK Rijeka" },
+        { status: "lost", score: "0–1", src: "https://www.espn.co.uk/football/match/_/gameId/401878936", srcName: "ESPN" },
+        { status: "lost", score: "3–1 (Rosario 4 corners)", src: "https://www.futbolargentino.com/primera-division/rosario-central-vs-gimnasia-mendoza-22-noviembre-2026-torneo-clausura---liga-profesional-de-argentina-m3275262", srcName: "Fútbol Argentino" },
+        { status: "won", score: "3–4", src: "https://www.vavel.com/en/football/2026/11/22/1280294-kfum-oslo-vs-sk-brann-live-score-updates-stream-info-and-results-in-eliteserien.html", srcName: "VAVEL" },
+        { status: "won", score: "2–2", src: "https://vglive.vg.no/fotball/event/kristiansund-sandefjord/731156", srcName: "VG" },
+        { status: "won", score: "1–2", src: "https://www.espn.co.uk/football/match/_/gameId/401878934", srcName: "ESPN" },
+        null,
+        null,
+        { status: "won", score: "4–2", src: "https://www.espn.com/soccer/match/_/gameId/401841318", srcName: "ESPN" },
+        { status: "lost", score: "0–0", src: "https://www.espn.in/football/match/_/gameId/401841321/vasco-da-gama-red-bull-bragantino", srcName: "ESPN" }
+      ],
       note: "Fewer plain Over 2.5 legs after 21 Nov (1 of 4). Mix: 3 home wins, 3 team 2+ goals, 1 corners, 2 Over 2.5, 4 GG.",
       legs: [
         { fx: "Werder Bremen v Hamburger SV", comp: "Bundesliga", ko: "16:30", mk: "Home Win", odds: "1.65" },
@@ -81,7 +109,19 @@ window.SLATES = [
         { fx: "Bragantino v Vasco da Gama", comp: "Brasileirão", ko: "22:30", mk: "Both Teams to Score (GG)", odds: "1.57" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "lost", score: "2–1 (6 corners)", src: "https://www.espn.co.uk/football/team-stats/_/gameId/401875545/league/ned.1", srcName: "ESPN" },
+      2: { status: "won", score: "4–0", src: "https://www.espn.com/soccer/match/_/gameId/401875008", srcName: "ESPN" },
+      3: { status: "won", score: "3–2 (Barça 10 corners)", src: "https://www.espn.com/soccer/team-stats/_/gameId/401882804", srcName: "ESPN" },
+      4: { status: "won", score: "3–0 (Ajax 8 corners)", src: "https://www.espn.co.uk/football/match/_/gameId/401875547", srcName: "ESPN" },
+      5: { status: "won", score: "3–2", src: "https://gnkdinamo.hr/hr/utakmice/366", srcName: "Dinamo Zagreb" },
+      6: { status: "won", score: "4–0", src: "https://www.espn.com/soccer/match/_/gameId/401876397/angers-paris-fc", srcName: "ESPN" },
+      7: { status: "won", score: "3–1", src: "https://www.espn.com/soccer/match/_/gameId/401884733", srcName: "ESPN" },
+      8: { status: "won", score: "2–0", src: "https://www.espn.co.uk/football/match/_/gameId/401896726/ofi-crete-panathinaikos", srcName: "ESPN" },
+      9: { status: "won", score: "2–0", src: "https://www.fanatik.com.tr/futbol/ozet-bursaspor-super-lige-goz-kirpiyor-bursaspor-sivasspor-mac-sonucu-2-0-2645414", srcName: "Fanatik" },
+      10: { status: "won", score: "0–3", src: "https://www.beinsports.com/en-us/soccer/la-liga/articles/getafe-0-3-atletico-madrid-simeone-makes-laliga-history-in-dominant-win-2026-11-22", srcName: "beIN Sports" }
+    },
+    settled: "Settled 23:20 UK: Slate R9MZ7V went 9 of 10 and LOST on Twente v Willem II Over 8.5 corners (only 6, all to Twente). Both tickets landed. Medium MFHEKF went 9 of 11 and lost (Copenhagen didn't score in a 5–0 defeat; Córdoba 3–0 Oviedo wasn't GG). Mega N5SRW1 lost (Viborg 0–0, Košice 1–1, Union 0–1, Bragantino 0–0); Salzburg and Chivas v Cruz Azul are still to be confirmed.",
     audit: {
       of: "Saturday 21 November 2026",
       note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Corner counts are from ESPN and Sports Mole full-time stats.",
