@@ -30,7 +30,8 @@ MEGA=[("4–0","won","https://www.foxsports.com/soccer/bundesliga-werder-bremen-
 ("3–4","won","https://www.vavel.com/en/football/2026/11/22/1280294-kfum-oslo-vs-sk-brann-live-score-updates-stream-info-and-results-in-eliteserien.html","VAVEL"),
 ("2–2","won","https://vglive.vg.no/fotball/event/kristiansund-sandefjord/731156","VG"),
 ("1–2","won","https://www.espn.co.uk/football/match/_/gameId/401878934","ESPN"),
-None,None,
+("1–0 at 75' (final unconfirmed)","unverified","https://www.vavel.com/en-us/soccer/2026/11/22/1280262-chivas-vs-cruz-azul-live-score-liga-mx.html","VAVEL (live)"),
+("1–0 (Salzburg 0 goals)","lost","https://www.whoscored.com/matches/1990927/live/austria-bundesliga-2026-2027-austria-wien-salzburg","WhoScored"),
 ("4–2","won","https://www.espn.com/soccer/match/_/gameId/401841318","ESPN"),
 ("0–0","lost","https://www.espn.in/football/match/_/gameId/401841321/vasco-da-gama-red-bull-bragantino","ESPN")]
 R=lambda t:'null' if t is None else '{ status: "%s", score: "%s", src: "%s", srcName: "%s" }'%(t[1],t[0],t[2],t[3])

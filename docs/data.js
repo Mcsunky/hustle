@@ -87,8 +87,8 @@ window.SLATES = [
         { status: "won", score: "3–4", src: "https://www.vavel.com/en/football/2026/11/22/1280294-kfum-oslo-vs-sk-brann-live-score-updates-stream-info-and-results-in-eliteserien.html", srcName: "VAVEL" },
         { status: "won", score: "2–2", src: "https://vglive.vg.no/fotball/event/kristiansund-sandefjord/731156", srcName: "VG" },
         { status: "won", score: "1–2", src: "https://www.espn.co.uk/football/match/_/gameId/401878934", srcName: "ESPN" },
-        null,
-        null,
+        { status: "unverified", score: "1–0 at 75' (final not yet confirmed)", src: "https://www.vavel.com/en-us/soccer/2026/11/22/1280262-chivas-vs-cruz-azul-live-score-liga-mx.html", srcName: "VAVEL (live)" },
+        { status: "lost", score: "1–0 (Salzburg 0 goals)", src: "https://www.whoscored.com/matches/1990927/live/austria-bundesliga-2026-2027-austria-wien-salzburg", srcName: "WhoScored" },
         { status: "won", score: "4–2", src: "https://www.espn.com/soccer/match/_/gameId/401841318", srcName: "ESPN" },
         { status: "lost", score: "0–0", src: "https://www.espn.in/football/match/_/gameId/401841321/vasco-da-gama-red-bull-bragantino", srcName: "ESPN" }
       ],
@@ -121,7 +121,7 @@ window.SLATES = [
       9: { status: "won", score: "2–0", src: "https://www.fanatik.com.tr/futbol/ozet-bursaspor-super-lige-goz-kirpiyor-bursaspor-sivasspor-mac-sonucu-2-0-2645414", srcName: "Fanatik" },
       10: { status: "won", score: "0–3", src: "https://www.beinsports.com/en-us/soccer/la-liga/articles/getafe-0-3-atletico-madrid-simeone-makes-laliga-history-in-dominant-win-2026-11-22", srcName: "beIN Sports" }
     },
-    settled: "Settled 23:20 UK: Slate R9MZ7V went 9 of 10 and LOST on Twente v Willem II Over 8.5 corners (only 6, all to Twente). Both tickets landed. Medium MFHEKF went 9 of 11 and lost (Copenhagen didn't score in a 5–0 defeat; Córdoba 3–0 Oviedo wasn't GG). Mega N5SRW1 lost (Viborg 0–0, Košice 1–1, Union 0–1, Bragantino 0–0); Salzburg and Chivas v Cruz Azul are still to be confirmed.",
+    settled: "Settled 23:20 UK: Slate R9MZ7V went 9 of 10 and LOST on Twente v Willem II Over 8.5 corners (only 6, all to Twente). Both tickets landed. Medium MFHEKF went 9 of 11 and lost (Copenhagen didn't score in a 5–0 defeat; Córdoba 3–0 Oviedo wasn't GG). Mega N5SRW1 lost (Viborg 0–0, Košice 1–1, Union 0–1, Bragantino 0–0); Austria Wien 1–0 Salzburg as well; Chivas v Cruz Azul was 1–0 at 75' and the final score is still unconfirmed.",
     audit: {
       of: "Saturday 21 November 2026",
       note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Corner counts are from ESPN and Sports Mole full-time stats.",
