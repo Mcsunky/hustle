@@ -5,6 +5,77 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-23",
+    label: "Monday 23 November 2026",
+    built: "Built 01:55 UK",
+    comps: [
+      { name: "Bulgarian Parva Liga", windows: [ { ko: "16:00 UK", picks: [
+        { n: 1, fx: "Ludogorets v Dunav Ruse", mk: "Ludogorets Over 1.5 Goals", odds: "1.25" } ] } ] },
+      { name: "Allsvenskan", windows: [ { ko: "18:00 UK", picks: [
+        { n: 2, fx: "Hammarby v IFK Göteborg", mk: "Home Win", odds: "1.23" } ] } ] },
+      { name: "Hungarian NB II", windows: [ { ko: "18:30 UK", picks: [
+        { n: 3, fx: "Diósgyőr v Karcag", mk: "Home Win", odds: "1.32" } ] } ] },
+      { name: "Eerste Divisie", windows: [ { ko: "19:00 UK", picks: [
+        { n: 4, fx: "Jong Ajax v Jong AZ", mk: "Over 2.5 Goals", odds: "1.31" } ] } ] },
+      { name: "Ligue 2", windows: [ { ko: "19:45 UK", picks: [
+        { n: 5, fx: "Nantes v Grenoble", mk: "Under 3.5 Goals", odds: "1.29" } ] } ] }
+    ],
+    passes: "Thin Monday: 84 fixtures and few strong favourites, so the Slate is 5 legs (3.43) and there is no Mega (not 12 quality legs). The Medium is 13.57, under its 20 target, rather than padding it with risky legs. Passed: Al-Ittihad (lost 1–4 at home last time, kickoff time disputed), Koper (the match may already have been played on Saturday), Brøndby v Midtjylland GG, Santos v Grêmio corners (no corner data, kicks off after midnight), Wieczysta v Motor GG and Real Oruro Over 2.5 (both had red flags), and short-priced legs below 1.20 (Ludogorets to win 1.14, Al Ain to score 1.13). No Arsenal fixtures.",
+    tickets: [
+      { name: "Safest 3-leg", legs: [
+        ["Hammarby v IFK Göteborg: Home Win", "1.23"],
+        ["Ludogorets v Dunav: Ludogorets Over 1.5", "1.25"],
+        ["Nantes v Grenoble: Under 3.5", "1.29"]
+      ], total: "1.98" }
+    ],
+    acca: { code: "KTMV7C", legs: 5, odds: "3.43", booked: "01:45 UK" },
+    mid: {
+      code: "VSUMY7", odds: "13.57", booked: "01:50 UK", results: null, landed: null,
+      note: "Thin Monday: 13.57 instead of 20+, because the extra legs available all had red flags. 10 legs over 6 market types; no fixture is shared with the Slate.",
+      legs: [
+        { fx: "Al Ain v Esteghlal", comp: "AFC Champions League Elite", ko: "16:00", mk: "Home Win", odds: "1.56" },
+        { fx: "Başakşehir v Çorum", comp: "Süper Lig", ko: "17:00", mk: "Double Chance 1X", odds: "1.29" },
+        { fx: "Slaven Belupo v Osijek", comp: "HNL", ko: "17:00", mk: "Both Teams to Score (GG)", odds: "1.48" },
+        { fx: "Jong PSV v Jong Utrecht", comp: "Eerste Divisie", ko: "19:00", mk: "Over 2.5 Goals", odds: "1.36" },
+        { fx: "Vitesse v De Graafschap", comp: "Eerste Divisie", ko: "19:00", mk: "Both Teams to Score (GG)", odds: "1.43" },
+        { fx: "Ceuta v Almería", comp: "LaLiga Hypermotion", ko: "19:30", mk: "Away to Score (Almería Over 0.5)", odds: "1.17" },
+        { fx: "Monza v Fiorentina", comp: "Serie A", ko: "19:45", mk: "Away to Score (Fiorentina Over 0.5)", odds: "1.15" },
+        { fx: "Brentford v Everton", comp: "Premier League", ko: "20:00", mk: "2nd Half Over 0.5 Goals", odds: "1.23" },
+        { fx: "Levante v Elche", comp: "LaLiga", ko: "20:00", mk: "2nd Half Over 0.5 Goals", odds: "1.20" },
+        { fx: "Internacional v Vitória", comp: "Brasileirão", ko: "22:30", mk: "Double Chance 1X", odds: "1.18" }
+      ]
+    },
+    results: null,
+    audit: {
+      of: "Sunday 22 November 2026",
+      note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Corner counts are from ESPN, Sports Mole and Fútbol Argentino full-time stats.",
+      picks: [
+        { fx: "Twente v Willem II", mk: "Over 8.5 Corners", odds: "1.29", score: "2–1 (6 corners)", status: "lost", src: "https://www.espn.co.uk/football/team-stats/_/gameId/401875545/league/ned.1", srcName: "ESPN" },
+        { fx: "Juventus v Venezia", mk: "Home Win", odds: "1.39", score: "4–0", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401875008", srcName: "ESPN" },
+        { fx: "Barcelona v Villarreal", mk: "Barcelona Over 5.5 Corners", odds: "1.29", score: "3–2 (Barça 10 corners)", status: "won", src: "https://www.espn.com/soccer/team-stats/_/gameId/401882804", srcName: "ESPN" },
+        { fx: "Ajax v ADO Den Haag", mk: "Ajax Over 5.5 Corners", odds: "1.32", score: "3–0 (Ajax 8 corners)", status: "won", src: "https://www.espn.co.uk/football/match/_/gameId/401875547", srcName: "ESPN" },
+        { fx: "Dinamo Zagreb v Istra", mk: "Home Win", odds: "1.21", score: "3–2", status: "won", src: "https://gnkdinamo.hr/hr/utakmice/366", srcName: "Dinamo Zagreb" },
+        { fx: "Paris FC v Angers", mk: "Home Win", odds: "1.35", score: "4–0", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401876397/angers-paris-fc", srcName: "ESPN" },
+        { fx: "Augsburg v Mainz", mk: "Over 2.5 Goals", odds: "1.42", score: "3–1", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401884733", srcName: "ESPN" },
+        { fx: "Panathinaikos v OFI", mk: "Home Win", odds: "1.23", score: "2–0", status: "won", src: "https://www.espn.co.uk/football/match/_/gameId/401896726/ofi-crete-panathinaikos", srcName: "ESPN" },
+        { fx: "Bursaspor v Sivasspor", mk: "Bursaspor Over 1.5 Goals", odds: "1.27", score: "2–0", status: "won", src: "https://www.fanatik.com.tr/futbol/ozet-bursaspor-super-lige-goz-kirpiyor-bursaspor-sivasspor-mac-sonucu-2-0-2645414", srcName: "Fanatik" },
+        { fx: "Getafe v Atlético Madrid", mk: "Under 3.5 Goals", odds: "1.30", score: "0–3", status: "won", src: "https://www.beinsports.com/en-us/soccer/la-liga/articles/getafe-0-3-atletico-madrid-simeone-makes-laliga-history-in-dominant-win-2026-11-22", srcName: "beIN Sports" }
+      ],
+      tickets: [
+        { name: "Safest 4-leg", total: "2.44", landed: true },
+        { name: "Value 3-leg", total: "2.66", landed: true },
+        { name: "Full accumulator R9MZ7V", total: "14.38", landed: false },
+        { name: "Medium MFHEKF", total: "25.78", landed: false },
+        { name: "Mega N5SRW1", total: "262.45", landed: false }
+      ],
+      lessons: [
+        "Slate R9MZ7V went 9 of 10 and lost only on Twente v Willem II Over 8.5 total corners: Twente won 6 corners and Willem II none. When the underdog is bottom and sits deep, total corners depends on the favourite alone, so use the favourite's own corner line (Barcelona's 10 and Ajax's 8 both cleared 5.5).",
+        "Medium MFHEKF went 9 of 11. It lost on Copenhagen to score (Nordsjælland won 5–0) and on Córdoba v Oviedo GG (3–0). Away-to-score and GG at 1.26–1.54 are the soft spots; 2H Over 0.5, corners, home wins, 1X and the over/under legs all won.",
+        "Mega N5SRW1 lost early: Viborg 0–0, Košice 1–1, Union won only 0–1, and Rosario took just 4 corners. Rosario's game was a single-leg knockout, so it was cagier than usual: avoid corner lines in cup knockouts. Home wins at 1.53–1.65 went 1 of 3 again."
+      ]
+    }
+  },
+  {
     date: "2026-11-22",
     label: "Sunday 22 November 2026",
     built: "Built 02:05 UK",
@@ -87,7 +158,7 @@ window.SLATES = [
         { status: "won", score: "3–4", src: "https://www.vavel.com/en/football/2026/11/22/1280294-kfum-oslo-vs-sk-brann-live-score-updates-stream-info-and-results-in-eliteserien.html", srcName: "VAVEL" },
         { status: "won", score: "2–2", src: "https://vglive.vg.no/fotball/event/kristiansund-sandefjord/731156", srcName: "VG" },
         { status: "won", score: "1–2", src: "https://www.espn.co.uk/football/match/_/gameId/401878934", srcName: "ESPN" },
-        { status: "unverified", score: "1–0 at 75' (final not yet confirmed)", src: "https://www.vavel.com/en-us/soccer/2026/11/22/1280262-chivas-vs-cruz-azul-live-score-liga-mx.html", srcName: "VAVEL (live)" },
+        { status: "lost", score: "1–0", src: "https://www.informador.mx/en-vivo-chivas-vs-cruz-azul--minuto-a-minuto-de-la-jornada-17-de-la-liga-mx-lb202611220001.html", srcName: "Informador" },
         { status: "lost", score: "1–0 (Salzburg 0 goals)", src: "https://www.whoscored.com/matches/1990927/live/austria-bundesliga-2026-2027-austria-wien-salzburg", srcName: "WhoScored" },
         { status: "won", score: "4–2", src: "https://www.espn.com/soccer/match/_/gameId/401841318", srcName: "ESPN" },
         { status: "lost", score: "0–0", src: "https://www.espn.in/football/match/_/gameId/401841321/vasco-da-gama-red-bull-bragantino", srcName: "ESPN" }
@@ -121,7 +192,7 @@ window.SLATES = [
       9: { status: "won", score: "2–0", src: "https://www.fanatik.com.tr/futbol/ozet-bursaspor-super-lige-goz-kirpiyor-bursaspor-sivasspor-mac-sonucu-2-0-2645414", srcName: "Fanatik" },
       10: { status: "won", score: "0–3", src: "https://www.beinsports.com/en-us/soccer/la-liga/articles/getafe-0-3-atletico-madrid-simeone-makes-laliga-history-in-dominant-win-2026-11-22", srcName: "beIN Sports" }
     },
-    settled: "Settled 23:20 UK: Slate R9MZ7V went 9 of 10 and LOST on Twente v Willem II Over 8.5 corners (only 6, all to Twente). Both tickets landed. Medium MFHEKF went 9 of 11 and lost (Copenhagen didn't score in a 5–0 defeat; Córdoba 3–0 Oviedo wasn't GG). Mega N5SRW1 lost (Viborg 0–0, Košice 1–1, Union 0–1, Bragantino 0–0); Austria Wien 1–0 Salzburg as well; Chivas v Cruz Azul was 1–0 at 75' and the final score is still unconfirmed.",
+    settled: "Settled: Slate R9MZ7V went 9 of 10 and LOST on Twente v Willem II Over 8.5 corners (only 6, all to Twente). Both tickets landed. Medium MFHEKF went 9 of 11 and lost (Copenhagen were beaten 5–0 without scoring; Córdoba 3–0 Oviedo wasn't GG). Mega N5SRW1 went 6 of 13 and lost.",
     audit: {
       of: "Saturday 21 November 2026",
       note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Corner counts are from ESPN and Sports Mole full-time stats.",
