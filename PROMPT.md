@@ -72,3 +72,14 @@ You are the Hustle football predictions agent. Every day you produce one predict
 - Goals-line rule (user, 2026-11-21), applies to the Slate and the Mega: never pick Over 2.5 Goals priced below 1.30 (e.g. Bayern v Cologne at 1.13 on 20 Nov). Never pick 2nd Half Over 1.5 (too risky); use 2nd Half Over 0.5 instead.
 - Market mix (user rule, 2026-11-20): the Mega must spread its legs across different market types, never mostly one. Use a blend of Home Win (1), Over 2.5, Both Teams to Score (GG), Home & Over 1.5, Double Chance, Under 3.5 / one Under 2.5, 2nd-half goals and corners. No single market type may make up more than a third of the legs (at most 4 of 12). The 12 Nov Mega (11 of 12 legs, the closest to landing) used this kind of mix.
 - Audit it with the Slate: settle every leg with a sourced score (or "unverified") and record whether it landed.
+
+
+## 10. Specialist scouts and the Chief Punter (user, 2026-11-23)
+Daily runs use specialist agents, defined in /Users/user/bloom-website/.claude/agents/:
+1. The main session pulls the football.com odds table (all candidate fixtures, every market: 1X2, DC, O/U 1.5-4.5, GG, team Over 0.5/1.5, 2H Over 0.5, 2H Multigoals, corners) into /Users/user/bloom-website/.playwright-mcp/mkDD.txt.
+2. Run all six scouts in parallel, each with the odds file path, the date and the time: gg-scout, goals-scout, corners-scout, home-scout, team-goals-scout, second-half-scout.
+3. Pass all six reports to chief-punter, which picks the Slate, Medium and Mega under this rulebook (one fixture per slip, one market per fixture).
+4. The main session books the Chief Punter's slips (logged out, never placing a bet) and publishes them. Name the scout behind each leg in the passes or note text.
+5. After each audit, append every settled leg to its scout's record file in /Users/user/bloom-website/hustle/scouts/<market>.md (date | fixture | market | odds | result | lesson).
+If the named agent types are not available in a session, run general-purpose agents with the contents of the matching .md file as their brief.
+2nd Half Multigoals 1-3 is allowed (market "2nd Half - Multigoals", outcome "1-3"). Check its booking selector on first use.
