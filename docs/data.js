@@ -30,7 +30,19 @@ window.SLATES = [
     ],
     acca: { code: "KTMV7C", legs: 5, odds: "3.43", booked: "01:45 UK" },
     mid: {
-      code: "VSUMY7", odds: "13.57", booked: "01:50 UK", results: null, landed: null,
+      code: "VSUMY7", odds: "13.57", booked: "01:50 UK", landed: false,
+      results: [
+        { status: "lost", score: "1–1", src: "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/md5-al-ain-fc-uae-1-1-esteghlal-fc-irn", srcName: "AFC" },
+        { status: "won", score: "4–2", src: "https://www.hurriyet.com.tr/sporarena/basaksehir-4-2-corum-fk-super-lig-maci-ozeti-43387510", srcName: "Hürriyet" },
+        { status: "lost", score: "1–0", src: "https://sportnet.hr/vijesti/nogomet-supersport-hnl/slaven-belupo-osijek-10-velika-pobjeda-farmaceuta-za-priblizavanje-gostima-na-samo-bod/635956/", srcName: "Sportnet" },
+        { status: "won", score: "3–2", src: "https://www.espn.co.uk/football/match/_/gameId/401875835", srcName: "ESPN" },
+        { status: "lost", score: "0–1", src: "https://www.degraafschap.nl/nieuws/de-graafschap-bindt-vitesse-aan-de-zegekar-in-gelderse-derby-0-1", srcName: "De Graafschap" },
+        { status: "won", score: "2–3", src: "https://www.espn.co.uk/football/match/_/gameId/401883110", srcName: "ESPN" },
+        { status: "lost", score: "3–0", src: "https://www.espn.com/soccer/match/_/gameId/401875009", srcName: "ESPN" },
+        { status: "won", score: "4–0 (HT 2–0)", src: "https://www.espn.co.uk/football/match/_/gameId/401879237", srcName: "ESPN" },
+        { status: "won", score: "1–1 (HT 0–0)", src: "https://www.espn.com/soccer/match/_/gameId/401882802", srcName: "ESPN" },
+        { status: "lost", score: "2–4", src: "https://www.espn.com/soccer/match/_/gameId/401841323/vitoria-internacional", srcName: "ESPN" }
+      ],
       note: "Thin Monday: 13.57 instead of 20+, because the extra legs available all had red flags. 10 legs over 6 market types; no fixture is shared with the Slate.",
       legs: [
         { fx: "Al Ain v Esteghlal", comp: "AFC Champions League Elite", ko: "16:00", mk: "Home Win", odds: "1.56" },
@@ -45,7 +57,14 @@ window.SLATES = [
         { fx: "Internacional v Vitória", comp: "Brasileirão", ko: "22:30", mk: "Double Chance 1X", odds: "1.18" }
       ]
     },
-    results: null,
+    results: {
+      1: { status: "lost", score: "1–0 (Ludogorets 1 goal)", src: "https://www.dnes.bg/a/9-sport/743397-ludogorets-se-izmachi-no-prechupi-dunav-izleze-na-treta-pozitsiya-v-parva-liga", srcName: "Dnes.bg" },
+      2: { status: "won", score: "3–1", src: "https://www.whoscored.com/matches/1957320/live/sweden-allsvenskan-2026-hammarby-ifk-goeteborg", srcName: "WhoScored" },
+      3: { status: "won", score: "2–1", src: "https://nb1.hu/hir/diosgyori-vtk-karcag-2-1-merkantil-bank-liga-14-fordulo-hetfo", srcName: "NB1.hu" },
+      4: { status: "won", score: "3–0", src: "https://www.ajax.nl/artikelen/jong-ajax-maakt-na-rust-het-verschil-tegen-jong-az", srcName: "Ajax" },
+      5: { status: "won", score: "1–0", src: "https://www.beinsports.com/fr-fr/football/ligue-2/articles-video/ligue-2-nantes-respire-face-%C3%A0-grenoble-2026-11-23", srcName: "beIN Sports" }
+    },
+    settled: "Settled 00:35 UK (24 Nov): Slate KTMV7C went 4 of 5 and LOST on Ludogorets Over 1.5 goals (they won only 1–0). The Safest 3-leg lost on the same leg. Medium VSUMY7 went 5 of 10 and lost (both GG legs ended 1–0, Fiorentina lost 3–0 at Monza, Al Ain drew 1–1, Internacional lost 2–4). Both 2nd Half Over 0.5 legs won.",
     audit: {
       of: "Sunday 22 November 2026",
       note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Corner counts are from ESPN, Sports Mole and Fútbol Argentino full-time stats.",
