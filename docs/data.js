@@ -5,6 +5,55 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-24",
+    label: "Tuesday 24 November 2026",
+    built: "Built 01:50 UK (scouts + Chief Punter)",
+    comps: [
+      { name: "Championship", windows: [ { ko: "19:45 UK", picks: [
+        { n: 1, fx: "Middlesbrough v Swansea", mk: "Middlesbrough Over 4.5 Corners", odds: "1.21" } ] } ] },
+      { name: "League Two", windows: [ { ko: "19:45 UK", picks: [
+        { n: 2, fx: "Port Vale v Northampton", mk: "Under 3.5 Goals", odds: "1.24" } ] } ] },
+      { name: "Champions League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 3, fx: "Man City v Napoli", mk: "Man City Over 4.5 Corners", odds: "1.24" } ] } ] },
+      { name: "Champions League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 4, fx: "RB Leipzig v Lens", mk: "Leipzig Over 1.5 Goals", odds: "1.29" } ] } ] },
+      { name: "Champions League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 5, fx: "Como v AEK Athens", mk: "Over 2.5 Goals", odds: "1.34" } ] } ] },
+      { name: "Champions League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 6, fx: "Feyenoord v Porto", mk: "Away to Score (Porto Over 0.5)", odds: "1.20" } ] } ] }
+    ],
+    passes: "First run with the six specialist scouts and the Chief Punter. Only 6 legs at 1.20+ cleared medium-or-better confidence with a positive edge after the red-flag fixtures were dropped, so the Slate is 3.86, under the 10.00 target. The Chief Punter's estimate is about a 25% chance of landing; the de-margined market says about 18.5%. NO Medium and NO Mega today: reaching 20 would need low-confidence GG legs (GG is 4 of 10 lately). Rejected: Slovan v Betis (kickoff disputed), Rangers v Aberdeen (kickoff conflict), Wolves v Derby (rotation), Bradford corners (only one old source), Durban v Polokwane (kickoff unverified), Man City to win (the scout's 70% is below the market's 75%), Real Madrid to win (1.19 is under the 1.20 floor), every 2H Over 0.5 (priced 1.07–1.14), and every 2H Multigoals 1–3 (negative value). No Arsenal fixtures.",
+    tickets: [
+      { name: "Corners double", legs: [
+        ["Middlesbrough v Swansea: Boro Over 4.5 Corners", "1.21"],
+        ["Man City v Napoli: City Over 4.5 Corners", "1.24"]
+      ], total: "1.50" }
+    ],
+    acca: { code: "L3F0UQ", legs: 6, odds: "3.86", booked: "01:45 UK", note: "Picked by the Chief Punter from six specialist scouts. Under the 10.00 target on purpose: no padding with weak legs." },
+    results: null,
+    audit: {
+      of: "Monday 23 November 2026",
+      note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below.",
+      picks: [
+        { fx: "Ludogorets v Dunav Ruse", mk: "Ludogorets Over 1.5 Goals", odds: "1.25", score: "1–0 (Ludogorets 1 goal)", status: "lost", src: "https://www.dnes.bg/a/9-sport/743397-ludogorets-se-izmachi-no-prechupi-dunav-izleze-na-treta-pozitsiya-v-parva-liga", srcName: "Dnes.bg" },
+        { fx: "Hammarby v IFK Göteborg", mk: "Home Win", odds: "1.23", score: "3–1", status: "won", src: "https://www.whoscored.com/matches/1957320/live/sweden-allsvenskan-2026-hammarby-ifk-goeteborg", srcName: "WhoScored" },
+        { fx: "Diósgyőr v Karcag", mk: "Home Win", odds: "1.32", score: "2–1", status: "won", src: "https://nb1.hu/hir/diosgyori-vtk-karcag-2-1-merkantil-bank-liga-14-fordulo-hetfo", srcName: "NB1.hu" },
+        { fx: "Jong Ajax v Jong AZ", mk: "Over 2.5 Goals", odds: "1.31", score: "3–0", status: "won", src: "https://www.ajax.nl/artikelen/jong-ajax-maakt-na-rust-het-verschil-tegen-jong-az", srcName: "Ajax" },
+        { fx: "Nantes v Grenoble", mk: "Under 3.5 Goals", odds: "1.29", score: "1–0", status: "won", src: "https://www.beinsports.com/fr-fr/football/ligue-2/articles-video/ligue-2-nantes-respire-face-%C3%A0-grenoble-2026-11-23", srcName: "beIN Sports" }
+      ],
+      tickets: [
+        { name: "Safest 3-leg", total: "1.98", landed: false },
+        { name: "Full accumulator KTMV7C", total: "3.43", landed: false },
+        { name: "Medium VSUMY7", total: "13.57", landed: false }
+      ],
+      lessons: [
+        "Slate KTMV7C went 4 of 5 and lost on Ludogorets Over 1.5 team goals: they only edged newly promoted Dunav 1–0 with a goal in first-half stoppage time. Team 2+ goals after a draw in a big derby (2–2 with CSKA 1948) carries fatigue risk; Ludogorets to win (1.14) would have landed but was under the 1.20 minimum.",
+        "Medium VSUMY7 went 5 of 10. Both GG legs failed in 1–0 games (Slaven Belupo, and Vitesse in a disrupted derby), Fiorentina failed to score at 18th-placed Monza (0–3), and both 1X legs at 1.18–1.56 had mixed results (Başakşehir won 4–2 from 0–2 down; Internacional lost 2–4 without the suspended Alan Patrick). 2nd Half Over 0.5 went 2 of 2 again, now 5 of 5 overall.",
+        "GG is now 4 of 10 over three days, the weakest market. The GG scout should require both sides to have scored in at least 7 of their last 10 and the weaker side not to have failed to score twice in its last 4."
+      ]
+    }
+  },
+  {
     date: "2026-11-23",
     label: "Monday 23 November 2026",
     built: "Built 01:55 UK",
