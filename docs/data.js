@@ -30,6 +30,19 @@ window.SLATES = [
       ], total: "1.60" }
     ],
     acca: { code: "V5V1CK", legs: 6, odds: "4.70", booked: "01:55 UK", note: "Six legs over six market types, chosen by the Chief Punter. The honest chance of landing is about 1 in 6. First use of 2nd Half Multigoals 1–3." },
+    slate2: {
+      label: "Fallback Slate · proven model", code: "TQ9VBG", odds: "3.46", booked: "07:10 UK", results: null,
+      note: "The user switched the proven 5–22 Nov model back on (rulebook section 11): strong home wins plus Over 1.5, no corners or team goals, and the 1.20 minimum suspended. Shares no fixture with V5V1CK, so both codes can be played. Thin Wednesday, so 3.46.",
+      legs: [
+        { fx: "Al Ula v Al Adalah", comp: "Saudi First Division", ko: "15:10", mk: "Home Win", odds: "1.27" },
+        { fx: "Tabor Sežana v Fužinar", comp: "Slovenian Cup", ko: "15:00", mk: "Home Win", odds: "1.28" },
+        { fx: "Al Jazira v Gol Gohar", comp: "AFC Champions League Two", ko: "16:00", mk: "Double Chance 1X", odds: "1.12" },
+        { fx: "Bolton v West Brom", comp: "Championship", ko: "19:45", mk: "Over 1.5 Goals", odds: "1.25" },
+        { fx: "Sporting v Man Utd", comp: "Champions League", ko: "20:00", mk: "Over 1.5 Goals", odds: "1.16" },
+        { fx: "Atlético Madrid v Viking", comp: "Champions League", ko: "20:00", mk: "Home Win", odds: "1.13" },
+        { fx: "Real Potosí v Always Ready", comp: "Copa Bolivia final, 2nd leg", ko: "23:00", mk: "Over 1.5 Goals", odds: "1.16" }
+      ]
+    },
     results: null,
     audit: {
       of: "Tuesday 24 November 2026",

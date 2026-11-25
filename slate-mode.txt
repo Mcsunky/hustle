@@ -1,1 +1,1 @@
-scouts (pending the 25 Nov result: switch to "fallback" if V5V1CK loses)
+fallback

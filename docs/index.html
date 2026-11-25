@@ -69,6 +69,7 @@ a { color: var(--main); }
 .code-card.main { --c: var(--main); }
 .code-card.mega { --c: var(--gold); }
 .code-card.mid { --c: #5FD3A6; }
+.code-card.s2 { --c: var(--main); }
 .code-card.prev { --c: var(--muted); }
 .code-card.prev .code { text-decoration: line-through; text-decoration-thickness: 2px; color: var(--muted); }
 .code-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
@@ -210,6 +211,15 @@ function codesBlock(sl) {
       ${sl.acca.note ? `<p class="code-note">${esc(sl.acca.note)}</p>` : ""}
     </div>`);
   }
+  if (sl.slate2) {
+    const r2 = sl.slate2.results || [], st2 = r2.some(r => r && r.status === "lost") ? "lost" : (r2.length === sl.slate2.legs.length && r2.every(r => r && (r.status === "won" || r.status === "void")) ? "landed" : "pending");
+    cards.push(`<div class="code-card s2">
+      <div class="code-head"><span class="code-label">${esc(sl.slate2.label || "Second Slate")}</span>${statusPill(st2)}</div>
+      <div class="code-row"><span class="code">${esc(sl.slate2.code)}</span>${copyBtn(sl.slate2.code)}</div>
+      <div class="code-meta"><span><b>${sl.slate2.legs.length}</b> legs</span><span>odds <b>${esc(sl.slate2.odds)}</b></span><span>booked ${esc(sl.slate2.booked)}</span></div>
+      ${sl.slate2.note ? `<p class="code-note">${esc(sl.slate2.note)}</p>` : ""}
+    </div>`);
+  }
   if (sl.mid) {
     const st = sl.mid.landed === true ? "landed" : sl.mid.landed === false ? "lost" : "pending";
     cards.push(`<div class="code-card mid">
@@ -302,6 +312,13 @@ function ticketsBlock(sl) {
   </section>`;
 }
 
+function slate2Block(sl) {
+  const m = sl.slate2; if (!m) return "";
+  return `<section aria-labelledby="s2-h">
+    <div class="sec-head"><h2 id="s2-h">${esc(m.label || "Second Slate")}</h2><span class="note">${m.legs.length} legs · odds ${esc(m.odds)}</span></div>
+    <ol class="picks">${m.legs.map((l, i) => pickLi(i + 1, l.fx + " · " + l.ko, l.comp + " · " + l.mk, l.odds, m.results && m.results[i])).join("")}</ol>
+  </section>`;
+}
 function midBlock(sl) {
   const m = sl.mid; if (!m) return "";
   return `<section aria-labelledby="mid-h">
@@ -352,7 +369,7 @@ function show(date) {
   $("#days").innerHTML = SLATES.map(s => `<button type="button" data-d="${s.date}" aria-pressed="${s.date === sl.date}">${new Date(s.date + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" })}</button>`).join("");
   const body = sl.noSlate
     ? `<section aria-labelledby="slate-h"><div class="sec-head"><h2 id="slate-h">No Slate Today</h2></div><p class="settled">${esc(sl.noSlate)}</p></section>`
-    : slateBlock(sl) + ticketsBlock(sl) + midBlock(sl) + megaBlock(sl) + megaPrevBlock(sl) + earlierBlock(sl);
+    : slateBlock(sl) + ticketsBlock(sl) + slate2Block(sl) + midBlock(sl) + megaBlock(sl) + megaPrevBlock(sl) + earlierBlock(sl);
   $("#app").innerHTML = codesBlock(sl) + recordBlock() + body + auditBlock(sl.audit);
   document.querySelectorAll("#days button").forEach(b => b.onclick = () => { location.hash = "d" + b.dataset.d; });
   document.querySelectorAll(".copy").forEach(b => b.onclick = () => {
