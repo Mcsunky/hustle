@@ -83,3 +83,16 @@ Daily runs use specialist agents, defined in /Users/user/bloom-website/.claude/a
 5. After each audit, append every settled leg to its scout's record file in /Users/user/bloom-website/hustle/scouts/<market>.md (date | fixture | market | odds | result | lesson).
 If the named agent types are not available in a session, run general-purpose agents with the contents of the matching .md file as their brief.
 2nd Half Multigoals 1-3 is allowed: booking key {tab:"Goals", hdr:"2nd Half - Multigoals", label:"1-3"} (it sits under the Goals tab, not Half).
+
+
+## 11. Fallback to the proven Slate model (user, 2026-11-25)
+If the 25 Nov Slate (V5V1CK, the scouts' second slip) does NOT land, return the Slate to the model that worked from 5 to 22 Nov. In that period, 6 Slates landed (5, 7, 11, 12, 15, 18 Nov) and 9 more lost by a single leg.
+Proven model:
+- **Core:** straight Home Wins for strong, in-form favourites with a verified home record (about 1.10-1.40), plus full-match Over 1.5 Goals in games where both sides score or concede. Together these made up about 80% of the winning legs.
+- **Occasional:** 1X when a draw is the main danger, one Under 3.5, and Over 2.5 only where both sides are leaky.
+- **Avoid on the Slate:** corners, team-goals ("to score"), GG and 2H Multigoals. Those belong in the Medium or Mega.
+- **Size:** 6-11 legs, total about 4-12. More legs are fine if each is strong.
+- **Price rules in fallback mode:** the 1.20 minimum per leg is suspended (the winning Slates used 1.10-1.19 legs), but still skip legs below about 1.10, which add almost nothing. The 10+ weekend target becomes an aim, not a requirement.
+- **All other rules still apply:** the bans, league caps, one fixture per slip, and the value check on combined markets.
+- **The scouts stay on as fact-checkers:** the home scout and the goals scout (for Over 1.5) shortlist and verify. The Chief Punter builds the Slate from those two markets only. The Medium and Mega still use all six scouts.
+Status is recorded in /Users/user/bloom-website/hustle/slate-mode.txt ("scouts" or "fallback"). The 25 Nov audit sets it.
