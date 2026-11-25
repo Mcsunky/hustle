@@ -30,7 +30,15 @@ window.SLATES = [
       ], total: "1.50" }
     ],
     acca: { code: "L3F0UQ", legs: 6, odds: "3.86", booked: "01:45 UK", note: "Picked by the Chief Punter from six specialist scouts. Under the 10.00 target on purpose: no padding with weak legs." },
-    results: null,
+    results: {
+      1: { status: "lost", score: "2–1 (Boro 3 corners)", src: "https://www.espn.co.uk/football/team-stats/_/gameId/401880145/league/eng.2", srcName: "ESPN" },
+      2: { status: "won", score: "1–1", src: "https://www.ntfc.co.uk/news/2026/november/24/match-report--port-vale-v-northampton-town", srcName: "Northampton Town" },
+      3: { status: "won", score: "2–2 (City 9 corners)", src: "https://www.espn.co.uk/football/match/_/gameId/401915379", srcName: "ESPN" },
+      4: { status: "won", score: "3–1", src: "https://www.espn.com/soccer/match/_/gameId/401915299", srcName: "ESPN" },
+      5: { status: "lost", score: "1–0", src: "https://www.beinsports.com/en-us/soccer/uefa-champions-league/articles/como-1-0-aek-athens-milla-stunner-spares-da-cunhas-penalty-miss-2026-11-24", srcName: "beIN Sports" },
+      6: { status: "won", score: "0–1", src: "https://www.espn.co.uk/football/match/_/gameId/401915294", srcName: "ESPN" }
+    },
+    settled: "Settled 01:15 UK (25 Nov): Slate L3F0UQ went 4 of 6 and LOST (Middlesbrough took only 3 corners; Como won 1–0, so Over 2.5 failed). The Corners double lost on Boro. The six candidates the Chief Punter rejected went 3 of 6, so padding would not have helped.",
     audit: {
       of: "Monday 23 November 2026",
       note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below.",
