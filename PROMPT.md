@@ -82,4 +82,4 @@ Daily runs use specialist agents, defined in /Users/user/bloom-website/.claude/a
 4. The main session books the Chief Punter's slips (logged out, never placing a bet) and publishes them. Name the scout behind each leg in the passes or note text.
 5. After each audit, append every settled leg to its scout's record file in /Users/user/bloom-website/hustle/scouts/<market>.md (date | fixture | market | odds | result | lesson).
 If the named agent types are not available in a session, run general-purpose agents with the contents of the matching .md file as their brief.
-2nd Half Multigoals 1-3 is allowed (market "2nd Half - Multigoals", outcome "1-3"). Check its booking selector on first use.
+2nd Half Multigoals 1-3 is allowed: booking key {tab:"Goals", hdr:"2nd Half - Multigoals", label:"1-3"} (it sits under the Goals tab, not Half).

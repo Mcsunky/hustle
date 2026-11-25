@@ -5,6 +5,55 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-25",
+    label: "Wednesday 25 November 2026",
+    built: "Built 02:00 UK (scouts + Chief Punter)",
+    comps: [
+      { name: "Champions League", windows: [ { ko: "17:45 UK", picks: [
+        { n: 1, fx: "Slavia Prague v Villarreal", mk: "2nd Half Multigoals 1–3", odds: "1.28" } ] } ] },
+      { name: "National League", windows: [ { ko: "19:00 UK", picks: [
+        { n: 2, fx: "Boreham Wood v Aldershot", mk: "Home Win", odds: "1.20" } ] } ] },
+      { name: "Championship", windows: [ { ko: "20:00 UK", picks: [
+        { n: 3, fx: "Stoke v Millwall", mk: "Home to Score (Stoke Over 0.5)", odds: "1.27" } ] } ] },
+      { name: "Champions League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 4, fx: "Club Brugge v Liverpool", mk: "Home to Score (Brugge Over 0.5)", odds: "1.26" } ] } ] },
+      { name: "Champions League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 5, fx: "Lille v Bayern Munich", mk: "Bayern Over 4.5 Corners", odds: "1.45" } ] } ] },
+      { name: "Champions League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 6, fx: "PSG v Roma", mk: "Over 2.5 Goals", odds: "1.32" } ] } ] }
+    ],
+    passes: "Built by the six scouts and the Chief Punter. The Slate is 4.70, under the 10.00 target: forcing 10+ would have added Al Jazira, Bolton corners and Birmingham to score, cutting the chance of landing from about 17% to about 6%. Yesterday showed padding would not have helped (the rejected picks went 3 of 6). NO Medium: only about 2.55 of clean legs were left after the Slate, so it can't reach 20 without flagged picks. NO Mega: only 3 genuine legs at 1.45+. Passed: Burnley v Birmingham (the scouts disagreed), Inter corners (conflicting source figures), FC Gifu (conflicting standings), Al-Taawoun (low confidence), El Gaish Under 2.5 (low-to-medium), PSG GG (no edge after shading), and every 2H Over 0.5 / Over 1.5 priced 1.07–1.12 (below the 1.20 minimum). No Arsenal fixtures.",
+    tickets: [
+      { name: "Team-to-score double", legs: [
+        ["Stoke v Millwall: Stoke to score", "1.27"],
+        ["Brugge v Liverpool: Brugge to score", "1.26"]
+      ], total: "1.60" }
+    ],
+    acca: { code: "V5V1CK", legs: 6, odds: "4.70", booked: "01:55 UK", note: "Six legs over six market types, chosen by the Chief Punter. The honest chance of landing is about 1 in 6. First use of 2nd Half Multigoals 1–3." },
+    results: null,
+    audit: {
+      of: "Tuesday 24 November 2026",
+      note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Corner counts are from ESPN.",
+      picks: [
+        { fx: "Middlesbrough v Swansea", mk: "Middlesbrough Over 4.5 Corners", odds: "1.21", score: "2–1 (Boro 3 corners)", status: "lost", src: "https://www.espn.co.uk/football/team-stats/_/gameId/401880145/league/eng.2", srcName: "ESPN" },
+        { fx: "Port Vale v Northampton", mk: "Under 3.5 Goals", odds: "1.24", score: "1–1", status: "won", src: "https://www.ntfc.co.uk/news/2026/november/24/match-report--port-vale-v-northampton-town", srcName: "Northampton Town" },
+        { fx: "Man City v Napoli", mk: "Man City Over 4.5 Corners", odds: "1.24", score: "2–2 (City 9 corners)", status: "won", src: "https://www.espn.co.uk/football/match/_/gameId/401915379", srcName: "ESPN" },
+        { fx: "RB Leipzig v Lens", mk: "Leipzig Over 1.5 Goals", odds: "1.29", score: "3–1", status: "won", src: "https://www.espn.com/soccer/match/_/gameId/401915299", srcName: "ESPN" },
+        { fx: "Como v AEK Athens", mk: "Over 2.5 Goals", odds: "1.34", score: "1–0", status: "lost", src: "https://www.beinsports.com/en-us/soccer/uefa-champions-league/articles/como-1-0-aek-athens-milla-stunner-spares-da-cunhas-penalty-miss-2026-11-24", srcName: "beIN Sports" },
+        { fx: "Feyenoord v Porto", mk: "Away to Score (Porto Over 0.5)", odds: "1.20", score: "0–1", status: "won", src: "https://www.espn.co.uk/football/match/_/gameId/401915294", srcName: "ESPN" }
+      ],
+      tickets: [
+        { name: "Corners double", total: "1.50", landed: false },
+        { name: "Full accumulator L3F0UQ", total: "3.86", landed: false }
+      ],
+      lessons: [
+        "Slate L3F0UQ went 4 of 6 and lost. Middlesbrough took only 3 corners (Swansea kept the ball in a 2–1 game, the 'score and sit' path the corners scout named), and Como beat AEK 1–0 (Over 2.5 lost to exactly the 1–0/2–0 path the Chief Punter called weakest). City 9 corners, Leipzig 3 goals, Porto scoring and Port Vale 1–1 all won.",
+        "The 'no padding' call was right: the six rejected candidates went 3 of 6 (Real Madrid 5–1, Galatasaray scored and Chapecoense 3–0 Under 4.5 won; Cardiff 0–4 Preston 1X, Forest Green 0–2 Over 2.5 and Bodø's 4 corners all lost). Padding would have made a bigger slip that still lost.",
+        "Corners for a favourite against a side that keeps the ball (Swansea) are weaker than against a deep block (Napoli gave City 9). The corners scout should check the opponent's possession style, not just corners conceded."
+      ]
+    }
+  },
+  {
     date: "2026-11-24",
     label: "Tuesday 24 November 2026",
     built: "Built 01:50 UK (scouts + Chief Punter)",
