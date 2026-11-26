@@ -5,6 +5,57 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-26",
+    label: "Thursday 26 November 2026",
+    built: "Built 02:25 UK (fallback model)",
+    comps: [
+      { name: "Conference League", windows: [ { ko: "15:30 UK", picks: [
+        { n: 1, fx: "Kairat Almaty v Mjällby", mk: "Under 3.5 Goals", odds: "1.38" } ] } ] },
+      { name: "Europa League", windows: [ { ko: "17:45 UK", picks: [
+        { n: 2, fx: "Union Saint-Gilloise v Lech Poznań", mk: "Home Win", odds: "1.39" } ] } ] },
+      { name: "Europa League", windows: [ { ko: "17:45 UK", picks: [
+        { n: 3, fx: "Viktoria Plzeň v Benfica", mk: "Over 1.5 Goals", odds: "1.13" } ] } ] },
+      { name: "Conference League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 4, fx: "Braga v KuPS", mk: "Home Win", odds: "1.15" } ] } ] },
+      { name: "Europa League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 5, fx: "Ferencváros v Celje", mk: "Over 1.5 Goals", odds: "1.16" } ] } ] },
+      { name: "Europa League", windows: [ { ko: "20:00 UK", picks: [
+        { n: 6, fx: "NEC Nijmegen v Rennes", mk: "Over 1.5 Goals", odds: "1.15" } ] } ] }
+    ],
+    passes: "FALLBACK MODE (proven model): home wins plus Over 1.5, with one Under 3.5. The scouts shortlisted and the Chief Punter built the slip. Total 3.33: the other Europa League home favourites all had red flags or no edge: Hoffenheim (Forebet gives the home win only 49%), Beşiktaş (neutral venue in Batumi), Salzburg (26th, Tabakovic out), Brighton and Juventus (rotation confirmed). No Medium: the best clean version reached only 7.41 (9.49 with a GG swap), with about a 9% chance of landing, so it was not worth posting. No Mega. Calibrated chance of landing about 28%; the bookmaker implies 30%. No Arsenal fixtures.",
+    tickets: [
+      { name: "Banker double", legs: [
+        ["Braga v KuPS: Home Win", "1.15"],
+        ["Viktoria Plzeň v Benfica: Over 1.5", "1.13"]
+      ], total: "1.30" }
+    ],
+    acca: { code: "K36UKZ", legs: 6, odds: "3.33", booked: "02:20 UK", note: "Proven model (fallback mode): home wins and Over 1.5 only, picked by the home and goals scouts and assembled by the Chief Punter." },
+    results: null,
+    audit: {
+      of: "Wednesday 25 November 2026",
+      note: "Settled on 90-minute results. Two Slates were played: the scouts' V5V1CK and the user's fallback TQ9VBG. Each result has at least one reliable source; one is linked below.",
+      picks: [
+        { fx: "Slavia Prague v Villarreal", mk: "2nd Half Multigoals 1–3", odds: "1.28", score: "0–1 (HT 0–0, 1 second-half goal)", status: "won", src: "https://www.skysports.com/football/slavia-prague-vs-villarreal/9091404031337954232", srcName: "Sky Sports" },
+        { fx: "Boreham Wood v Aldershot", mk: "Home Win", odds: "1.20", score: "4–1", status: "won", src: "https://www.fotmob.com/matches/boreham-wood-vs-aldershot-town/zpyse", srcName: "FotMob" },
+        { fx: "Stoke v Millwall", mk: "Home to Score (Stoke Over 0.5)", odds: "1.27", score: "2–1", status: "won", src: "https://www.skysports.com/football/stoke-city-vs-millwall/report/560700", srcName: "Sky Sports" },
+        { fx: "Club Brugge v Liverpool", mk: "Home to Score (Brugge Over 0.5)", odds: "1.26", score: "0–3", status: "lost", src: "https://www.espn.com/soccer/report/_/gameId/401915292", srcName: "ESPN" },
+        { fx: "Lille v Bayern Munich", mk: "Bayern Over 4.5 Corners", odds: "1.45", score: "2–1 (Bayern 4 corners)", status: "lost", src: "https://africa.espn.com/football/match/_/gameId/401915377", srcName: "ESPN" },
+        { fx: "PSG v Roma", mk: "Over 2.5 Goals", odds: "1.32", score: "2–2", status: "won", src: "https://www.espn.co.uk/football/match/_/gameId/401915374", srcName: "ESPN" }
+      ],
+      tickets: [
+        { name: "Scouts Slate V5V1CK", total: "4.70", landed: false },
+        { name: "Fallback Slate TQ9VBG", total: "3.46", landed: false },
+        { name: "Team-to-score double", total: "1.60", landed: false }
+      ],
+      lessons: [
+        "The proven model beat the scouts' Slate on the same day. Fallback TQ9VBG went 6 of 7, losing only on Real Potosí 0–0 Always Ready (Over 1.5 in a cup final the away side only needed to protect) (home wins Al Ula 3–0, Tabor 6–1, Atlético 2–0, Al Jazira 1X, and Over 1.5 in Bolton 1–3 and Sporting 2–2). Scouts Slate V5V1CK went 4 of 6 and lost on Brugge to score (0–3 v Liverpool) and Bayern corners (4).",
+        "Team-to-score and team-corner lines lost again (Brugge, Bayern; Boro and Copenhagen before them). The user's call to drop them from the Slate is backed by the data: keep them for the Medium or Mega only.",
+        "2nd Half Multigoals 1–3 won on its first use (Slavia 0–1, one second-half goal).",
+        "Avoid Over 1.5 in second-leg finals where one side leads on aggregate: Real Potosí 0–0 Always Ready cost TQ9VBG, which had won its other 6 legs."
+      ]
+    }
+  },
+  {
     date: "2026-11-25",
     label: "Wednesday 25 November 2026",
     built: "Built 02:00 UK (scouts + Chief Punter)",
