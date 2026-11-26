@@ -30,8 +30,26 @@ window.SLATES = [
       ], total: "1.60" }
     ],
     acca: { code: "V5V1CK", legs: 6, odds: "4.70", booked: "01:55 UK", note: "Six legs over six market types, chosen by the Chief Punter. The honest chance of landing is about 1 in 6. First use of 2nd Half Multigoals 1–3." },
+    results: {
+      1: { status: "won", score: "0–1 (HT 0–0, 1 second-half goal)", src: "https://www.skysports.com/football/slavia-prague-vs-villarreal/9091404031337954232", srcName: "Sky Sports" },
+      2: { status: "won", score: "4–1", src: "https://www.fotmob.com/matches/boreham-wood-vs-aldershot-town/zpyse", srcName: "FotMob" },
+      3: { status: "won", score: "2–1", src: "https://www.skysports.com/football/stoke-city-vs-millwall/report/560700", srcName: "Sky Sports" },
+      4: { status: "lost", score: "0–3", src: "https://www.espn.com/soccer/report/_/gameId/401915292", srcName: "ESPN" },
+      5: { status: "lost", score: "2–1 (Bayern 4 corners)", src: "https://africa.espn.com/football/match/_/gameId/401915377", srcName: "ESPN" },
+      6: { status: "won", score: "2–2", src: "https://www.espn.co.uk/football/match/_/gameId/401915374", srcName: "ESPN" }
+    },
+    settled: "Settled 00:30 UK (26 Nov). Scouts Slate V5V1CK went 4 of 6 and LOST (Brugge 0–3 Liverpool, so Brugge didn't score; Bayern took only 4 corners). Fallback Slate TQ9VBG (proven model) won all 6 settled legs; only Real Potosí v Always Ready Over 1.5 is still to be confirmed. The Team-to-score double lost on Brugge.",
     slate2: {
-      label: "Fallback Slate · proven model", code: "TQ9VBG", odds: "3.46", booked: "07:10 UK", results: null,
+      label: "Fallback Slate · proven model", code: "TQ9VBG", odds: "3.46", booked: "07:10 UK",
+      results: [
+        { status: "won", score: "3–0", src: "https://www.alweeam.com.sa/1302415/2026/first-division-results-wednesday-november-25-2026-ula-adalah-3-0", srcName: "Alweeam" },
+        { status: "won", score: "6–1", src: "https://www.rtvslo.si/sport/nogomet/tabor-sezana-v-cetrtfinalu-pokala-slovenije/801228", srcName: "RTV SLO" },
+        { status: "won", score: "1–0", src: "https://www.the-afc.com/en/club/afc_champions_league_two.html/news/group-b-al-jazira-club-uae-1-0-golgohar-sirjan-irn", srcName: "AFC" },
+        { status: "won", score: "1–3", src: "https://www.skysports.com/football/news/13610529/bolton-wanderers-1-3-west-bromwich-albion-aune-heggebo-nets-twice-in-baggies-win", srcName: "Sky Sports" },
+        { status: "won", score: "2–2", src: "https://www.espn.com/soccer/report/_/gameId/401915373", srcName: "ESPN" },
+        { status: "won", score: "2–0", src: "https://www.espn.com/soccer/match/_/gameId/401915291/viking-fk-atletico-madrid", srcName: "ESPN" },
+        null
+      ],
       note: "The user switched the proven 5–22 Nov model back on (rulebook section 11): strong home wins plus Over 1.5, no corners or team goals, and the 1.20 minimum suspended. Shares no fixture with V5V1CK, so both codes can be played. Thin Wednesday, so 3.46.",
       legs: [
         { fx: "Al Ula v Al Adalah", comp: "Saudi First Division", ko: "15:10", mk: "Home Win", odds: "1.27" },
@@ -43,7 +61,6 @@ window.SLATES = [
         { fx: "Real Potosí v Always Ready", comp: "Copa Bolivia final, 2nd leg", ko: "23:00", mk: "Over 1.5 Goals", odds: "1.16" }
       ]
     },
-    results: null,
     audit: {
       of: "Tuesday 24 November 2026",
       note: "Settled on 90-minute results. Each result has at least one reliable source; one is linked below. Corner counts are from ESPN.",
