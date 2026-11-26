@@ -38,7 +38,7 @@ window.SLATES = [
       5: { status: "lost", score: "2–1 (Bayern 4 corners)", src: "https://africa.espn.com/football/match/_/gameId/401915377", srcName: "ESPN" },
       6: { status: "won", score: "2–2", src: "https://www.espn.co.uk/football/match/_/gameId/401915374", srcName: "ESPN" }
     },
-    settled: "Settled 00:30 UK (26 Nov). Scouts Slate V5V1CK went 4 of 6 and LOST (Brugge 0–3 Liverpool, so Brugge didn't score; Bayern took only 4 corners). Fallback Slate TQ9VBG (proven model) won all 6 settled legs; only Real Potosí v Always Ready Over 1.5 is still to be confirmed. The Team-to-score double lost on Brugge.",
+    settled: "Settled 00:30 UK (26 Nov). Scouts Slate V5V1CK went 4 of 6 and LOST (Brugge 0–3 Liverpool, so Brugge didn't score; Bayern took only 4 corners). Fallback Slate TQ9VBG (proven model) went 6 of 7 and LOST on the last leg: Real Potosí 0–0 Always Ready in the Copa Bolivia final (Over 1.5 failed; the crossbar was hit twice). The Team-to-score double lost on Brugge.",
     slate2: {
       label: "Fallback Slate · proven model", code: "TQ9VBG", odds: "3.46", booked: "07:10 UK",
       results: [
@@ -48,7 +48,7 @@ window.SLATES = [
         { status: "won", score: "1–3", src: "https://www.skysports.com/football/news/13610529/bolton-wanderers-1-3-west-bromwich-albion-aune-heggebo-nets-twice-in-baggies-win", srcName: "Sky Sports" },
         { status: "won", score: "2–2", src: "https://www.espn.com/soccer/report/_/gameId/401915373", srcName: "ESPN" },
         { status: "won", score: "2–0", src: "https://www.espn.com/soccer/match/_/gameId/401915291/viking-fk-atletico-madrid", srcName: "ESPN" },
-        null
+        { status: "lost", score: "0–0", src: "https://www.vision360.bo/noticias/2026/11/25/78975-always-ready-empata-en-potosi-y-se-consagra-por-primera-vez-campeon-del-torneo-seriado", srcName: "Visión 360" }
       ],
       note: "The user switched the proven 5–22 Nov model back on (rulebook section 11): strong home wins plus Over 1.5, no corners or team goals, and the 1.20 minimum suspended. Shares no fixture with V5V1CK, so both codes can be played. Thin Wednesday, so 3.46.",
       legs: [
