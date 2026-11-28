@@ -96,3 +96,7 @@ Proven model:
 - **All other rules still apply:** the bans, league caps, one fixture per slip, and the value check on combined markets.
 - **The scouts stay on as fact-checkers:** the home scout and the goals scout (for Over 1.5) shortlist and verify. The Chief Punter builds the Slate from those two markets only. The Medium and Mega still use all six scouts.
 Status is recorded in /Users/user/bloom-website/hustle/slate-mode.txt ("scouts" or "fallback"). The 25 Nov audit sets it.
+
+
+## 12. Home team corners discontinued (user, 2026-11-28)
+Never use the "Home Team Total Corners" market in any slip (Slate, Medium or Mega). It lost on Middlesbrough (3 corners) and in total-corner form on Twente. Total corners and away-team corners are still allowed for the Medium and Mega, subject to the corners scout's lessons.
