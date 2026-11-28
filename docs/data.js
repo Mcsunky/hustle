@@ -5,6 +5,60 @@
    - audit: the previous day's settlement (picks, tickets, lessons). settled: one-line summary once the day is audited. */
 window.SLATES = [
   {
+    date: "2026-11-28",
+    label: "Saturday 28 November 2026",
+    built: "Built 02:20 UK (fallback model, scouts + Chief Punter)",
+    comps: [
+      { name: "2. Bundesliga", windows: [ { ko: "12:00 UK", picks: [
+        { n: 1, fx: "Hertha v Karlsruher SC", mk: "Home Win", odds: "1.42" } ] } ] },
+      { name: "LaLiga", windows: [ { ko: "13:00 UK", picks: [
+        { n: 2, fx: "Betis v Rayo Vallecano", mk: "Double Chance 1X", odds: "1.19" } ] } ] },
+      { name: "UAE Pro League", windows: [ { ko: "14:15 UK", picks: [
+        { n: 3, fx: "Al Wasl v Al Dhafra", mk: "Home Win", odds: "1.22" } ] } ] },
+      { name: "Scottish Premiership", windows: [ { ko: "15:00 UK", picks: [
+        { n: 4, fx: "Rangers v Falkirk", mk: "Over 1.5 Goals", odds: "1.12" } ] } ] },
+      { name: "Serie A", windows: [ { ko: "17:00 UK", picks: [
+        { n: 5, fx: "Torino v Lazio", mk: "Under 3.5 Goals", odds: "1.39" } ] } ] },
+      { name: "Saudi Pro League", windows: [ { ko: "17:30 UK", picks: [
+        { n: 6, fx: "Al Ahli v Al-Taawoun", mk: "Home Win", odds: "1.40" } ] } ] },
+      { name: "Eredivisie", windows: [ { ko: "17:45 UK", picks: [
+        { n: 7, fx: "PSV v Go Ahead Eagles", mk: "Home Win", odds: "1.24" } ] } ] },
+      { name: "Eredivisie", windows: [ { ko: "20:00 UK", picks: [
+        { n: 8, fx: "Cambuur v Sparta Rotterdam", mk: "Over 1.5 Goals", odds: "1.13" } ] } ] },
+      { name: "LaLiga", windows: [ { ko: "20:00 UK", picks: [
+        { n: 9, fx: "Real Madrid v Alavés", mk: "Home Win", odds: "1.14" } ] } ] }
+    ],
+    passes: "FALLBACK MODE (proven model), built by the six scouts and the Chief Punter. New user rule today: the Home Team Corners market is discontinued. The Slate is 7.18, under the weekend aim of 10, because every extra leg was weak: Saint-Étienne (a cup tie, moved to the Medium), Inter (rotation risk), Dynamo Kyiv and APOEL (+1 edge each) and PSG to win (no edge). Adding them would have cut the chance of landing from about 14% to about 11% or less. No Mega: only about 6 genuine legs were priced 1.45–2.25. Passed on: Rosenborg, Stuttgart and Real Madrid Over 1.5 (all 1.08–1.09, too short), Grasshopper v Basel Over 1.5, Vaduz v Zurich GG and Lens to score (low confidence), and Botafogo v Bahia (kicks off after midnight). No Arsenal fixtures.",
+    tickets: [
+      { name: "Banker treble", legs: [
+        ["Rangers v Falkirk: Over 1.5", "1.12"],
+        ["Cambuur v Sparta: Over 1.5", "1.13"],
+        ["Real Madrid v Alavés: Home Win", "1.14"]
+      ], total: "1.44" },
+      { name: "Value double", legs: [
+        ["Hertha v Karlsruher SC: Home Win", "1.42"],
+        ["Torino v Lazio: Under 3.5", "1.39"]
+      ], total: "1.97" }
+    ],
+    acca: { code: "UTN1HT", legs: 9, odds: "7.18", booked: "02:15 UK", note: "Proven model: 5 home wins, one 1X, two Over 1.5 and one Under 3.5. About a 1-in-7 chance of landing (bookmaker 13.9%)." },
+    mid: {
+      code: "LEH1Y6", odds: "20.28", booked: "02:18 UK", results: null, landed: null,
+      note: "9 legs over 7 market types, no fixture shared with the Slate. About a 4% chance (implied 4.9%), so a long shot. No home-team corners (new rule).",
+      legs: [
+        { fx: "Frosinone v Parma", comp: "Serie A", ko: "14:00", mk: "Home Win", odds: "1.52" },
+        { fx: "Hamburg v Bayern Munich", comp: "Bundesliga", ko: "14:30", mk: "Under 4.5 Goals", odds: "1.42" },
+        { fx: "Mainz v Union Berlin", comp: "Bundesliga", ko: "14:30", mk: "Over 1.5 Goals", odds: "1.17" },
+        { fx: "Stockport v Leyton Orient", comp: "League One", ko: "15:00", mk: "2nd Half Over 0.5 Goals", odds: "1.16" },
+        { fx: "Leeds v Coventry", comp: "Premier League", ko: "15:00", mk: "Home Win", odds: "1.54" },
+        { fx: "Charlotte v Chicago Fire", comp: "MLS Cup Playoffs", ko: "17:30", mk: "Both Teams to Score (GG)", odds: "1.33" },
+        { fx: "Saint-Étienne v Villefranche", comp: "Coupe de France", ko: "18:00", mk: "Home Win", odds: "1.31" },
+        { fx: "Inter v Genoa", comp: "Serie A", ko: "19:45", mk: "Inter Over 1.5 Goals", odds: "1.38" },
+        { fx: "PSG v Lorient", comp: "Ligue 1", ko: "19:45", mk: "Total Corners Under 9.5", odds: "1.87" }
+      ]
+    },
+    results: null
+  },
+  {
     date: "2026-11-26",
     label: "Thursday 26 November 2026",
     built: "Built 02:25 UK (fallback model)",
@@ -31,6 +85,7 @@ window.SLATES = [
     ],
     acca: { code: "K36UKZ", legs: 6, odds: "3.33", booked: "02:20 UK", note: "Proven model (fallback mode): home wins and Over 1.5 only, picked by the home and goals scouts and assembled by the Chief Punter." },
     results: null,
+    settled: "Not audited: the session was paused on 26–27 Nov and the user chose to skip this audit.",
     audit: {
       of: "Wednesday 25 November 2026",
       note: "Settled on 90-minute results. Two Slates were played: the scouts' V5V1CK and the user's fallback TQ9VBG. Each result has at least one reliable source; one is linked below.",
